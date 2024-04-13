@@ -1,0 +1,10 @@
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.csproj.AssemblyReference.cache
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.Form1.resources
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.Properties.Resources.resources
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.csproj.GenerateResource.cache
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.csproj.CoreCompileInputs.cache
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\bin\Debug\LIBRERIA.exe.config
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\bin\Debug\LIBRERIA.exe
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\bin\Debug\LIBRERIA.pdb
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.exe
+C:\facultad\poo\tp\EJERCICIO_01\LIBRERIA\obj\Debug\LIBRERIA.pdb
