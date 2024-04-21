@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|c:\\facultad\\poo\\tp\\ejercicio_01\\libreria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|c:\\facultad\\poo\\tp\\ejercicio_01\\libreria\\clases\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\clases\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|c:\\facultad\\poo\\tp\\ejercicio_01\\libreria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_01\\libreria\\clases\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\clases\\venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_01\\libreria\\clases\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\clases\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_01\\libreria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_01\\libreria\\clases\\libreria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\clases\\libreria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_01\\libreria\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}|LIBRERIA\\LIBRERIA.csproj|solutionrelative:libreria\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 300,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,59 +46,45 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Form1.cs",
-              "RelativeDocumentMoniker": "LIBRERIA\\Form1.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Form1.cs",
-              "RelativeToolTip": "LIBRERIA\\Form1.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAAAE4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T01:28:21.163Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Venta.cs",
               "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Clases\\Venta.cs",
               "RelativeDocumentMoniker": "LIBRERIA\\Clases\\Venta.cs",
               "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Clases\\Venta.cs",
               "RelativeToolTip": "LIBRERIA\\Clases\\Venta.cs",
-              "ViewState": "AQIAAA8AAABAAQAAAAAgwBcAAAAnAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAIA1wBwAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T00:38:10.907Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Libreria.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Clases\\Libreria.cs",
-              "RelativeDocumentMoniker": "LIBRERIA\\Clases\\Libreria.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Clases\\Libreria.cs",
-              "RelativeToolTip": "LIBRERIA\\Clases\\Libreria.cs",
-              "ViewState": "AQIAABsAAAAUMjMzMzMpwC4AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T00:37:55.357Z",
+              "WhenOpened": "2024-04-14T21:29:04.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Clases\\Producto.cs",
-              "RelativeDocumentMoniker": "LIBRERIA\\Clases\\Producto.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Clases\\Producto.cs",
-              "RelativeToolTip": "LIBRERIA\\Clases\\Producto.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAAADAAAAAtAAAA",
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Form1.cs",
+              "RelativeDocumentMoniker": "LIBRERIA\\Form1.cs",
+              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Form1.cs",
+              "RelativeToolTip": "LIBRERIA\\Form1.cs",
+              "ViewState": "AQIAAFQAAAAAAAAAAAAAAF0AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-13T00:36:07.72Z",
+              "WhenOpened": "2024-04-14T21:28:28.771Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "LIBRERIA\\ClassDiagram1.cd",
+              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\ClassDiagram1.cd",
+              "RelativeToolTip": "LIBRERIA\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-04-14T16:41:19.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_01\\LIBRERIA\\Form1.cs",
               "RelativeDocumentMoniker": "LIBRERIA\\Form1.cs",

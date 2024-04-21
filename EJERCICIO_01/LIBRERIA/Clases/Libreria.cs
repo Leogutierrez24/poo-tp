@@ -27,7 +27,6 @@ namespace LIBRERIA.Clases
 		public float Recaudacion
 		{
 			get { return recaudacion; }
-			set { recaudacion = value; }
 		}
 
 		public Libreria()
@@ -45,6 +44,13 @@ namespace LIBRERIA.Clases
 		public void NuevoProducto(Producto producto)
 		{
 			productos.Add(producto);
+		}
+
+		public void NuevaVenta(Venta venta)
+		{
+			venta.Id = ventas.Count + 1;
+			ventas.Add(venta);
+			recaudacion += venta.CalcularTotal();
 		}
 
 	}

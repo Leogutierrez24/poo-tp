@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7773F872-C5CC-4B47-831F-4ADF3FD7FFD3}</ProjectGuid>
+    <ProjectGuid>{74A80ED0-9A63-4104-A88A-2939D47AE5EE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>LIBRERIA</RootNamespace>
-    <AssemblyName>LIBRERIA</AssemblyName>
+    <RootNamespace>ESTACION</RootNamespace>
+    <AssemblyName>ESTACION</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -46,8 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\Libreria.cs" />
-    <Compile Include="Clases\Producto.cs" />
+    <Compile Include="Clases\Estacion.cs" />
+    <Compile Include="Clases\Nafta.cs" />
+    <Compile Include="Clases\Surtidor.cs" />
+    <Compile Include="Clases\TipoNafta.cs" />
     <Compile Include="Clases\Venta.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -55,10 +57,28 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Informes_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Informes_frm.Designer.cs">
+      <DependentUpon>Informes_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Venta_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Venta_frm.Designer.cs">
+      <DependentUpon>Venta_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Informes_frm.resx">
+      <DependentUpon>Informes_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Venta_frm.resx">
+      <DependentUpon>Venta_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +103,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

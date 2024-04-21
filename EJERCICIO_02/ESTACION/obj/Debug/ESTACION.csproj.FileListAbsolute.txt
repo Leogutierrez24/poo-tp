@@ -1,0 +1,12 @@
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\bin\Debug\ESTACION.exe.config
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\bin\Debug\ESTACION.exe
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\bin\Debug\ESTACION.pdb
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.csproj.AssemblyReference.cache
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.Form1.resources
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.Properties.Resources.resources
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.csproj.GenerateResource.cache
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.csproj.CoreCompileInputs.cache
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.exe
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.pdb
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.Formularios.Venta_frm.resources
+C:\facultad\poo\tp\EJERCICIO_02\ESTACION\obj\Debug\ESTACION.Formularios.Informes_frm.resources

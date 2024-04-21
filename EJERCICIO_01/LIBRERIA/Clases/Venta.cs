@@ -8,6 +8,13 @@ namespace LIBRERIA.Clases
 {
     public class Venta
     {
+        private int id;
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
         private readonly List<Producto> productos = new List<Producto>();
         public List<Producto> Productos 
         { 
@@ -24,11 +31,21 @@ namespace LIBRERIA.Clases
             productos.Remove(producto);
         }
 
+        public void QuitarTodos()
+        {
+            productos.Clear();
+        }
+
         public float CalcularTotal()
         {
             float total = 0;
             productos.ForEach(producto => total += producto.Precio);
             return total;
+        }
+
+        public override string ToString()
+        {
+            return string.Format("{0} ${1:0.0}", id, CalcularTotal());
         }
     }
 }

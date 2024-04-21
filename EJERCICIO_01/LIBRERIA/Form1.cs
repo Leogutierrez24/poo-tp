@@ -76,22 +76,59 @@ namespace LIBRERIA
 
         private void AgregarAlCarrito_btn_Click(object sender, EventArgs e)
         {
-
+            if (Productos_listBox.SelectedItems.Count > 0)
+            {
+                Producto prodSeleccionado = Productos_listBox.SelectedItem as Producto;
+                this.venta.AgregarProducto(prodSeleccionado);
+                Subtotal_lbl.Text = string.Format("$ {0:0.00}", venta.CalcularTotal());
+                ActualizarListBox(Carrito_listBox, venta.Productos);
+            }
+            else MessageBox.Show("Selecciona un producto para agregar.");
         }
 
         private void QuitarDelCarrito_btn_Click(object sender, EventArgs e)
         {
-
+            if (Carrito_listBox.SelectedItems.Count > 0)
+            {
+                Producto prodSeleccionado = Productos_listBox.SelectedItem as Producto;
+                this.venta.QuitarProducto(prodSeleccionado);
+                Subtotal_lbl.Text = string.Format("$ {0:0.00}", venta.CalcularTotal());
+                ActualizarListBox(Carrito_listBox, venta.Productos);
+            }
+            else MessageBox.Show("Selecciona un producto para quitar.");
         }
 
         private void FinalizarVenta_btn_Click(object sender, EventArgs e)
         {
-
+            if (venta.Productos.Count > 0)
+            {
+                libreria.NuevaVenta(venta);
+                venta = null;
+                GC.Collect();
+                venta = new Venta();
+                ActualizarListBox(Ventas_listBox, libreria.Ventas);
+                Carrito_listBox.Items.Clear();
+                Subtotal_lbl.Text = "$ 0,00";
+                Recaudacion_lbl.Text = string.Format("$ {0:0.00}", libreria.Recaudacion);
+            }
+            else MessageBox.Show("No hay productos por vender.");
         }
 
         private void CancelarVenta_btn_Click(object sender, EventArgs e)
         {
+            if (venta.Productos.Count > 0)
+            {
+                venta.QuitarTodos();
+                Carrito_listBox.Items.Clear();
+            }
+        }
 
+        // Detalle ventas
+
+        private void Ventas_listBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Venta ventaSeleccionada = Ventas_listBox.SelectedItem as Venta;
+            ActualizarListBox(VentaProductos_listBox, ventaSeleccionada.Productos);
         }
     }
 }

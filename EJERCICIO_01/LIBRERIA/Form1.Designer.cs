@@ -51,9 +51,11 @@
             this.Ventas_listBox = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Recaudacion_lbl = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.VentaProductos_listBox = new System.Windows.Forms.ListBox();
+            this.Subtotal_lbl = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ProductoPrecio_numericUpDown)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -171,7 +173,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.Subtotal_lbl);
             this.groupBox2.Controls.Add(this.CancelarVenta_btn);
+            this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.FinalizarVenta_btn);
             this.groupBox2.Controls.Add(this.QuitarDelCarrito_btn);
             this.groupBox2.Controls.Add(this.Carrito_listBox);
@@ -188,7 +192,7 @@
             // 
             // CancelarVenta_btn
             // 
-            this.CancelarVenta_btn.Location = new System.Drawing.Point(348, 225);
+            this.CancelarVenta_btn.Location = new System.Drawing.Point(348, 248);
             this.CancelarVenta_btn.Name = "CancelarVenta_btn";
             this.CancelarVenta_btn.Size = new System.Drawing.Size(75, 23);
             this.CancelarVenta_btn.TabIndex = 13;
@@ -198,7 +202,7 @@
             // 
             // FinalizarVenta_btn
             // 
-            this.FinalizarVenta_btn.Location = new System.Drawing.Point(348, 196);
+            this.FinalizarVenta_btn.Location = new System.Drawing.Point(348, 219);
             this.FinalizarVenta_btn.Name = "FinalizarVenta_btn";
             this.FinalizarVenta_btn.Size = new System.Drawing.Size(75, 23);
             this.FinalizarVenta_btn.TabIndex = 12;
@@ -208,7 +212,7 @@
             // 
             // QuitarDelCarrito_btn
             // 
-            this.QuitarDelCarrito_btn.Location = new System.Drawing.Point(225, 196);
+            this.QuitarDelCarrito_btn.Location = new System.Drawing.Point(225, 219);
             this.QuitarDelCarrito_btn.Name = "QuitarDelCarrito_btn";
             this.QuitarDelCarrito_btn.Size = new System.Drawing.Size(75, 40);
             this.QuitarDelCarrito_btn.TabIndex = 11;
@@ -267,6 +271,7 @@
             this.Ventas_listBox.Name = "Ventas_listBox";
             this.Ventas_listBox.Size = new System.Drawing.Size(199, 95);
             this.Ventas_listBox.TabIndex = 2;
+            this.Ventas_listBox.SelectedIndexChanged += new System.EventHandler(this.Ventas_listBox_SelectedIndexChanged);
             // 
             // label7
             // 
@@ -286,14 +291,14 @@
             this.label8.TabIndex = 15;
             this.label8.Text = "Recaudación:";
             // 
-            // label9
+            // Recaudacion_lbl
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(787, 277);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(46, 13);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "0000.00";
+            this.Recaudacion_lbl.AutoSize = true;
+            this.Recaudacion_lbl.Location = new System.Drawing.Point(787, 277);
+            this.Recaudacion_lbl.Name = "Recaudacion_lbl";
+            this.Recaudacion_lbl.Size = new System.Drawing.Size(46, 13);
+            this.Recaudacion_lbl.TabIndex = 16;
+            this.Recaudacion_lbl.Text = "0000.00";
             // 
             // label10
             // 
@@ -312,6 +317,24 @@
             this.VentaProductos_listBox.Size = new System.Drawing.Size(199, 95);
             this.VentaProductos_listBox.TabIndex = 17;
             // 
+            // Subtotal_lbl
+            // 
+            this.Subtotal_lbl.AutoSize = true;
+            this.Subtotal_lbl.Location = new System.Drawing.Point(281, 196);
+            this.Subtotal_lbl.Name = "Subtotal_lbl";
+            this.Subtotal_lbl.Size = new System.Drawing.Size(46, 13);
+            this.Subtotal_lbl.TabIndex = 20;
+            this.Subtotal_lbl.Text = "0000.00";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(226, 196);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(49, 13);
+            this.label11.TabIndex = 19;
+            this.label11.Text = "Subtotal:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -319,7 +342,7 @@
             this.ClientSize = new System.Drawing.Size(929, 344);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.VentaProductos_listBox);
-            this.Controls.Add(this.label9);
+            this.Controls.Add(this.Recaudacion_lbl);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Ventas_listBox);
@@ -362,10 +385,12 @@
         private System.Windows.Forms.ListBox Ventas_listBox;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label Recaudacion_lbl;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ListBox VentaProductos_listBox;
         private System.Windows.Forms.NumericUpDown ProductoPrecio_numericUpDown;
+        private System.Windows.Forms.Label Subtotal_lbl;
+        private System.Windows.Forms.Label label11;
     }
 }
 

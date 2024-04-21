@@ -93,23 +93,24 @@ Desarrollar una aplicación Orientada a Objetos utilizando VB.Net o C# que permi
 12)	Calcular el porcentaje de recaudación de cada barril.
 
 
-EJERCICIO Nº 5
+EJERCICIO Nº 5 (Obligatorio)
 
 Un polideportivo necesita un sistema que le permita administrar los alquileres de sus diferentes canchas. Cada cancha posee un valor de base por hora, y en algunos casos pueden tener agregados, se detalla a continuación:
 
 •	Canchas de tenis: 
-o	Valor: $200.
-o	Opcional: 1 árbitro, adiciona $100 al valor de la cancha y la ganancia del juez es de $50.
+	o	Valor: $200.
+	o	Opcional: 1 árbitro, adiciona $100 al valor de la cancha y la ganancia del juez es de $50.
 •	Canchas de fútbol 5: 
-o	Valor: $500
-o	No posee adicionales.
+	o	Valor: $500
+	o	No posee adicionales.
 •	Canchas de fútbol 7:
-o	Valor: $650.
-o	Opcional: 1 árbitro, adiciona $100 al valor de la cancha y la ganancia del juez es de $50.
+	o	Valor: $650.
+	o	Opcional: 1 árbitro, adiciona $100 al valor de la cancha y la ganancia del juez es de $50.
 •	Canchas de fútbol 11:
-o	Valor: $800.
-o	Opcional 1: 1 árbitro, adiciona $100 al valor de la cancha y la ganancia del juez es de $50.
-o	Opcional 2: Agregando el “opcional 1” se puede agregar 2 jueces de línea al alquiler, incrementando $90 al costo total, y la recaudación de cada juez de línea es de $35. 
+	o	Valor: $800.
+	o	Opcional 1: 1 árbitro, adiciona $100 al valor de la cancha y la ganancia del juez es de $50.
+	o	Opcional 2: Agregando el “opcional 1” se puede agregar 2 jueces de línea al alquiler, incrementando $90 al costo total, y la recaudación de cada juez de línea es de $35.
+
 De cada juez se registra, el nombre, apellido y el legajo.
 Desarrollar una aplicación Orientada a Objetos utilizando VB.Net o C# que permita:
 1)	Obtener la recaudación total del polideportivo.
@@ -197,43 +198,43 @@ Desarrollar una aplicación Orientada a Objetos utilizando VB.Net o C# que permi
 6)	Ningún elemento puede estar hardcodeado.
 
 
-EJERCICIO Nº 9
+EJERCICIO Nº 9 (Obligatorio)
 
 
 Un observatorio astronómico necesita un sistema para poder registrar los diferentes cuerpos celestes encontrados. Los diferentes elementos observados son: estrellas, planetas y satélites naturales. 
 Cada registro debe dejar asentado: fecha del encuentro, persona que lo observó, objeto encontrado y la distancia expresada en años luz desde la tierra. Los objetos a registrar se describen a continuación:
 
 •	Estrellas:
-o	Masa.
-o	Temperatura expresada en grados Celsius.
-o	Edad.
-o	Diámetro.
-o	Nombre.
-o	Color (Roja, Naranja , Amarilla, Blanca , Azul) 
-o	Tipo de estrella (Enana - Gigante) 
+	o	Masa.
+	o	Temperatura expresada en grados Celsius.
+	o	Edad.
+	o	Diámetro.
+	o	Nombre.
+	o	Color (Roja, Naranja , Amarilla, Blanca , Azul) 
+	o	Tipo de estrella (Enana - Gigante) 
 
 •	Planetas:
-o	Masa.
-o	Edad.
-o	Temperatura.
-o	En caso de pertenecer a un sistema planetario, pueden contener satélites.
+	o	Masa.
+	o	Edad.
+	o	Temperatura.
+	o	En caso de pertenecer a un sistema planetario, pueden contener satélites.
 
 •	Planetas dentro de un sistema planetario simple:
-o	Orbita alrededor de 1 estrella.
-o	Distancia en años luz a con respecto a la estrella que orbita.
-o	Satélites.
-o	Determinar si se encuentra en la zona “Ricitos de oro”
-o	Determinar si en función de la temperatura, elementos de la atmosfera y la zona es potencialmente habitable.
+	o	Orbita alrededor de 1 estrella.
+	o	Distancia en años luz a con respecto a la estrella que orbita.
+	o	Satélites.
+	o	Determinar si se encuentra en la zona “Ricitos de oro”
+	o	Determinar si en función de la temperatura, elementos de la atmosfera y la zona es potencialmente habitable.
 
 •	Planetas dentro de un sistema planetario Binario:
-o	Orbita alrededor de 2 estrellas.
-o	Determina también la distancia con respecto a la segunda estrella.
+	o	Orbita alrededor de 2 estrellas.
+	o	Determina también la distancia con respecto a la segunda estrella.
 
 •	Satélites:
-o	Nombre.
-o	Indicar si posee acoplamiento de marea.
-o	Masa.
-o	Edad.
+	o	Nombre.
+	o	Indicar si posee acoplamiento de marea.
+	o	Masa.
+	o	Edad.
 
 Cada sistema de  estrellas se deberá agrupar dentro de una constelación.
 Del descubridor del cuerpo celeste  se registrará el nombre, apellido, fecha de nacimiento y por último el legajo en caso de ser personal del observatorio.
@@ -289,7 +290,7 @@ Se requiere:
 •	Uso de interfaces
 
 
-EJERCICIO Nº 11
+EJERCICIO Nº 11 (Obligatorio)
 
 Un hospital privado necesita un sistema que le permita gestionar las historias clínicas de sus pacientes. El hospital está dividido en diferentes especialidades, donde cada especialidad tiene diferentes estudios que el paciente puede realizarse. Cada estudio tiene un costo, y debe estar acompañado de la orden médica con la firma médico fue el que lo solicitó, además el cupo para realizar los estudios es limitado por día.
 Cada médico clínico tiene un costo, y este costo se encarece en un 15% por cada especialización que éste posea. También los médicos tienen agendas de pacientes, para lo cual, se debe reservar el turno con antelación y evitar que los turnos se superpongan. Los médicos de guardia son los únicos que pueden atender demanda espontánea.
@@ -327,16 +328,4 @@ Los ejemplares se categorizan por:
 
 De los libros se conoce el título, autor (nombre, apellido, fecha de nacimiento, y en el caso que corresponda fecha de defunción), el año, la editorial, y la edición.
 De los libros con material digital, se conoce además la cantidad de cds que acompañan.
-Y de las revistas se registras el nombre, el año, el número, y el tipo de entrega (mensual / quincenal / diario). 
-
-
-EJERCICIO Nº 13
-
-
-EJERCICIO Nº 14
-
-
-EJERCICIO Nº 15
-
-
-EJERCICIO Nº 16
+Y de las revistas se registras el nombre, el año, el número, y el tipo de entrega (mensual / quincenal / diario).
