@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CAFETERIA.Clases.Cafe">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Clases\Cafe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.Cafeteria">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Clases\Cafeteria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.Vaso">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAACAAAAAgAAAAAAAQ=</HashCode>
+      <FileName>Clases\Vaso.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CAFETERIA.Clases.Venta">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\Venta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="CAFETERIA.TipoCafe" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\TipoCafe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CAFETERIA.TipoVaso" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAIAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Clases\TipoVaso.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
