@@ -1,0 +1,12 @@
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.csproj.AssemblyReference.cache
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.Form1.resources
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.Properties.Resources.resources
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.csproj.GenerateResource.cache
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.csproj.CoreCompileInputs.cache
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\bin\Debug\CAFETERIA.exe.config
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\bin\Debug\CAFETERIA.exe
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\bin\Debug\CAFETERIA.pdb
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.exe
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.pdb
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.Formularios.NuevaCafetera_frm.resources
+C:\facultad\poo\tp\EJERCICIO_03\CAFETERIA\obj\Debug\CAFETERIA.Formularios.Informe_frm.resources
