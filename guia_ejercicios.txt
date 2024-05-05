@@ -74,7 +74,7 @@ Un after office vende diferentes tipos de cerveza tiradas de barril, las mismas 
 Cada barril puede tener un solo tipo de cerveza, y dada las dimensiones del negocio, el sistema debe contemplar el agregado de barriles en función del tiempo.
 Cada venta se ve afectada por un cálculo de incremento de valor de la cerveza en un 5%, que depende del tipo de vaso donde se sirve:
 •	Chopp de 3/4 litros
-•	 Vaso de 1/2 litro
+•	Vaso de 1/2 litro
 •	Jara de 3 litros
 
 Desarrollar una aplicación Orientada a Objetos utilizando VB.Net o C# que permita:
