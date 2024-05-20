@@ -95,7 +95,8 @@ Desarrollar una aplicación Orientada a Objetos utilizando VB.Net o C# que permi
 
 EJERCICIO Nº 5 (Obligatorio)
 
-Un polideportivo necesita un sistema que le permita administrar los alquileres de sus diferentes canchas. Cada cancha posee un valor de base por hora, y en algunos casos pueden tener agregados, se detalla a continuación:
+Un polideportivo necesita un sistema que le permita administrar los alquileres de sus diferentes canchas.
+Cada cancha posee un valor de base por hora, y en algunos casos pueden tener agregados, se detalla a continuación:
 
 •	Canchas de tenis: 
 	o	Valor: $200.

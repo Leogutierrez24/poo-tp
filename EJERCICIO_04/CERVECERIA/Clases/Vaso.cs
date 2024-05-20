@@ -22,6 +22,12 @@ namespace CERVECERIA.Clases
 			set => capacidad = value;
 		}
 
+		private int solicitudes;
+		public int Solicitudes
+		{
+			get { return solicitudes; }
+		}
+
 		public Vaso(TipoVaso tipo)
 		{
 			this.tipo = tipo;
@@ -36,5 +42,15 @@ namespace CERVECERIA.Clases
 			else capacidad = 3f;
 			return capacidad;
 		}
-	}
+
+		public void Solicitar()
+		{
+			solicitudes++;
+		}
+
+        public override string ToString()
+        {
+            return Tipo.ToString();
+        }
+    }
 }

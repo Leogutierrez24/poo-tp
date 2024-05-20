@@ -37,5 +37,14 @@ namespace CERVECERIA.Clases
 			return precio;
 		}
 
+		public override string ToString()
+		{
+			string descripcion;
+
+			if (Tipo == TipoCerveza.RubiaNacional) descripcion = "Rubia Nacional";
+			else if (Tipo == TipoCerveza.NegraNacional) descripcion = "Negra Nacional";
+			else descripcion = "Rubia Internacional";
+			return descripcion;
+		}
 	}
 }

@@ -1,0 +1,10 @@
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\bin\Debug\CERVECERIA.exe.config
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\bin\Debug\CERVECERIA.exe
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\bin\Debug\CERVECERIA.pdb
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.csproj.AssemblyReference.cache
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.Form1.resources
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.Properties.Resources.resources
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.csproj.GenerateResource.cache
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.csproj.CoreCompileInputs.cache
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.exe
+C:\facultad\poo\tp\EJERCICIO_04\CERVECERIA\obj\Debug\CERVECERIA.pdb

@@ -19,15 +19,27 @@ namespace CERVECERIA.Clases
 		public Cerveza Cerveza
 		{
 			get { return cerveza; }
-			set { cerveza = value; }
 		}
 
 		private float capacidad;
 		public float Capacidad
 		{
 			get { return capacidad; }
-			set { capacidad = value; }
 		}
+
+		private float recaudacion;
+		public float Recaudacion
+		{
+			get { return recaudacion; }
+		}
+
+		private float cantidadVendida;
+		public float CantidadVendida
+		{
+			get { return cantidadVendida; }
+		}
+
+		public Barril() { }
 
 		public Barril(int id, Cerveza cerveza)
 		{
@@ -42,10 +54,21 @@ namespace CERVECERIA.Clases
 			if (cantidad <= capacidad)
 			{
 				capacidad -= cantidad;
+				recaudacion += (cantidad * cerveza.Precio) * 1.05f;
+				cantidadVendida += cantidad;
 			}
 			else resultado = -1;
 			return resultado;
 		}
 
-	}
+		public void EstablecerCerveza(Cerveza cerveza)
+		{
+			this.cerveza = cerveza;
+		}
+
+        public override string ToString()
+        {
+            return $"Barril {id}";
+        }
+    }
 }
