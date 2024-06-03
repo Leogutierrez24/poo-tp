@@ -20,6 +20,12 @@ namespace POLIDEPORTIVO.clases
 			get { return precio; }
 		}
 
+		private int vecesAlquilada;
+		public int VecesAlquilada
+		{
+			get { return vecesAlquilada; }
+		}
+
 		public Cancha(TipoCancha tipo)
 		{
 			this.tipo = tipo;
@@ -34,6 +40,11 @@ namespace POLIDEPORTIVO.clases
 			else if (tipo == TipoCancha.FutbolSiete) precio = 650;
 			else precio = 800;
 			return precio;
+		}
+
+		public void Alquilar()
+		{
+			vecesAlquilada++;
 		}
 	}
 }

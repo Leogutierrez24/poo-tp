@@ -39,5 +39,22 @@ namespace POLIDEPORTIVO.clases
 				new Cancha(TipoCancha.FutbolOnce),
 			};
 		}
+
+		public float CalcularRecaudacion()
+		{
+			float recaudacion = 0f;
+
+			alquileres.ForEach(alquiler => recaudacion += alquiler.Total);
+            jueces.ForEach(juez => recaudacion -= juez.Remuneracion);
+
+			return recaudacion;
+		}
+
+		public Cancha CanchaMasAlquilada()
+		{
+			List<Cancha> listaCanchas = new List<Cancha>();
+			canchas.ForEach(cancha => listaCanchas.Add(cancha));
+			return listaCanchas.OrderByDescending(cancha => cancha.VecesAlquilada).First();
+		}
 	}
 }
