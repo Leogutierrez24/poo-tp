@@ -32,17 +32,26 @@ namespace POLIDEPORTIVO.clases
 			get { return remuneracion; }
 		}
 
+		private int partidosDirigidos;
+		public int PartidosDirigidos
+		{
+			get { return partidosDirigidos; }
+		}
+
 		public Juez(string nombre, string apellido, int legajo)
 		{
 			this.nombre = nombre;
 			this.apellido = apellido;
 			this.legajo = legajo;
+			remuneracion = 0;
+			partidosDirigidos = 0;
 		}
 
 		public void Remunerar(float total)
 		{
 			if (total > 0)
 			{
+				partidosDirigidos++;
 				remuneracion += total;
 			}
 		}

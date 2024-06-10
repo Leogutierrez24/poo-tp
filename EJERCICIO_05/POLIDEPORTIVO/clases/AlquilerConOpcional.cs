@@ -14,12 +14,16 @@ namespace POLIDEPORTIVO.clases
 			get { return primerJuez; }
 		}
 
-		public AlquilerConOpcional (DateTime inicio, DateTime fin, Cancha cancha, Juez juez) : base (inicio, fin, cancha)
+		public AlquilerConOpcional (DateTime fecha, int inicio, int fin, Cancha cancha, Juez juez) : base (fecha, inicio, fin, cancha)
 		{
 			primerJuez = juez;
             primerJuez.Remunerar(50f);
-            this.total = (fin.Hour - inicio.Hour) * (cancha.Precio + 100);
+            this.total = (fin - inicio) * (cancha.Precio + 100);
 		}
 
+		public void EstablecerPrimerJuez(Juez juez)
+		{
+			primerJuez = juez;
+		}
 	}
 }

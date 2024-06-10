@@ -26,10 +26,18 @@ namespace POLIDEPORTIVO.clases
 			get { return vecesAlquilada; }
 		}
 
+		private float recaudacion;
+		public float Recaudacion
+		{
+			get { return recaudacion; }
+		}
+
 		public Cancha(TipoCancha tipo)
 		{
 			this.tipo = tipo;
 			this.precio = CalcularPrecio(tipo);
+			vecesAlquilada = 0;
+			recaudacion = 0;
 		}
 
 		private int CalcularPrecio(TipoCancha tipo)
@@ -42,9 +50,10 @@ namespace POLIDEPORTIVO.clases
 			return precio;
 		}
 
-		public void Alquilar()
+		public void Alquilar(float recuadacion)
 		{
 			vecesAlquilada++;
+			this.recaudacion += recuadacion;
 		}
 	}
 }

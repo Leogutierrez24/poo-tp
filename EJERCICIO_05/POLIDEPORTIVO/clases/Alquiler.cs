@@ -8,18 +8,22 @@ namespace POLIDEPORTIVO.clases
 {
     public class Alquiler
     {
-		private DateTime inicio;
-		public DateTime Inicio
+		private DateTime fecha;
+		public DateTime Fecha
 		{
-			get { return inicio; }
-			set { inicio = value; }
+			get { return fecha; }			
 		}
 
-		private DateTime fin;
-		public DateTime Fin
+		private int horaInicio;
+		public int HoraInicio
 		{
-			get { return fin; }
-			set { fin = value; }
+			get { return horaInicio; }
+		}
+
+		private int horaFin;
+		public int HoraFin
+		{
+			get { return horaFin; }
 		}
 
 		private Cancha cancha;
@@ -36,13 +40,14 @@ namespace POLIDEPORTIVO.clases
 			set { total = value; }
 		}
 
-		public Alquiler(DateTime inicio, DateTime fin, Cancha cancha) 
+		public Alquiler(DateTime fecha, int horaInicio, int horaFin, Cancha cancha) 
 		{
-			this.inicio = inicio;
-			this.fin = fin;
+			this.fecha = fecha;
+			this.horaInicio = horaInicio;
+			this.horaFin = horaFin;
 			this.cancha = cancha;
-			this.total = (fin.Hour - inicio.Hour) * cancha.Precio;
-			this.cancha.Alquilar();
+			total = (horaFin - horaInicio) * cancha.Precio;
+			this.cancha.Alquilar(total);
         }
 	}
 }

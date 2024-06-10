@@ -23,18 +23,25 @@ namespace POLIDEPORTIVO.clases
         }
 
         public AlquilerConOpcionales(
-            DateTime inicio,
-            DateTime fin,
+            DateTime fecha,
+            int inicio,
+            int fin,
             Cancha cancha,
             Juez juez, 
             Juez primerLinea,
-            Juez segundoLinea) : base (inicio, fin, cancha, juez)
+            Juez segundoLinea) : base (fecha, inicio, fin, cancha, juez)
         {
             primerJuezLinea = primerLinea;
             segundoJuezLinea = segundoLinea;
             primerJuezLinea.Remunerar(35);
             segundoJuezLinea.Remunerar(35);
             this.total += 90;
+        }
+
+        public void EstablecerJuecesDeLinea(Juez primerJuez, Juez segundoJuez)
+        {
+            primerJuezLinea = primerJuez;
+            segundoJuezLinea = segundoJuez;            
         }
     }
 }
