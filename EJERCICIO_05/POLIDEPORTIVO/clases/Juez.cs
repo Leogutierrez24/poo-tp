@@ -20,10 +20,11 @@ namespace POLIDEPORTIVO.clases
 			get { return apellido; }
 		}
 
-		private readonly int legajo;
+		private int legajo;
 		public int Legajo
 		{
 			get { return legajo; }
+			set { legajo = value; }
 		}
 
 		private float remuneracion;
@@ -40,12 +41,21 @@ namespace POLIDEPORTIVO.clases
 
 		public Juez(string nombre, string apellido, int legajo)
 		{
-			this.nombre = nombre;
-			this.apellido = apellido;
+			this.nombre = nombre.ToUpper();
+			this.apellido = apellido.ToUpper();
 			this.legajo = legajo;
 			remuneracion = 0;
 			partidosDirigidos = 0;
 		}
+
+		public Juez(string nombre, string apellido)
+		{
+			this.nombre = nombre.ToUpper();
+			this.apellido = apellido.ToUpper();
+			this.legajo = 0;
+            remuneracion = 0;
+            partidosDirigidos = 0;
+        }
 
 		public void Remunerar(float total)
 		{
@@ -55,5 +65,10 @@ namespace POLIDEPORTIVO.clases
 				remuneracion += total;
 			}
 		}
-	}
+
+        public override string ToString()
+        {
+			return $"{nombre} {apellido}";
+        }
+    }
 }

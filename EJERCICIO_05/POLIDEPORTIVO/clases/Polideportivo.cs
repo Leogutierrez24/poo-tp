@@ -9,21 +9,21 @@ namespace POLIDEPORTIVO.clases
 {
     public class Polideportivo
     {
-		private List<Cancha> canchas;
+		private List<Cancha> canchas = new List<Cancha>();
 		public List<Cancha> Canchas
 		{
 			get { return canchas; }
 			set { canchas = value; }
 		}
 
-		private List<Juez> jueces;
+		private List<Juez> jueces = new List<Juez>();
 		public List <Juez> Jueces
 		{
 			get { return jueces; }
 			set { jueces = value; }
 		}
 
-		private List<Alquiler> alquileres;
+		private List<Alquiler> alquileres = new List<Alquiler>();
 		public List<Alquiler> Alquileres
 		{
 			get { return alquileres; }
@@ -38,6 +38,13 @@ namespace POLIDEPORTIVO.clases
 				new Cancha(TipoCancha.FutbolCinco),
 				new Cancha(TipoCancha.FutbolSiete),
 				new Cancha(TipoCancha.FutbolOnce),
+			};
+
+			jueces = new List<Juez>
+			{
+				new Juez("Lucas", "Rodriguez", 1),
+				new Juez("German", "Beder", 2),
+				new Juez("Alfred", "Montesdeoca", 3),
 			};
 		}
 
@@ -121,6 +128,12 @@ namespace POLIDEPORTIVO.clases
 
             return listaAlquileres;
         }
+
+		public List<Alquiler> BuscarAlquileres(Cancha cancha, DateTime fecha)
+		{
+			List<Alquiler> aPorFecha = alquileres.FindAll(alquiler => alquiler.Fecha == fecha && alquiler.Cancha.Tipo == cancha.Tipo);
+			return aPorFecha;
+		}
 
 		// Disponibilidad de juez
         public bool ComprobarDisponibilidad(Juez juez, DateTime fecha, int horaInicio, int horaFin)
@@ -218,5 +231,13 @@ namespace POLIDEPORTIVO.clases
 
             return nuevoAlquiler;
         }
+
+		public void RegistrarJuez(Juez juez)
+		{
+			juez.Legajo = jueces.Count + 1;
+			jueces.Add(juez);
+		}
+
+
 	}
 }

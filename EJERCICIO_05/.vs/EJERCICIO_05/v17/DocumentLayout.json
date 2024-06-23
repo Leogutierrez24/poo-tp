@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|c:\\facultad\\poo\\tp\\ejercicio_05\\polideportivo\\formularios\\nuevareserva_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\formularios\\nuevareserva_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|c:\\facultad\\poo\\tp\\ejercicio_05\\polideportivo\\formularios\\nuevareserva_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\formularios\\nuevareserva_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\clases\\polideportivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\clases\\polideportivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\classdiagram2.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
-      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\classdiagram2.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\clases\\juez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\clases\\juez.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\clases\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\clases\\alquiler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_05\\polideportivo\\clases\\cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\clases\\cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|c:\\facultad\\poo\\tp\\ejercicio_05\\polideportivo\\clases\\polideportivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58AB7A65-E925-4F04-9EDB-BA00E56A9C33}|POLIDEPORTIVO\\POLIDEPORTIVO.csproj|solutionrelative:polideportivo\\clases\\polideportivo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 300,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\Form1.cs",
               "RelativeDocumentMoniker": "POLIDEPORTIVO\\Form1.cs",
@@ -51,13 +47,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Polideportivo.cs",
               "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Polideportivo.cs",
               "RelativeDocumentMoniker": "POLIDEPORTIVO\\clases\\Polideportivo.cs",
               "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Polideportivo.cs",
               "RelativeToolTip": "POLIDEPORTIVO\\clases\\Polideportivo.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFEAAAAgAAAA",
+              "ViewState": "AQIAAFoAAAAAyczMzEwwwIYAAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-03T00:24:42.323Z",
               "IsPinned": true,
@@ -81,53 +77,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Juez.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Juez.cs",
-              "RelativeDocumentMoniker": "POLIDEPORTIVO\\clases\\Juez.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Juez.cs",
-              "RelativeToolTip": "POLIDEPORTIVO\\clases\\Juez.cs",
-              "ViewState": "AQIAACoAAAAAzczMzMwQwDUAAAAYAAAA",
+              "DocumentIndex": 0,
+              "Title": "NuevaReserva_frm.cs",
+              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs",
+              "RelativeDocumentMoniker": "POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs",
+              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs",
+              "RelativeToolTip": "POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC4AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T01:39:05.297Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Alquiler.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Alquiler.cs",
-              "RelativeDocumentMoniker": "POLIDEPORTIVO\\clases\\Alquiler.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Alquiler.cs",
-              "RelativeToolTip": "POLIDEPORTIVO\\clases\\Alquiler.cs",
-              "ViewState": "AQIAAAIAAADALTMzMzMbwA0AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T00:47:12.11Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cancha.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Cancha.cs",
-              "RelativeDocumentMoniker": "POLIDEPORTIVO\\clases\\Cancha.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\clases\\Cancha.cs",
-              "RelativeToolTip": "POLIDEPORTIVO\\clases\\Cancha.cs",
-              "ViewState": "AQIAAAQAAAAAY2ZmZmYGwDcAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-09T00:46:20.055Z",
+              "WhenOpened": "2024-06-21T20:42:19.298Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClassDiagram2.cd",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\ClassDiagram2.cd",
-              "RelativeDocumentMoniker": "POLIDEPORTIVO\\ClassDiagram2.cd",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\ClassDiagram2.cd",
-              "RelativeToolTip": "POLIDEPORTIVO\\ClassDiagram2.cd",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-06-03T00:48:15.598Z",
+              "Title": "NuevaReserva_frm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs",
+              "RelativeDocumentMoniker": "POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs",
+              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "POLIDEPORTIVO\\formularios\\NuevaReserva_frm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T20:12:18.136Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\Form1.cs",
+              "RelativeDocumentMoniker": "POLIDEPORTIVO\\Form1.cs",
+              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_05\\POLIDEPORTIVO\\Form1.cs",
+              "RelativeToolTip": "POLIDEPORTIVO\\Form1.cs",
+              "ViewState": "AQIAAHEAAAAA6TIzMzP7v4UAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T23:17:58.115Z",
               "EditorCaption": ""
             }
           ]

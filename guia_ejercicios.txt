@@ -245,13 +245,13 @@ Desarrollar una aplicación Orientada a Objetos utilizando C# que permita:
 2)	Convertir dinámicamente años luz en kilómetros y viceversa.
 3)	Convertir dinámicamente las temperaturas de Grados Celsius a Fanrenheit y viceversa.
 4)	Buscar planetas por:
-a.	Nombre.
-b.	Estrella en la que orbita.
-c.	Potencialmente habitables.
+	a.	Nombre.
+	b.	Estrella en la que orbita.
+	c.	Potencialmente habitables.
 5)	Buscar estrellas por:
-a.	Tipo basado en el color y Tipo.
-b.	Temperatura.
-c.	Constelación.
+	a.	Tipo basado en el color y Tipo.
+	b.	Temperatura.
+	c.	Constelación.
 6)	De cada búsqueda mostrar toda la información con de dicho cuerpo celeste.
 
 

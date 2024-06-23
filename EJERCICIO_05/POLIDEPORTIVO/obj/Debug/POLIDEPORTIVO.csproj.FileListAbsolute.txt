@@ -8,3 +8,15 @@ C:\facultad\poo\tp\CLASE_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.Generat
 C:\facultad\poo\tp\CLASE_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.CoreCompileInputs.cache
 C:\facultad\poo\tp\CLASE_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.exe
 C:\facultad\poo\tp\CLASE_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.pdb
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.exe.config
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.exe
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.pdb
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.AssemblyReference.cache
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.Form1.resources
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.formularios.NuevaReserva_frm.resources
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.formularios.RegistroJuez_frm.resources
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.Properties.Resources.resources
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.GenerateResource.cache
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.CoreCompileInputs.cache
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.exe
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.pdb

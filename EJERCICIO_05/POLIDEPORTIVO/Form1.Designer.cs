@@ -31,15 +31,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Canchas_listBox = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.tipoCancha_lbl = new System.Windows.Forms.Label();
-            this.precioCancha_lbl = new System.Windows.Forms.Label();
-            this.recaudacionCancha_lbl = new System.Windows.Forms.Label();
             this.cantAlquileresCancha_lbl = new System.Windows.Forms.Label();
+            this.recaudacionCancha_lbl = new System.Windows.Forms.Label();
+            this.precioCancha_lbl = new System.Windows.Forms.Label();
+            this.tipoCancha_lbl = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.remuneracionJuez_lbl = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.partidosDirigidos_lbl = new System.Windows.Forms.Label();
             this.legajoJuez_lbl = new System.Windows.Forms.Label();
             this.apellidoJuez_lbl = new System.Windows.Forms.Label();
@@ -50,10 +52,18 @@
             this.label17 = new System.Windows.Forms.Label();
             this.Jueces_listBox = new System.Windows.Forms.ListBox();
             this.label18 = new System.Windows.Forms.Label();
-            this.remuneracionJuez_lbl = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.RegistrarJuez_btn = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.horaFin_lbl = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.horaInicio_lbl = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.fechaAlquiler_lbl = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.segundoLinea_lbl = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.primerLinea_lbl = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
             this.primerJuez_lbl = new System.Windows.Forms.Label();
             this.tipoAlquiler_lbl = new System.Windows.Forms.Label();
             this.totalAlquiler_lbl = new System.Windows.Forms.Label();
@@ -65,16 +75,6 @@
             this.Alquileres_listBox = new System.Windows.Forms.ListBox();
             this.label29 = new System.Windows.Forms.Label();
             this.NuevoAlquiler_btn = new System.Windows.Forms.Button();
-            this.primerLinea_lbl = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.segundoLinea_lbl = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.fechaAlquiler_lbl = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.horaInicio_lbl = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.horaFin_lbl = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -96,6 +96,7 @@
             this.Canchas_listBox.Name = "Canchas_listBox";
             this.Canchas_listBox.Size = new System.Drawing.Size(135, 95);
             this.Canchas_listBox.TabIndex = 1;
+            this.Canchas_listBox.SelectedIndexChanged += new System.EventHandler(this.Canchas_listBox_SelectedIndexChanged);
             // 
             // groupBox1
             // 
@@ -114,59 +115,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cancha Info.";
             // 
-            // label2
+            // cantAlquileresCancha_lbl
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tipo:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 52);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 13);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Precio p/hora:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 13);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Total recaudado:";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 106);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 13);
-            this.label5.TabIndex = 3;
-            this.label5.Text = "Veces alquilada:";
-            // 
-            // tipoCancha_lbl
-            // 
-            this.tipoCancha_lbl.AutoSize = true;
-            this.tipoCancha_lbl.Location = new System.Drawing.Point(43, 26);
-            this.tipoCancha_lbl.Name = "tipoCancha_lbl";
-            this.tipoCancha_lbl.Size = new System.Drawing.Size(61, 13);
-            this.tipoCancha_lbl.TabIndex = 4;
-            this.tipoCancha_lbl.Text = "tipoCancha";
-            // 
-            // precioCancha_lbl
-            // 
-            this.precioCancha_lbl.AutoSize = true;
-            this.precioCancha_lbl.Location = new System.Drawing.Point(87, 52);
-            this.precioCancha_lbl.Name = "precioCancha_lbl";
-            this.precioCancha_lbl.Size = new System.Drawing.Size(59, 13);
-            this.precioCancha_lbl.TabIndex = 5;
-            this.precioCancha_lbl.Text = "precioHora";
+            this.cantAlquileresCancha_lbl.AutoSize = true;
+            this.cantAlquileresCancha_lbl.Location = new System.Drawing.Point(97, 106);
+            this.cantAlquileresCancha_lbl.Name = "cantAlquileresCancha_lbl";
+            this.cantAlquileresCancha_lbl.Size = new System.Drawing.Size(79, 13);
+            this.cantAlquileresCancha_lbl.TabIndex = 7;
+            this.cantAlquileresCancha_lbl.Text = "vecesAlquilada";
             // 
             // recaudacionCancha_lbl
             // 
@@ -177,14 +133,59 @@
             this.recaudacionCancha_lbl.TabIndex = 6;
             this.recaudacionCancha_lbl.Text = "totalRecaudado";
             // 
-            // cantAlquileresCancha_lbl
+            // precioCancha_lbl
             // 
-            this.cantAlquileresCancha_lbl.AutoSize = true;
-            this.cantAlquileresCancha_lbl.Location = new System.Drawing.Point(97, 106);
-            this.cantAlquileresCancha_lbl.Name = "cantAlquileresCancha_lbl";
-            this.cantAlquileresCancha_lbl.Size = new System.Drawing.Size(79, 13);
-            this.cantAlquileresCancha_lbl.TabIndex = 7;
-            this.cantAlquileresCancha_lbl.Text = "vecesAlquilada";
+            this.precioCancha_lbl.AutoSize = true;
+            this.precioCancha_lbl.Location = new System.Drawing.Point(87, 52);
+            this.precioCancha_lbl.Name = "precioCancha_lbl";
+            this.precioCancha_lbl.Size = new System.Drawing.Size(59, 13);
+            this.precioCancha_lbl.TabIndex = 5;
+            this.precioCancha_lbl.Text = "precioHora";
+            // 
+            // tipoCancha_lbl
+            // 
+            this.tipoCancha_lbl.AutoSize = true;
+            this.tipoCancha_lbl.Location = new System.Drawing.Point(43, 26);
+            this.tipoCancha_lbl.Name = "tipoCancha_lbl";
+            this.tipoCancha_lbl.Size = new System.Drawing.Size(61, 13);
+            this.tipoCancha_lbl.TabIndex = 4;
+            this.tipoCancha_lbl.Text = "tipoCancha";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(85, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Veces alquilada:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Total recaudado:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(75, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Precio p/hora:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(6, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(31, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tipo:";
             // 
             // groupBox2
             // 
@@ -204,6 +205,24 @@
             this.groupBox2.TabIndex = 5;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos juez";
+            // 
+            // remuneracionJuez_lbl
+            // 
+            this.remuneracionJuez_lbl.AutoSize = true;
+            this.remuneracionJuez_lbl.Location = new System.Drawing.Point(146, 134);
+            this.remuneracionJuez_lbl.Name = "remuneracionJuez_lbl";
+            this.remuneracionJuez_lbl.Size = new System.Drawing.Size(66, 13);
+            this.remuneracionJuez_lbl.TabIndex = 9;
+            this.remuneracionJuez_lbl.Text = "cantPartidos";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 134);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(134, 13);
+            this.label20.TabIndex = 8;
+            this.label20.Text = "Remuneración acumulada:";
             // 
             // partidosDirigidos_lbl
             // 
@@ -284,6 +303,7 @@
             this.Jueces_listBox.Name = "Jueces_listBox";
             this.Jueces_listBox.Size = new System.Drawing.Size(135, 95);
             this.Jueces_listBox.TabIndex = 4;
+            this.Jueces_listBox.SelectedIndexChanged += new System.EventHandler(this.Jueces_listBox_SelectedIndexChanged);
             // 
             // label18
             // 
@@ -294,24 +314,6 @@
             this.label18.TabIndex = 3;
             this.label18.Text = "Jueces";
             // 
-            // remuneracionJuez_lbl
-            // 
-            this.remuneracionJuez_lbl.AutoSize = true;
-            this.remuneracionJuez_lbl.Location = new System.Drawing.Point(146, 134);
-            this.remuneracionJuez_lbl.Name = "remuneracionJuez_lbl";
-            this.remuneracionJuez_lbl.Size = new System.Drawing.Size(66, 13);
-            this.remuneracionJuez_lbl.TabIndex = 9;
-            this.remuneracionJuez_lbl.Text = "cantPartidos";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 134);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(134, 13);
-            this.label20.TabIndex = 8;
-            this.label20.Text = "Remuneración acumulada:";
-            // 
             // RegistrarJuez_btn
             // 
             this.RegistrarJuez_btn.Location = new System.Drawing.Point(451, 126);
@@ -320,6 +322,7 @@
             this.RegistrarJuez_btn.TabIndex = 6;
             this.RegistrarJuez_btn.Text = "Registrar nuevo juez";
             this.RegistrarJuez_btn.UseVisualStyleBackColor = true;
+            this.RegistrarJuez_btn.Click += new System.EventHandler(this.RegistrarJuez_btn_Click);
             // 
             // groupBox3
             // 
@@ -347,6 +350,96 @@
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Reserva Info.";
+            // 
+            // horaFin_lbl
+            // 
+            this.horaFin_lbl.AutoSize = true;
+            this.horaFin_lbl.Location = new System.Drawing.Point(162, 126);
+            this.horaFin_lbl.Name = "horaFin_lbl";
+            this.horaFin_lbl.Size = new System.Drawing.Size(42, 13);
+            this.horaFin_lbl.TabIndex = 17;
+            this.horaFin_lbl.Text = "horaFin";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(116, 126);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(38, 13);
+            this.label39.TabIndex = 16;
+            this.label39.Text = "Hasta:";
+            // 
+            // horaInicio_lbl
+            // 
+            this.horaInicio_lbl.AutoSize = true;
+            this.horaInicio_lbl.Location = new System.Drawing.Point(53, 126);
+            this.horaInicio_lbl.Name = "horaInicio_lbl";
+            this.horaInicio_lbl.Size = new System.Drawing.Size(53, 13);
+            this.horaInicio_lbl.TabIndex = 15;
+            this.horaInicio_lbl.Text = "horaInicio";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(7, 126);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(24, 13);
+            this.label37.TabIndex = 14;
+            this.label37.Text = "De:";
+            // 
+            // fechaAlquiler_lbl
+            // 
+            this.fechaAlquiler_lbl.AutoSize = true;
+            this.fechaAlquiler_lbl.Location = new System.Drawing.Point(53, 102);
+            this.fechaAlquiler_lbl.Name = "fechaAlquiler_lbl";
+            this.fechaAlquiler_lbl.Size = new System.Drawing.Size(34, 13);
+            this.fechaAlquiler_lbl.TabIndex = 13;
+            this.fechaAlquiler_lbl.Text = "fecha";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(7, 102);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(40, 13);
+            this.label35.TabIndex = 12;
+            this.label35.Text = "Fecha:";
+            // 
+            // segundoLinea_lbl
+            // 
+            this.segundoLinea_lbl.AutoSize = true;
+            this.segundoLinea_lbl.Location = new System.Drawing.Point(343, 78);
+            this.segundoLinea_lbl.Name = "segundoLinea_lbl";
+            this.segundoLinea_lbl.Size = new System.Drawing.Size(74, 13);
+            this.segundoLinea_lbl.TabIndex = 11;
+            this.segundoLinea_lbl.Text = "segundoLinea";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(220, 78);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(117, 13);
+            this.label33.TabIndex = 10;
+            this.label33.Text = "Segundo juez de línea:";
+            // 
+            // primerLinea_lbl
+            // 
+            this.primerLinea_lbl.AutoSize = true;
+            this.primerLinea_lbl.Location = new System.Drawing.Point(329, 52);
+            this.primerLinea_lbl.Name = "primerLinea_lbl";
+            this.primerLinea_lbl.Size = new System.Drawing.Size(61, 13);
+            this.primerLinea_lbl.TabIndex = 9;
+            this.primerLinea_lbl.Text = "primerLinea";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(220, 52);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(103, 13);
+            this.label31.TabIndex = 8;
+            this.label31.Text = "Primer juez de línea:";
             // 
             // primerJuez_lbl
             // 
@@ -427,6 +520,7 @@
             this.Alquileres_listBox.Name = "Alquileres_listBox";
             this.Alquileres_listBox.Size = new System.Drawing.Size(135, 134);
             this.Alquileres_listBox.TabIndex = 8;
+            this.Alquileres_listBox.SelectedIndexChanged += new System.EventHandler(this.Alquileres_listBox_SelectedIndexChanged);
             // 
             // label29
             // 
@@ -445,96 +539,7 @@
             this.NuevoAlquiler_btn.TabIndex = 10;
             this.NuevoAlquiler_btn.Text = "Nueva Reserva";
             this.NuevoAlquiler_btn.UseVisualStyleBackColor = true;
-            // 
-            // primerLinea_lbl
-            // 
-            this.primerLinea_lbl.AutoSize = true;
-            this.primerLinea_lbl.Location = new System.Drawing.Point(329, 52);
-            this.primerLinea_lbl.Name = "primerLinea_lbl";
-            this.primerLinea_lbl.Size = new System.Drawing.Size(61, 13);
-            this.primerLinea_lbl.TabIndex = 9;
-            this.primerLinea_lbl.Text = "primerLinea";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(220, 52);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(103, 13);
-            this.label31.TabIndex = 8;
-            this.label31.Text = "Primer juez de línea:";
-            // 
-            // segundoLinea_lbl
-            // 
-            this.segundoLinea_lbl.AutoSize = true;
-            this.segundoLinea_lbl.Location = new System.Drawing.Point(343, 78);
-            this.segundoLinea_lbl.Name = "segundoLinea_lbl";
-            this.segundoLinea_lbl.Size = new System.Drawing.Size(74, 13);
-            this.segundoLinea_lbl.TabIndex = 11;
-            this.segundoLinea_lbl.Text = "segundoLinea";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(220, 78);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(117, 13);
-            this.label33.TabIndex = 10;
-            this.label33.Text = "Segundo juez de línea:";
-            // 
-            // fechaAlquiler_lbl
-            // 
-            this.fechaAlquiler_lbl.AutoSize = true;
-            this.fechaAlquiler_lbl.Location = new System.Drawing.Point(53, 102);
-            this.fechaAlquiler_lbl.Name = "fechaAlquiler_lbl";
-            this.fechaAlquiler_lbl.Size = new System.Drawing.Size(34, 13);
-            this.fechaAlquiler_lbl.TabIndex = 13;
-            this.fechaAlquiler_lbl.Text = "fecha";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(7, 102);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(40, 13);
-            this.label35.TabIndex = 12;
-            this.label35.Text = "Fecha:";
-            // 
-            // horaInicio_lbl
-            // 
-            this.horaInicio_lbl.AutoSize = true;
-            this.horaInicio_lbl.Location = new System.Drawing.Point(53, 126);
-            this.horaInicio_lbl.Name = "horaInicio_lbl";
-            this.horaInicio_lbl.Size = new System.Drawing.Size(53, 13);
-            this.horaInicio_lbl.TabIndex = 15;
-            this.horaInicio_lbl.Text = "horaInicio";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(7, 126);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(24, 13);
-            this.label37.TabIndex = 14;
-            this.label37.Text = "De:";
-            // 
-            // horaFin_lbl
-            // 
-            this.horaFin_lbl.AutoSize = true;
-            this.horaFin_lbl.Location = new System.Drawing.Point(162, 126);
-            this.horaFin_lbl.Name = "horaFin_lbl";
-            this.horaFin_lbl.Size = new System.Drawing.Size(42, 13);
-            this.horaFin_lbl.TabIndex = 17;
-            this.horaFin_lbl.Text = "horaFin";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(116, 126);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(38, 13);
-            this.label39.TabIndex = 16;
-            this.label39.Text = "Hasta:";
+            this.NuevoAlquiler_btn.Click += new System.EventHandler(this.NuevoAlquiler_btn_Click);
             // 
             // Form1
             // 
@@ -554,6 +559,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Polideportivo";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

@@ -55,5 +55,10 @@ namespace POLIDEPORTIVO.clases
 			vecesAlquilada++;
 			this.recaudacion += recuadacion;
 		}
-	}
+
+        public override string ToString()
+        {
+            return $"{tipo}";
+        }
+    }
 }

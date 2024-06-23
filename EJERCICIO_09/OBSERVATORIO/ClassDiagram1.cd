@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OBSERVATORIO.clases.CuerpoCeleste">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAgAAAAAAAAgAAAAIAIAAAACA=</HashCode>
+      <FileName>clases\CuerpoCeleste.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Estrella">
+    <Position X="0.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAEAAAABQAAAAEAACAAAAAgAAAAAQ=</HashCode>
+      <FileName>clases\Estrella.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Persona">
+    <Position X="0.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAQAAACEAAAAgAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>clases\Persona.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Personal">
+    <Position X="0.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clases\Personal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Planeta">
+    <Position X="3" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clases\Planeta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.PlanetaSistemaBinario">
+    <Position X="3" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAA=</HashCode>
+      <FileName>clases\PlanetaSistemaBinario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.PlanetaSistemaSimple">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAACAAAAAAAAABAAAAAQABAAAQAQAAEABAAAAAQAA=</HashCode>
+      <FileName>clases\PlanetaSistemaSimple.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Satelite">
+    <Position X="5.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clases\Satelite.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Registro">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAgAIBAIAAAUAA=</HashCode>
+      <FileName>clases\Registro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="OBSERVATORIO.Color">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAACAEAAAAAAAAAAAAAAAAABCAAAAA=</HashCode>
+      <FileName>clases\Color.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="OBSERVATORIO.TipoEstrella">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clases\TipoEstrella.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

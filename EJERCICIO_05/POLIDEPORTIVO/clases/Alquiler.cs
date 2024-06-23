@@ -11,7 +11,7 @@ namespace POLIDEPORTIVO.clases
 		private DateTime fecha;
 		public DateTime Fecha
 		{
-			get { return fecha; }			
+			get { return fecha; }
 		}
 
 		private int horaInicio;
@@ -49,5 +49,10 @@ namespace POLIDEPORTIVO.clases
 			total = (horaFin - horaInicio) * cancha.Precio;
 			this.cancha.Alquilar(total);
         }
-	}
+
+        public override string ToString()
+        {
+            return $"{cancha.Tipo} | {fecha.ToShortDateString()} | {horaInicio} a {horaFin}";
+        }
+    }
 }
