@@ -53,9 +53,8 @@
     <Compile Include="clases\Observatorio.cs" />
     <Compile Include="clases\Persona.cs" />
     <Compile Include="clases\Personal.cs" />
-    <Compile Include="clases\Planeta.cs" />
-    <Compile Include="clases\PlanetaSistemaBinario.cs" />
-    <Compile Include="clases\PlanetaSistemaSimple.cs" />
+    <Compile Include="clases\PlanetaBinario.cs" />
+    <Compile Include="clases\PlanetaSimple.cs" />
     <Compile Include="clases\Registro.cs" />
     <Compile Include="clases\Satelite.cs" />
     <Compile Include="clases\TipoEstrella.cs" />
@@ -65,8 +64,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="formularios\NuevoRegistro_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\NuevoRegistro_frm.Designer.cs">
+      <DependentUpon>NuevoRegistro_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\VerCuerpo_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\VerCuerpo_frm.Designer.cs">
+      <DependentUpon>VerCuerpo_frm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

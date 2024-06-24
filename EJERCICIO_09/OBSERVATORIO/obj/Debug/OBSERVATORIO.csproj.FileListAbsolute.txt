@@ -1,0 +1,10 @@
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\bin\Debug\OBSERVATORIO.exe.config
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\bin\Debug\OBSERVATORIO.exe
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\bin\Debug\OBSERVATORIO.pdb
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.csproj.AssemblyReference.cache
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.Form1.resources
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.Properties.Resources.resources
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.csproj.GenerateResource.cache
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.csproj.CoreCompileInputs.cache
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.exe
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.pdb

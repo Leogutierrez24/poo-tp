@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OBSERVATORIO.clases
 {
-    public class PlanetaSistemaSimple : Planeta
+    public class PlanetaSimple : CuerpoCeleste
     {
 		private Estrella estrella;
 		public Estrella Estrella

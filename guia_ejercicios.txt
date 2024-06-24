@@ -243,7 +243,7 @@ Del descubridor del cuerpo celeste  se registrará el nombre, apellido, fecha de
 Desarrollar una aplicación Orientada a Objetos utilizando C# que permita:
 1)	Carga y edición de los diferentes cuerpos celestes.
 2)	Convertir dinámicamente años luz en kilómetros y viceversa.
-3)	Convertir dinámicamente las temperaturas de Grados Celsius a Fanrenheit y viceversa.
+3)	Convertir dinámicamente las temperaturas de Grados Celsius a Fahrenheit y viceversa.
 4)	Buscar planetas por:
 	a.	Nombre.
 	b.	Estrella en la que orbita.

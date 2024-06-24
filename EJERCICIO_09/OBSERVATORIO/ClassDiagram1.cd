@@ -28,25 +28,18 @@
       <FileName>clases\Personal.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OBSERVATORIO.clases.Planeta">
-    <Position X="3" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>clases\Planeta.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OBSERVATORIO.clases.PlanetaSistemaBinario">
-    <Position X="3" Y="8.5" Width="1.5" />
+  <Class Name="OBSERVATORIO.clases.PlanetaBinario">
+    <Position X="3" Y="7.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>CAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAgAAAA=</HashCode>
-      <FileName>clases\PlanetaSistemaBinario.cs</FileName>
+      <FileName>clases\PlanetaBinario.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OBSERVATORIO.clases.PlanetaSistemaSimple">
-    <Position X="3" Y="5" Width="1.5" />
+  <Class Name="OBSERVATORIO.clases.PlanetaSimple">
+    <Position X="3" Y="3.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAACAAAAAAAAABAAAAAQABAAAQAQAAEABAAAAAQAA=</HashCode>
-      <FileName>clases\PlanetaSistemaSimple.cs</FileName>
+      <FileName>clases\PlanetaSimple.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OBSERVATORIO.clases.Satelite">
@@ -61,6 +54,13 @@
     <TypeIdentifier>
       <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAgAAgAIBAIAAAUAA=</HashCode>
       <FileName>clases\Registro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OBSERVATORIO.clases.Constelacion">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAgAABAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>clases\Constelacion.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Enum Name="OBSERVATORIO.Color">
