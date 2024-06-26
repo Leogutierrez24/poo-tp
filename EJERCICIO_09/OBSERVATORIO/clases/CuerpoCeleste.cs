@@ -15,8 +15,8 @@ namespace OBSERVATORIO.clases
 			set { nombre = value; }
 		}
 
-		private int edad;
-		public int Edad
+		private float edad;
+		public float Edad
 		{
 			get { return edad; }
 			set { edad = value; }

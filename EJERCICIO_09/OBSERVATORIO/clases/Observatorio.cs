@@ -31,6 +31,13 @@ namespace OBSERVATORIO.clases
 			set => constelaciones = value;
 		}
 
+		public Observatorio()
+		{
+			registros = new List<Registro>();
+			cuerposRegistrados = new List<CuerpoCeleste>();
+			constelaciones = new List<Constelacion>();
+		}
+
 		public void RegistrarCuerpoCeleste(CuerpoCeleste cuerpo)
 		{
 			cuerposRegistrados.Add(cuerpo);
@@ -51,7 +58,7 @@ namespace OBSERVATORIO.clases
 			return (tempCelsius * 9 / 5) + 32;
         }
 
-		private List<PlanetaSimple> ObtenerPlanetas()
+		public List<PlanetaSimple> ObtenerPlanetas()
 		{
             List<PlanetaSimple> planetas = new List<PlanetaSimple>();
 
@@ -76,6 +83,18 @@ namespace OBSERVATORIO.clases
 			return estrellas;
 		}
 
+		public List<Satelite> ObtenerSatelites()
+		{
+            List<Satelite> satelites = new List<Satelite>();
+
+            foreach (Satelite s in cuerposRegistrados)
+            {
+                if (s is Satelite) satelites.Add(s as Satelite);
+            }
+
+            return satelites;
+        }
+	
 		public PlanetaSimple BuscarPlaneta(string nombre)
 		{
 			List<PlanetaSimple> planetas = ObtenerPlanetas();

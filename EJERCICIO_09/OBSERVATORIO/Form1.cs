@@ -16,15 +16,43 @@ namespace OBSERVATORIO
     {
         private Observatorio observatorio;
 
-        public Form1(Observatorio observatorio)
+        public Form1()
         {
             InitializeComponent();
-            this.observatorio = observatorio;
+            observatorio = new Observatorio();
+        }
+
+        private void CargarListBox<T>(ListBox listBox, List<T> coleccion)
+        {
+            listBox.Items.Clear();
+            coleccion.ForEach(item => listBox.Items.Add(item));
+        }
+
+        private void CargarRegistros()
+        {
+            CargarListBox(Registros_listBox, observatorio.Registros);
+        }
+
+        private void CargarCuerpos()
+        {
+            CargarListBox(CuerposRegistrados_listBox, observatorio.CuerposRegistrados);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            CargarRegistros();
+            CargarCuerpos();
+        }
+
+        private void CargarCuerposEncontrados<T>(List<T> coleccion)
+        {
+            CargarListBox(CuerposEncontrados_listBox, coleccion);
         }
 
         private void AgregarCuerpo_btn_Click(object sender, EventArgs e)
         {
-
+            AgregarCuerpo_frm form = new AgregarCuerpo_frm(observatorio);
+            form.ShowDialog();
         }
 
         private void ModificarCuerpo_btn_Click(object sender, EventArgs e)
@@ -56,5 +84,7 @@ namespace OBSERVATORIO
         {
 
         }
+
+        
     }
 }

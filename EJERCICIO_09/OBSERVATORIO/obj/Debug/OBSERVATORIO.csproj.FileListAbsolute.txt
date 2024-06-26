@@ -8,3 +8,4 @@ I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVAT
 I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.csproj.CoreCompileInputs.cache
 I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.exe
 I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.pdb
+I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_09\OBSERVATORIO\obj\Debug\OBSERVATORIO.formularios.AgregarCuerpo_frm.resources

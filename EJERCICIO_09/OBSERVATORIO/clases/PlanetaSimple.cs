@@ -22,6 +22,13 @@ namespace OBSERVATORIO.clases
 			set { distancia = value; }
 		}
 
+		private float temperatura;
+		public float Temperatura
+		{
+			get { return temperatura; }
+			set { temperatura = value; }
+		}
+
 		private List<Satelite> satelites;
 		public List<Satelite> Satelites
 		{
