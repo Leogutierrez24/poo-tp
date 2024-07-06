@@ -36,6 +36,18 @@ namespace OBSERVATORIO.clases
 			registros = new List<Registro>();
 			cuerposRegistrados = new List<CuerpoCeleste>();
 			constelaciones = new List<Constelacion>();
+			InicializarCuerposCelestes();
+		}
+
+		private void InicializarCuerposCelestes()
+		{
+			Satelite luna = new Satelite("Luna", 0.01230f, 4.53f, true);
+			Estrella sol = new Estrella("Sol", 3330598439.44f, 4.603f, 1.3927f, TipoEstrella.Gigante, Color.Blanca);
+			List<Satelite> s = new List<Satelite> { luna };
+			PlanetaSimple tierra = new PlanetaSimple("Tierra", 1, 4.54f, sol, 150f, 13.9f, s, true, true);
+			RegistrarCuerpoCeleste(luna);
+			RegistrarCuerpoCeleste(sol);
+			RegistrarCuerpoCeleste(tierra);
 		}
 
 		public void RegistrarCuerpoCeleste(CuerpoCeleste cuerpo)
@@ -71,11 +83,11 @@ namespace OBSERVATORIO.clases
 			return planetas;
         }
 
-		private List<Estrella> ObtenerEstrellas()
+		public List<Estrella> ObtenerEstrellas()
 		{
 			List<Estrella> estrellas = new List<Estrella>();
 
-			foreach(Estrella e in cuerposRegistrados)
+			foreach(CuerpoCeleste e in cuerposRegistrados)
 			{
 				if (e is Estrella) estrellas.Add(e as Estrella);
 			}
@@ -87,7 +99,7 @@ namespace OBSERVATORIO.clases
 		{
             List<Satelite> satelites = new List<Satelite>();
 
-            foreach (Satelite s in cuerposRegistrados)
+            foreach (CuerpoCeleste s in cuerposRegistrados)
             {
                 if (s is Satelite) satelites.Add(s as Satelite);
             }
@@ -95,35 +107,43 @@ namespace OBSERVATORIO.clases
             return satelites;
         }
 	
-		public PlanetaSimple BuscarPlaneta(string nombre)
+		public List<PlanetaSimple> BuscarPlaneta(string nombre)
 		{
 			List<PlanetaSimple> planetas = ObtenerPlanetas();
 
-			 return planetas.Find(planeta => planeta.Nombre == nombre);
+			return planetas.FindAll(planeta => planeta.Nombre.Contains(nombre));
 		}
 
-		public List<PlanetaSimple> BuscarPlanetas(Estrella estrella)
-		{
-			List<PlanetaSimple> planetas = ObtenerPlanetas();
-
-			foreach(PlanetaSimple p in planetas)
-			{
-				if (p.Estrella.Nombre == estrella.Nombre) planetas.Add(p);
-				if (p is PlanetaBinario)
-				{
-					PlanetaBinario pBinario = (PlanetaBinario)p;
-					if (pBinario.Estrella.Nombre == estrella.Nombre || pBinario.SegundaEstrella.Nombre == estrella.Nombre) planetas.Add(pBinario);
-				}
-			}
-
-            return planetas;
-        }
-
-		public List<PlanetaSimple> BuscarPlanetas(bool habitabilidad)
+		public List<PlanetaSimple> BuscarPlanetaPorHabitabilidad()
 		{
             List<PlanetaSimple> planetas = ObtenerPlanetas();
 
-			return planetas.FindAll(planeta => planeta.Habitabilidad == habitabilidad);
+            return planetas.FindAll(planeta => planeta.Habitabilidad);
+        }
+
+		public List<PlanetaSimple> BuscarPlanetaPorEstrella(string nombreEstrella)
+		{
+            List<PlanetaSimple> planetas = ObtenerPlanetas();
+			List<PlanetaSimple> planetasObtenidos = new List<PlanetaSimple>();
+
+			foreach(PlanetaSimple planeta in planetas)
+			{
+				if (planeta.Estrella.Nombre.Contains(nombreEstrella))
+				{
+					planetasObtenidos.Add(planeta);
+				}
+
+				if (planeta is PlanetaBinario)
+				{
+					PlanetaBinario p = planeta as PlanetaBinario;
+                    if (p.SegundaEstrella.Nombre.Contains(nombreEstrella))
+                    {
+                        planetasObtenidos.Add(p);
+                    }
+                }
+			}
+
+			return planetasObtenidos;
         }
 
 		public List<Estrella> BuscarEstrellas(Color color, TipoEstrella tipo)

@@ -35,8 +35,6 @@
             this.Satelite_groupBox = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.AcoplamientoMarea_comboBox = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.PlanetaQueOrbita_comboBox = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.SateliteMasa_numericUpDown = new System.Windows.Forms.NumericUpDown();
@@ -46,6 +44,8 @@
             this.SateliteNombre_textBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Planeta_groupBox = new System.Windows.Forms.GroupBox();
+            this.DistanciaSegundaEstrella_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.DistanciaPrimerEstrella_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label28 = new System.Windows.Forms.Label();
             this.PlanetaSiRicitos_radioButton = new System.Windows.Forms.RadioButton();
             this.PlanetaNoRicitos_radioButton = new System.Windows.Forms.RadioButton();
@@ -94,12 +94,12 @@
             this.label22 = new System.Windows.Forms.Label();
             this.AgregarCuerpo_btn = new System.Windows.Forms.Button();
             this.Cancelar_btn = new System.Windows.Forms.Button();
-            this.DistanciaPrimerEstrella_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.DistanciaSegundaEstrella_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.Satelite_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SateliteMasa_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SateliteEdad_numericUpDown)).BeginInit();
             this.Planeta_groupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DistanciaSegundaEstrella_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DistanciaPrimerEstrella_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaTemp_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaMasa_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaEdad_numericUpDown)).BeginInit();
@@ -107,8 +107,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaDiametro_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaMasa_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaEdad_numericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DistanciaPrimerEstrella_numericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DistanciaSegundaEstrella_numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // TipoCuerpo01_radioButton
@@ -159,8 +157,6 @@
             // 
             this.Satelite_groupBox.Controls.Add(this.label13);
             this.Satelite_groupBox.Controls.Add(this.AcoplamientoMarea_comboBox);
-            this.Satelite_groupBox.Controls.Add(this.label7);
-            this.Satelite_groupBox.Controls.Add(this.PlanetaQueOrbita_comboBox);
             this.Satelite_groupBox.Controls.Add(this.label6);
             this.Satelite_groupBox.Controls.Add(this.label5);
             this.Satelite_groupBox.Controls.Add(this.SateliteMasa_numericUpDown);
@@ -171,7 +167,7 @@
             this.Satelite_groupBox.Controls.Add(this.label2);
             this.Satelite_groupBox.Location = new System.Drawing.Point(15, 71);
             this.Satelite_groupBox.Name = "Satelite_groupBox";
-            this.Satelite_groupBox.Size = new System.Drawing.Size(200, 289);
+            this.Satelite_groupBox.Size = new System.Drawing.Size(200, 229);
             this.Satelite_groupBox.TabIndex = 4;
             this.Satelite_groupBox.TabStop = false;
             this.Satelite_groupBox.Text = "Agregar Satelite";
@@ -190,30 +186,12 @@
             this.AcoplamientoMarea_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AcoplamientoMarea_comboBox.FormattingEnabled = true;
             this.AcoplamientoMarea_comboBox.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
+            "NO",
+            "SI"});
             this.AcoplamientoMarea_comboBox.Location = new System.Drawing.Point(9, 196);
             this.AcoplamientoMarea_comboBox.Name = "AcoplamientoMarea_comboBox";
             this.AcoplamientoMarea_comboBox.Size = new System.Drawing.Size(180, 21);
             this.AcoplamientoMarea_comboBox.TabIndex = 10;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 236);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(93, 13);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Planeta que orbita";
-            // 
-            // PlanetaQueOrbita_comboBox
-            // 
-            this.PlanetaQueOrbita_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.PlanetaQueOrbita_comboBox.FormattingEnabled = true;
-            this.PlanetaQueOrbita_comboBox.Location = new System.Drawing.Point(9, 252);
-            this.PlanetaQueOrbita_comboBox.Name = "PlanetaQueOrbita_comboBox";
-            this.PlanetaQueOrbita_comboBox.Size = new System.Drawing.Size(180, 21);
-            this.PlanetaQueOrbita_comboBox.TabIndex = 8;
             // 
             // label6
             // 
@@ -331,6 +309,30 @@
             this.Planeta_groupBox.TabIndex = 5;
             this.Planeta_groupBox.TabStop = false;
             this.Planeta_groupBox.Text = "Agregar Planetas";
+            // 
+            // DistanciaSegundaEstrella_numericUpDown
+            // 
+            this.DistanciaSegundaEstrella_numericUpDown.Location = new System.Drawing.Point(216, 344);
+            this.DistanciaSegundaEstrella_numericUpDown.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.DistanciaSegundaEstrella_numericUpDown.Name = "DistanciaSegundaEstrella_numericUpDown";
+            this.DistanciaSegundaEstrella_numericUpDown.Size = new System.Drawing.Size(145, 20);
+            this.DistanciaSegundaEstrella_numericUpDown.TabIndex = 37;
+            // 
+            // DistanciaPrimerEstrella_numericUpDown
+            // 
+            this.DistanciaPrimerEstrella_numericUpDown.Location = new System.Drawing.Point(216, 244);
+            this.DistanciaPrimerEstrella_numericUpDown.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.DistanciaPrimerEstrella_numericUpDown.Name = "DistanciaPrimerEstrella_numericUpDown";
+            this.DistanciaPrimerEstrella_numericUpDown.Size = new System.Drawing.Size(145, 20);
+            this.DistanciaPrimerEstrella_numericUpDown.TabIndex = 12;
             // 
             // label28
             // 
@@ -473,9 +475,6 @@
             // 
             this.PlanetaSegundaEstrella_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PlanetaSegundaEstrella_comboBox.FormattingEnabled = true;
-            this.PlanetaSegundaEstrella_comboBox.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
             this.PlanetaSegundaEstrella_comboBox.Location = new System.Drawing.Point(216, 297);
             this.PlanetaSegundaEstrella_comboBox.Name = "PlanetaSegundaEstrella_comboBox";
             this.PlanetaSegundaEstrella_comboBox.Size = new System.Drawing.Size(180, 21);
@@ -520,6 +519,7 @@
             this.PlanetaSimple_radioButton.TabStop = true;
             this.PlanetaSimple_radioButton.Text = "Simple";
             this.PlanetaSimple_radioButton.UseVisualStyleBackColor = true;
+            this.PlanetaSimple_radioButton.CheckedChanged += new System.EventHandler(this.PlanetaSimple_radioButton_CheckedChanged);
             // 
             // label14
             // 
@@ -543,9 +543,6 @@
             // 
             this.PlanetaPrimeraEstrella_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.PlanetaPrimeraEstrella_comboBox.FormattingEnabled = true;
-            this.PlanetaPrimeraEstrella_comboBox.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
             this.PlanetaPrimeraEstrella_comboBox.Location = new System.Drawing.Point(216, 193);
             this.PlanetaPrimeraEstrella_comboBox.Name = "PlanetaPrimeraEstrella_comboBox";
             this.PlanetaPrimeraEstrella_comboBox.Size = new System.Drawing.Size(180, 21);
@@ -677,9 +674,9 @@
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(63, 203);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(97, 13);
+            this.label29.Size = new System.Drawing.Size(76, 13);
             this.label29.TabIndex = 34;
-            this.label29.Text = "masa terrestre (M🜨)";
+            this.label29.Text = "millones de km";
             // 
             // EstrellaEnana_radioButton
             // 
@@ -698,8 +695,11 @@
             this.EstrellaColor_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EstrellaColor_comboBox.FormattingEnabled = true;
             this.EstrellaColor_comboBox.Items.AddRange(new object[] {
-            "SI",
-            "NO"});
+            "ROJA",
+            "AMARILLA",
+            "NARANJA",
+            "BLANCA",
+            "AZUL"});
             this.EstrellaColor_comboBox.Location = new System.Drawing.Point(14, 244);
             this.EstrellaColor_comboBox.Name = "EstrellaColor_comboBox";
             this.EstrellaColor_comboBox.Size = new System.Drawing.Size(180, 21);
@@ -818,33 +818,9 @@
             this.Cancelar_btn.Name = "Cancelar_btn";
             this.Cancelar_btn.Size = new System.Drawing.Size(89, 42);
             this.Cancelar_btn.TabIndex = 8;
-            this.Cancelar_btn.Text = "Cancelar";
+            this.Cancelar_btn.Text = "Salir";
             this.Cancelar_btn.UseVisualStyleBackColor = true;
             this.Cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
-            // 
-            // DistanciaPrimerEstrella_numericUpDown
-            // 
-            this.DistanciaPrimerEstrella_numericUpDown.Location = new System.Drawing.Point(216, 244);
-            this.DistanciaPrimerEstrella_numericUpDown.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.DistanciaPrimerEstrella_numericUpDown.Name = "DistanciaPrimerEstrella_numericUpDown";
-            this.DistanciaPrimerEstrella_numericUpDown.Size = new System.Drawing.Size(145, 20);
-            this.DistanciaPrimerEstrella_numericUpDown.TabIndex = 12;
-            // 
-            // DistanciaSegundaEstrella_numericUpDown
-            // 
-            this.DistanciaSegundaEstrella_numericUpDown.Location = new System.Drawing.Point(216, 344);
-            this.DistanciaSegundaEstrella_numericUpDown.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.DistanciaSegundaEstrella_numericUpDown.Name = "DistanciaSegundaEstrella_numericUpDown";
-            this.DistanciaSegundaEstrella_numericUpDown.Size = new System.Drawing.Size(145, 20);
-            this.DistanciaSegundaEstrella_numericUpDown.TabIndex = 37;
             // 
             // AgregarCuerpo_frm
             // 
@@ -870,6 +846,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.SateliteEdad_numericUpDown)).EndInit();
             this.Planeta_groupBox.ResumeLayout(false);
             this.Planeta_groupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DistanciaSegundaEstrella_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DistanciaPrimerEstrella_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaTemp_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaMasa_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaEdad_numericUpDown)).EndInit();
@@ -878,8 +856,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaDiametro_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaMasa_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaEdad_numericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DistanciaPrimerEstrella_numericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DistanciaSegundaEstrella_numericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -903,8 +879,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown SateliteMasa_numericUpDown;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox PlanetaQueOrbita_comboBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.NumericUpDown PlanetaMasa_numericUpDown;

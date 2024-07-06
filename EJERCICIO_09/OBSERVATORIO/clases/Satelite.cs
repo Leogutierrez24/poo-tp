@@ -15,5 +15,13 @@ namespace OBSERVATORIO.clases
 			set { acoplamientoMarea = value; }
 		}
 
+		public Satelite(string nombre, float masa, float edad, bool acoplamientoMarea = false)
+		{
+			this.nombre = nombre;
+			this.masa = masa;
+			this.edad = edad;
+			this.acoplamientoMarea = acoplamientoMarea;
+		}
+
 	}
 }

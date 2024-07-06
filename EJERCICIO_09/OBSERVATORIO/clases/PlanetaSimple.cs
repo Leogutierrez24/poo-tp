@@ -29,7 +29,7 @@ namespace OBSERVATORIO.clases
 			set { temperatura = value; }
 		}
 
-		private List<Satelite> satelites;
+		private List<Satelite> satelites = new List<Satelite>();
 		public List<Satelite> Satelites
 		{
 			get { return satelites; }
@@ -49,5 +49,26 @@ namespace OBSERVATORIO.clases
 			get { return ricitos; }
 			set { ricitos = value; }
 		}
-	}
+
+        public PlanetaSimple(string nombre, float masa, float edad, Estrella estrella, float distancia, float temp, List<Satelite> satelites, bool habitabilidad, bool ricitos)
+		{
+			this.nombre = nombre;
+			this.masa = masa;
+			this.edad = edad;
+			this.estrella = estrella;
+			this.distancia = distancia;
+			temperatura = temp;
+			if(satelites.Count != 0) AgregarSatelites(satelites);
+		}
+
+		public void AgregarSatelite(Satelite satelite)
+		{
+			satelites.Add(satelite);
+		}
+
+		public void AgregarSatelites(List<Satelite> satelites)
+		{
+			satelites.ForEach(satelite => this.satelites.Add(satelite));
+		}
+    }
 }

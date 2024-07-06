@@ -29,14 +29,23 @@ namespace OBSERVATORIO.clases
 			set { tipo = value; }
 		}
 
-		private float diametro;
-		public float Diametro
+		private double diametro;
+		public double Diametro
 		{
 			get { return diametro; }
 			set { diametro = value; }
 		}
 
-		// Falta agregar la constelación
+        public Estrella(string nombre, float masa, float edad, float diametro, TipoEstrella tipo, Color color)
+		{
+			this.nombre = nombre;
+			this.masa = masa;
+			this.edad = edad;
+			this.diametro = diametro;
+			this.tipo = tipo;
+			this.color = color;
+		}
+        // Falta agregar la constelación
 
-	}
+    }
 }

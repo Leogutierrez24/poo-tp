@@ -21,5 +21,21 @@ namespace OBSERVATORIO.clases
             get { return segundaDistancia; }
             set { segundaDistancia = value; }
         }
+
+        public PlanetaBinario(string nombre,
+            float masa,
+            float edad,
+            Estrella primeraEstrella,
+            float primeraDistancia,
+            Estrella segundaEstrella,
+            float segundaDistancia,
+            float temp,
+            List<Satelite> satelites,
+            bool habitabilidad,
+            bool ricitos) : base(nombre, masa, edad, primeraEstrella, primeraDistancia, temp, satelites, habitabilidad, ricitos)
+        {
+            this.segundaEstrella = segundaEstrella;
+            this.segundaDistancia = segundaDistancia;
+        }
     }
 }

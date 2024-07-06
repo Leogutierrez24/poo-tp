@@ -8,25 +8,30 @@ namespace OBSERVATORIO.clases
 {
     public abstract class CuerpoCeleste
     {
-		private string nombre;
+		protected string nombre;
 		public string Nombre
 		{
 			get { return nombre; }
 			set { nombre = value; }
 		}
 
-		private float edad;
+		protected float edad;
 		public float Edad
 		{
 			get { return edad; }
 			set { edad = value; }
 		}
 
-		private float masa;
-		public float Masa
+		protected double masa;
+		public double Masa
 		{
 			get { return masa; }
 			set { masa = value; }
-		}		
-	}
+		}
+
+        public override string ToString()
+        {
+            return nombre;
+        }
+    }
 }

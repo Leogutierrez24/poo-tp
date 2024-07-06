@@ -48,6 +48,8 @@
             this.ModificarCuerpo_btn = new System.Windows.Forms.Button();
             this.VerRegistro_btn = new System.Windows.Forms.Button();
             this.VerCuerpo_btn = new System.Windows.Forms.Button();
+            this.ValorFiltro_textBox = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,6 +72,8 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.ValorFiltro_textBox);
             this.groupBox1.Controls.Add(this.Filtrar_btn);
             this.groupBox1.Controls.Add(this.VerCuerpoFiltrado_btn);
             this.groupBox1.Controls.Add(this.CuerposEncontrados_listBox);
@@ -82,26 +86,26 @@
             this.groupBox1.Controls.Add(this.Opcion01_radioButton);
             this.groupBox1.Location = new System.Drawing.Point(220, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(202, 411);
+            this.groupBox1.Size = new System.Drawing.Size(373, 369);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Cuerpos";
             // 
             // Filtrar_btn
             // 
-            this.Filtrar_btn.Location = new System.Drawing.Point(56, 165);
+            this.Filtrar_btn.Location = new System.Drawing.Point(236, 69);
             this.Filtrar_btn.Name = "Filtrar_btn";
             this.Filtrar_btn.Size = new System.Drawing.Size(81, 36);
             this.Filtrar_btn.TabIndex = 10;
-            this.Filtrar_btn.Text = "Filtrar";
+            this.Filtrar_btn.Text = "Buscar";
             this.Filtrar_btn.UseVisualStyleBackColor = true;
             this.Filtrar_btn.Click += new System.EventHandler(this.Filtrar_btn_Click);
             // 
             // VerCuerpoFiltrado_btn
             // 
-            this.VerCuerpoFiltrado_btn.Location = new System.Drawing.Point(9, 364);
+            this.VerCuerpoFiltrado_btn.Location = new System.Drawing.Point(141, 315);
             this.VerCuerpoFiltrado_btn.Name = "VerCuerpoFiltrado_btn";
-            this.VerCuerpoFiltrado_btn.Size = new System.Drawing.Size(81, 36);
+            this.VerCuerpoFiltrado_btn.Size = new System.Drawing.Size(90, 36);
             this.VerCuerpoFiltrado_btn.TabIndex = 9;
             this.VerCuerpoFiltrado_btn.Text = "Ver Cuerpo";
             this.VerCuerpoFiltrado_btn.UseVisualStyleBackColor = true;
@@ -110,15 +114,15 @@
             // CuerposEncontrados_listBox
             // 
             this.CuerposEncontrados_listBox.FormattingEnabled = true;
-            this.CuerposEncontrados_listBox.Location = new System.Drawing.Point(6, 237);
+            this.CuerposEncontrados_listBox.Location = new System.Drawing.Point(15, 188);
             this.CuerposEncontrados_listBox.Name = "CuerposEncontrados_listBox";
-            this.CuerposEncontrados_listBox.Size = new System.Drawing.Size(177, 121);
+            this.CuerposEncontrados_listBox.Size = new System.Drawing.Size(343, 121);
             this.CuerposEncontrados_listBox.TabIndex = 4;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 221);
+            this.label4.Location = new System.Drawing.Point(6, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 13);
             this.label4.TabIndex = 3;
@@ -126,6 +130,7 @@
             // 
             // Filtros_comboBox
             // 
+            this.Filtros_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Filtros_comboBox.FormattingEnabled = true;
             this.Filtros_comboBox.Location = new System.Drawing.Point(18, 138);
             this.Filtros_comboBox.Name = "Filtros_comboBox";
@@ -150,6 +155,7 @@
             this.Opcion03_radioButton.TabIndex = 3;
             this.Opcion03_radioButton.Text = "Estrella";
             this.Opcion03_radioButton.UseVisualStyleBackColor = true;
+            this.Opcion03_radioButton.CheckedChanged += new System.EventHandler(this.Opcion03_radioButton_CheckedChanged);
             // 
             // Opcion02_radioButton
             // 
@@ -160,6 +166,7 @@
             this.Opcion02_radioButton.TabIndex = 2;
             this.Opcion02_radioButton.Text = "Planeta";
             this.Opcion02_radioButton.UseVisualStyleBackColor = true;
+            this.Opcion02_radioButton.CheckedChanged += new System.EventHandler(this.Opcion02_radioButton_CheckedChanged);
             // 
             // label2
             // 
@@ -181,6 +188,7 @@
             this.Opcion01_radioButton.TabStop = true;
             this.Opcion01_radioButton.Text = "Satelite";
             this.Opcion01_radioButton.UseVisualStyleBackColor = true;
+            this.Opcion01_radioButton.CheckedChanged += new System.EventHandler(this.Opcion01_radioButton_CheckedChanged);
             // 
             // Registros_listBox
             // 
@@ -249,11 +257,28 @@
             this.VerCuerpo_btn.UseVisualStyleBackColor = true;
             this.VerCuerpo_btn.Click += new System.EventHandler(this.VerCuerpo_btn_Click);
             // 
+            // ValorFiltro_textBox
+            // 
+            this.ValorFiltro_textBox.Enabled = false;
+            this.ValorFiltro_textBox.Location = new System.Drawing.Point(200, 41);
+            this.ValorFiltro_textBox.Name = "ValorFiltro_textBox";
+            this.ValorFiltro_textBox.Size = new System.Drawing.Size(158, 20);
+            this.ValorFiltro_textBox.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(197, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Concepto a filtrar:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(435, 436);
+            this.ClientSize = new System.Drawing.Size(618, 436);
             this.Controls.Add(this.VerCuerpo_btn);
             this.Controls.Add(this.VerRegistro_btn);
             this.Controls.Add(this.ModificarCuerpo_btn);
@@ -296,6 +321,8 @@
         private System.Windows.Forms.Button VerRegistro_btn;
         private System.Windows.Forms.Button VerCuerpo_btn;
         private System.Windows.Forms.Button Filtrar_btn;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox ValorFiltro_textBox;
     }
 }
 
