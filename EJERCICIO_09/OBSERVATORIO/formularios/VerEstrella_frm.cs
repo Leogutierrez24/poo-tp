@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace OBSERVATORIO.formularios
 {
-    public partial class VerCuerpo_frm : Form
+    public partial class VerEstrella_frm : Form
     {
-        public VerCuerpo_frm()
+        public VerEstrella_frm()
         {
             InitializeComponent();
         }

@@ -41,6 +41,7 @@ namespace OBSERVATORIO.formularios
             this.Close();
         }
 
+        // Validacion de los campos de cada formulario.
         private bool ValidarCamposSatelite()
         {
             bool resultado = true;
@@ -74,11 +75,14 @@ namespace OBSERVATORIO.formularios
                 EstrellaEdad_numericUpDown.Value == 0 ||
                 EstrellaMasa_numericUpDown.Value == 0 ||
                 EstrellaDiametro_numericUpDown.Value == 0 ||
-                EstrellaColor_comboBox.SelectedIndex == -1) resultado = false;
+                EstrellaColor_comboBox.SelectedIndex == -1 ||
+                EstrellaTemperatura_numericUpDown.Value < 0) resultado = false;
 
             return resultado;
         }
 
+
+        // Agregar cuerpo celeste segun corresponda.
         private void AgregarSatelite()
         {
             if (ValidarCamposSatelite())
@@ -90,6 +94,7 @@ namespace OBSERVATORIO.formularios
 
                 observatorio.RegistrarCuerpoCeleste(nuevoSatelite);
                 MessageBox.Show($"Se registro al Satélite: {nuevoSatelite.Nombre}");
+                this.Close();
             }
             else MessageBox.Show("Hay campos con valores erroneos o incompletos!!!");
         }
@@ -137,6 +142,7 @@ namespace OBSERVATORIO.formularios
 
                 observatorio.RegistrarCuerpoCeleste(nuevoPlaneta);
                 MessageBox.Show($"Se registró al Planeta: {nuevoPlaneta.Nombre}");
+                this.Close();
             }
             else MessageBox.Show("Hay campos con valores erroneos o incompletos!!!");
         }
@@ -154,18 +160,41 @@ namespace OBSERVATORIO.formularios
 
         private void AgregarEstrella()
         {
-            if (ValidarCamposEstrella())
+            if (ValidarCamposEstrella() && Constelacion_checkBox.Checked)
             {
                 Estrella nuevaEstrella = new Estrella(EstrellaNombre_textBox.Text,
                     (float)EstrellaMasa_numericUpDown.Value,
                     (float)EstrellaEdad_numericUpDown.Value,
                     (float)EstrellaDiametro_numericUpDown.Value,
                     EstrellaEnana_radioButton.Checked ? TipoEstrella.Enana : TipoEstrella.Gigante,
-                    DeterminarColorEstrella(EstrellaColor_comboBox.SelectedIndex)
+                    DeterminarColorEstrella(EstrellaColor_comboBox.SelectedIndex),
+                    (float)EstrellaTemperatura_numericUpDown.Value
                     );
 
                 observatorio.RegistrarCuerpoCeleste(nuevaEstrella);
                 MessageBox.Show($"Se registró la Estrella: {nuevaEstrella.Nombre}");
+                this.Close();
+            } else if (ValidarCamposEstrella() && !Constelacion_checkBox.Checked)
+            {               
+                if (Constelaciones_listBox.SelectedItems.Count == 1)
+                {
+                    Estrella nuevaEstrella = new Estrella(EstrellaNombre_textBox.Text,
+                        (float)EstrellaMasa_numericUpDown.Value,
+                        (float)EstrellaEdad_numericUpDown.Value,
+                        (float)EstrellaDiametro_numericUpDown.Value,
+                        EstrellaEnana_radioButton.Checked ? TipoEstrella.Enana : TipoEstrella.Gigante,
+                        DeterminarColorEstrella(EstrellaColor_comboBox.SelectedIndex),
+                        (float)EstrellaTemperatura_numericUpDown.Value
+                    );
+
+                    Constelacion c = Constelaciones_listBox.SelectedItem as Constelacion;
+                    c.AgregarEstrella(nuevaEstrella);
+
+                    observatorio.RegistrarCuerpoCeleste(nuevaEstrella);
+                    MessageBox.Show($"Se registró la Estrella: {nuevaEstrella.Nombre}");
+                    this.Close();
+                }
+                else MessageBox.Show("Debe haber solo una constelacion seleccionada para agregar la estrella.");                
             }
             else MessageBox.Show("Hay campos con valores erroneos o incompletos!!!");
         }
@@ -221,6 +250,13 @@ namespace OBSERVATORIO.formularios
             else combo.Items.Add("No hay estrellas cargadas.");
         }
 
+        private void CargarConstelaciones()
+        {
+            Constelaciones_listBox.Items.Clear();
+            observatorio.Constelaciones.ForEach(constelacion  => Constelaciones_listBox.Items.Add(constelacion));
+        }
+
+        // Establecer que formulario estara disponible
         private void TipoCuerpo01_radioButton_CheckedChanged(object sender, EventArgs e)
         {
             EstablecerGroupBox(Satelite_groupBox, TipoCuerpo01_radioButton);
@@ -240,6 +276,19 @@ namespace OBSERVATORIO.formularios
         private void PlanetaSimple_radioButton_CheckedChanged(object sender, EventArgs e)
         {
             HabilitarCamposSegundaEstrella();
+        }
+
+        private void AgregarConstelacion_btn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(ConstelacionNombre_textBox.Text))
+            {
+                Constelacion nuevaConstelacion = new Constelacion(ConstelacionNombre_textBox.Text);
+                observatorio.AgregarConstelacion(nuevaConstelacion);
+                CargarConstelaciones();
+                ConstelacionNombre_textBox.Text = string.Empty;
+            }
+            else MessageBox.Show("Es necesario un nombre para agregar una nueva constelacion!!!");
+            
         }
     }
 }

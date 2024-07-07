@@ -59,6 +59,8 @@ namespace OBSERVATORIO.clases
 			this.distancia = distancia;
 			temperatura = temp;
 			if(satelites.Count != 0) AgregarSatelites(satelites);
+			this.habitabilidad = habitabilidad;
+			this.ricitos = ricitos;
 		}
 
 		public void AgregarSatelite(Satelite satelite)

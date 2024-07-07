@@ -15,11 +15,24 @@ namespace OBSERVATORIO.clases
 			set { nombre = value; }
 		}
 
-		private List<Estrella> estrellas;
+		private List<Estrella> estrellas = new List<Estrella>();
 		public List<Estrella> Estrellas
 		{
 			get { return estrellas; }
-			set { estrellas = value; }
 		}
-	}
+
+		public Constelacion() { }
+		public Constelacion(string nombre) => this.nombre = nombre;
+
+		public void AgregarEstrella(Estrella estrella)
+		{
+			estrellas.Add(estrella);
+		}
+
+        public override string ToString()
+        {
+            return nombre;
+        }
+
+    }
 }

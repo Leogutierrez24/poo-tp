@@ -31,6 +31,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.CuerposRegistrados_listBox = new System.Windows.Forms.ListBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.ValorFiltro_textBox = new System.Windows.Forms.TextBox();
             this.Filtrar_btn = new System.Windows.Forms.Button();
             this.VerCuerpoFiltrado_btn = new System.Windows.Forms.Button();
             this.CuerposEncontrados_listBox = new System.Windows.Forms.ListBox();
@@ -48,8 +50,6 @@
             this.ModificarCuerpo_btn = new System.Windows.Forms.Button();
             this.VerRegistro_btn = new System.Windows.Forms.Button();
             this.VerCuerpo_btn = new System.Windows.Forms.Button();
-            this.ValorFiltro_textBox = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +90,23 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Buscar Cuerpos";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(197, 26);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(90, 13);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "Concepto a filtrar:";
+            // 
+            // ValorFiltro_textBox
+            // 
+            this.ValorFiltro_textBox.Enabled = false;
+            this.ValorFiltro_textBox.Location = new System.Drawing.Point(200, 41);
+            this.ValorFiltro_textBox.Name = "ValorFiltro_textBox";
+            this.ValorFiltro_textBox.Size = new System.Drawing.Size(158, 20);
+            this.ValorFiltro_textBox.TabIndex = 11;
             // 
             // Filtrar_btn
             // 
@@ -257,23 +274,6 @@
             this.VerCuerpo_btn.UseVisualStyleBackColor = true;
             this.VerCuerpo_btn.Click += new System.EventHandler(this.VerCuerpo_btn_Click);
             // 
-            // ValorFiltro_textBox
-            // 
-            this.ValorFiltro_textBox.Enabled = false;
-            this.ValorFiltro_textBox.Location = new System.Drawing.Point(200, 41);
-            this.ValorFiltro_textBox.Name = "ValorFiltro_textBox";
-            this.ValorFiltro_textBox.Size = new System.Drawing.Size(158, 20);
-            this.ValorFiltro_textBox.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(197, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Concepto a filtrar:";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -290,6 +290,7 @@
             this.Controls.Add(this.CuerposRegistrados_listBox);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Observatorio";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

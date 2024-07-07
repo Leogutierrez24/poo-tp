@@ -42,7 +42,7 @@ namespace OBSERVATORIO.clases
 		private void InicializarCuerposCelestes()
 		{
 			Satelite luna = new Satelite("Luna", 0.01230f, 4.53f, true);
-			Estrella sol = new Estrella("Sol", 3330598439.44f, 4.603f, 1.3927f, TipoEstrella.Gigante, Color.Blanca);
+			Estrella sol = new Estrella("Sol", 333043.01f, 4.603f, 1.3927f, TipoEstrella.Gigante, Color.Blanca, 5498.85f);
 			List<Satelite> s = new List<Satelite> { luna };
 			PlanetaSimple tierra = new PlanetaSimple("Tierra", 1, 4.54f, sol, 150f, 13.9f, s, true, true);
 			RegistrarCuerpoCeleste(luna);
@@ -111,14 +111,14 @@ namespace OBSERVATORIO.clases
 		{
 			List<PlanetaSimple> planetas = ObtenerPlanetas();
 
-			return planetas.FindAll(planeta => planeta.Nombre.Contains(nombre));
+			return planetas.FindAll(planeta => planeta.Nombre.ToLower().Contains(nombre.ToLower()));
 		}
 
 		public List<PlanetaSimple> BuscarPlanetaPorHabitabilidad()
 		{
             List<PlanetaSimple> planetas = ObtenerPlanetas();
 
-            return planetas.FindAll(planeta => planeta.Habitabilidad);
+            return planetas.FindAll(planeta => planeta.Habitabilidad == true);
         }
 
 		public List<PlanetaSimple> BuscarPlanetaPorEstrella(string nombreEstrella)
@@ -128,7 +128,7 @@ namespace OBSERVATORIO.clases
 
 			foreach(PlanetaSimple planeta in planetas)
 			{
-				if (planeta.Estrella.Nombre.Contains(nombreEstrella))
+				if (planeta.Estrella.Nombre.ToLower().Contains(nombreEstrella.ToLower()))
 				{
 					planetasObtenidos.Add(planeta);
 				}
@@ -136,7 +136,7 @@ namespace OBSERVATORIO.clases
 				if (planeta is PlanetaBinario)
 				{
 					PlanetaBinario p = planeta as PlanetaBinario;
-                    if (p.SegundaEstrella.Nombre.Contains(nombreEstrella))
+                    if (p.SegundaEstrella.Nombre.ToLower().Contains(nombreEstrella.ToLower()))
                     {
                         planetasObtenidos.Add(p);
                     }
@@ -146,24 +146,36 @@ namespace OBSERVATORIO.clases
 			return planetasObtenidos;
         }
 
-		public List<Estrella> BuscarEstrellas(Color color, TipoEstrella tipo)
+		public List<Estrella> BuscarEstrellasPorColor(string color)
 		{
 			List<Estrella> estrellas = ObtenerEstrellas();
 
-			return estrellas.FindAll(estrella => estrella.Color == color && estrella.Tipo == tipo);
+			return estrellas.FindAll(estrella => estrella.Color.ToString().ToLower() == color);
         }
 
-		public List<Estrella> BuscarEstrellas(float temperatura)
+		public List<Estrella> BuscarEstrellaPorTipo(string tipo)
+		{
+            List<Estrella> estrellas = ObtenerEstrellas();
+
+            return estrellas.FindAll(estrella => estrella.Tipo.ToString().ToLower() == tipo);
+        }
+
+		public List<Estrella> BuscarEstrellasPorTemperatura(float temperatura)
 		{
             List<Estrella> estrellas = ObtenerEstrellas();
 
             return estrellas.FindAll(estrella => estrella.Temperatura == temperatura);
         }
 
-		public List<Estrella> BuscarEstrellas(Constelacion constelacion)
+		public Constelacion BuscarEstrellasPorConstelacion(string constelacion)
 		{
-			Constelacion c = constelaciones.Find(cons => cons.Nombre == constelacion.Nombre);
-			return c.Estrellas;
+			Constelacion c = constelaciones.Find(cons => cons.Nombre.ToLower() == constelacion.ToLower());
+			return c;
+		}
+
+		public void AgregarConstelacion(Constelacion constelacion)
+		{
+			constelaciones.Add(constelacion);
 		}
 	}
 }

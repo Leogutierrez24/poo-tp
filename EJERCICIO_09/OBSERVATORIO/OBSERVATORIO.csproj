@@ -76,11 +76,23 @@
     <Compile Include="formularios\NuevoRegistro_frm.Designer.cs">
       <DependentUpon>NuevoRegistro_frm.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularios\VerCuerpo_frm.cs">
+    <Compile Include="formularios\VerEstrella_frm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularios\VerCuerpo_frm.Designer.cs">
-      <DependentUpon>VerCuerpo_frm.cs</DependentUpon>
+    <Compile Include="formularios\VerEstrella_frm.Designer.cs">
+      <DependentUpon>VerEstrella_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\VerPlaneta_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\VerPlaneta_frm.Designer.cs">
+      <DependentUpon>VerPlaneta_frm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\VerSatelite_frm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="formularios\VerSatelite_frm.Designer.cs">
+      <DependentUpon>VerSatelite_frm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -89,6 +101,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\AgregarCuerpo_frm.resx">
       <DependentUpon>AgregarCuerpo_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\VerEstrella_frm.resx">
+      <DependentUpon>VerEstrella_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\VerPlaneta_frm.resx">
+      <DependentUpon>VerPlaneta_frm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\VerSatelite_frm.resx">
+      <DependentUpon>VerSatelite_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

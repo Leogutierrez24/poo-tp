@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -54,7 +55,8 @@ namespace OBSERVATORIO
                 Filtros_comboBox.Items.Add("Planeta Habitable");
             } else if (Opcion03_radioButton.Checked)
             {
-                Filtros_comboBox.Items.Add("Color y Tipo");
+                Filtros_comboBox.Items.Add("Color");
+                Filtros_comboBox.Items.Add("Tipo");
                 Filtros_comboBox.Items.Add("Temperatura");
                 Filtros_comboBox.Items.Add("Constelación");
             }
@@ -81,11 +83,21 @@ namespace OBSERVATORIO
         private void CargarListBoxBusqueda<T>(List<T> lista)
         {
             CuerposEncontrados_listBox.Items.Clear();
-            if (lista.Count > 0)
+            if (lista?.Count > 0)
             {
                 lista.ForEach(item => CuerposEncontrados_listBox.Items.Add(item));
             }
             else MessageBox.Show("No se encontraron cuerpos.");
+        }
+
+        private void CargarListBoxBusqueda(Constelacion constelacion)
+        {
+            CuerposEncontrados_listBox.Items.Clear();
+            if (constelacion != null)
+            {
+                constelacion.Estrellas.ForEach(item => CuerposEncontrados_listBox.Items.Add(item));
+            }
+            else MessageBox.Show("No se encontro constelacion.");
         }
 
         private void ModificarCuerpo_btn_Click(object sender, EventArgs e)
@@ -98,6 +110,81 @@ namespace OBSERVATORIO
 
         }
 
+        private void FiltrarPlanetas()
+        {
+            if (Filtros_comboBox.SelectedIndex != -1)
+            {
+                if (Filtros_comboBox.SelectedIndex == 0)
+                {
+                    if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text)) // Por Nombre
+                    {
+                        CargarListBoxBusqueda(observatorio.BuscarPlaneta(ValorFiltro_textBox.Text));
+                    }
+                    else MessageBox.Show("El filtro de busqueda esta vacío.");
+                }
+                else if (Filtros_comboBox.SelectedIndex == 1) // Por estrella que orbita
+                {
+                    if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text))
+                    {
+                        CargarListBoxBusqueda(observatorio.BuscarPlanetaPorEstrella(ValorFiltro_textBox.Text));
+                    }
+                    else MessageBox.Show("El filtro de busqueda esta vacío.");
+                }
+                else if (Filtros_comboBox.SelectedIndex == 2) // Por Habitabilidad
+                {
+                    CargarListBoxBusqueda(observatorio.BuscarPlanetaPorHabitabilidad());
+                }
+            }
+            else MessageBox.Show("Es necesario elegir una opción de filtro para continuar.");
+        }
+
+        private void FiltrarEstrellas()
+        {
+            if (Filtros_comboBox.SelectedIndex != -1)
+            {
+                if (Filtros_comboBox.SelectedIndex == 0)
+                {
+                    if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text)) // Por Color
+                    {
+                        CargarListBoxBusqueda(observatorio.BuscarEstrellasPorColor(ValorFiltro_textBox.Text));
+                    }
+                    else MessageBox.Show("El filtro de busqueda esta vacío.");
+                }
+                else if (Filtros_comboBox.SelectedIndex == 1) // Por Tipo
+                {
+                    if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text))
+                    {
+                        CargarListBoxBusqueda(observatorio.BuscarEstrellaPorTipo(ValorFiltro_textBox.Text));
+                    }
+                    else MessageBox.Show("El filtro de busqueda esta vacío.");
+                }
+                else if (Filtros_comboBox.SelectedIndex == 2) // Por Temperatura
+                {
+                    if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text))
+                    {
+                        try
+                        {
+                            CargarListBoxBusqueda(observatorio.BuscarEstrellasPorTemperatura(float.Parse(ValorFiltro_textBox.Text)));
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show("Ocurrio el siguiente error: " + ex);
+                        }
+                    }
+                    else MessageBox.Show("El filtro de busqueda esta vacío.");
+                }
+                else if (Filtros_comboBox.SelectedIndex == 3) // Por Constelacion
+                {
+                    if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text))
+                    {
+                        CargarListBoxBusqueda(observatorio.BuscarEstrellasPorConstelacion(ValorFiltro_textBox.Text));
+                    }
+                    else MessageBox.Show("El filtro de busqueda esta vacío.");
+                }
+            }
+            else MessageBox.Show("Es necesario elegir una opción de filtro para continuar.");
+        }
+
         private void Filtrar_btn_Click(object sender, EventArgs e)
         {
             if (Opcion01_radioButton.Checked) // Buscar Satelites
@@ -106,32 +193,11 @@ namespace OBSERVATORIO
             }
             else if (Opcion02_radioButton.Checked) // Buscar Planetas
             {
-                if (Filtros_comboBox.SelectedIndex != -1)
-                {
-                    if (Filtros_comboBox.SelectedIndex == 0)
-                    {
-                        if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text))
-                        {
-                            CargarListBoxBusqueda(observatorio.BuscarPlaneta(ValorFiltro_textBox.Text));
-                        } else MessageBox.Show("El filtro de busqueda esta vacío.");
-                    }
-                    else if (Filtros_comboBox.SelectedIndex == 1)
-                    {
-                        if (!string.IsNullOrEmpty(ValorFiltro_textBox.Text))
-                        {
-                            CargarListBoxBusqueda(observatorio.BuscarPlanetaPorEstrella(ValorFiltro_textBox.Text));
-                        } else MessageBox.Show("El filtro de busqueda esta vacío.");
-                    }
-                    else if (Filtros_comboBox.SelectedIndex == 2)
-                    {
-                        CargarListBoxBusqueda(observatorio.BuscarPlanetaPorHabitabilidad());
-                    }
-                }
-                else MessageBox.Show("Es necesario elegir una opción de filtro para continuar.");
+                FiltrarPlanetas();
             }
             else if (Opcion03_radioButton.Checked) // Buscar Estrellas
             {
-
+                FiltrarEstrellas();
             }
             else MessageBox.Show("Hubo un error");
         }

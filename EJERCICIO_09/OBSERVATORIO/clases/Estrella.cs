@@ -36,7 +36,7 @@ namespace OBSERVATORIO.clases
 			set { diametro = value; }
 		}
 
-        public Estrella(string nombre, float masa, float edad, float diametro, TipoEstrella tipo, Color color)
+        public Estrella(string nombre, float masa, float edad, float diametro, TipoEstrella tipo, Color color, float temperatura)
 		{
 			this.nombre = nombre;
 			this.masa = masa;
@@ -44,8 +44,7 @@ namespace OBSERVATORIO.clases
 			this.diametro = diametro;
 			this.tipo = tipo;
 			this.color = color;
+			this.temperatura = temperatura;
 		}
-        // Falta agregar la constelación
-
     }
 }
