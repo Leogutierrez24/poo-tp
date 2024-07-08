@@ -128,9 +128,9 @@ namespace POLIDEPORTIVO
             CargarJueces();
         }
 
-        private void NuevoAlquiler_btn_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            NuevaReserva_frm form = new NuevaReserva_frm(polideportivo);
+            Alquilar_frm form = new Alquilar_frm(polideportivo);
             form.ShowDialog();
         }
     }

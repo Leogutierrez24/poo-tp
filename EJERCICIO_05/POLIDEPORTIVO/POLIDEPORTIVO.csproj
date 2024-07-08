@@ -59,11 +59,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="formularios\NuevaReserva_frm.cs">
+    <Compile Include="formularios\Alquilar_frm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formularios\NuevaReserva_frm.Designer.cs">
-      <DependentUpon>NuevaReserva_frm.cs</DependentUpon>
+    <Compile Include="formularios\Alquilar_frm.Designer.cs">
+      <DependentUpon>Alquilar_frm.cs</DependentUpon>
     </Compile>
     <Compile Include="formularios\RegistroJuez_frm.cs">
       <SubType>Form</SubType>
@@ -76,8 +76,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="formularios\NuevaReserva_frm.resx">
-      <DependentUpon>NuevaReserva_frm.cs</DependentUpon>
+    <EmbeddedResource Include="formularios\Alquilar_frm.resx">
+      <DependentUpon>Alquilar_frm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="formularios\RegistroJuez_frm.resx">
       <DependentUpon>RegistroJuez_frm.cs</DependentUpon>

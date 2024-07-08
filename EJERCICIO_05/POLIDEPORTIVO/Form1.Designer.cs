@@ -74,7 +74,7 @@
             this.label28 = new System.Windows.Forms.Label();
             this.Alquileres_listBox = new System.Windows.Forms.ListBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.NuevoAlquiler_btn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -531,22 +531,22 @@
             this.label29.TabIndex = 7;
             this.label29.Text = "Reservas";
             // 
-            // NuevoAlquiler_btn
+            // button1
             // 
-            this.NuevoAlquiler_btn.Location = new System.Drawing.Point(623, 201);
-            this.NuevoAlquiler_btn.Name = "NuevoAlquiler_btn";
-            this.NuevoAlquiler_btn.Size = new System.Drawing.Size(81, 35);
-            this.NuevoAlquiler_btn.TabIndex = 10;
-            this.NuevoAlquiler_btn.Text = "Nueva Reserva";
-            this.NuevoAlquiler_btn.UseVisualStyleBackColor = true;
-            this.NuevoAlquiler_btn.Click += new System.EventHandler(this.NuevoAlquiler_btn_Click);
+            this.button1.Location = new System.Drawing.Point(623, 211);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(81, 35);
+            this.button1.TabIndex = 10;
+            this.button1.Text = "Registrar nuevo juez";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 356);
-            this.Controls.Add(this.NuevoAlquiler_btn);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.Alquileres_listBox);
             this.Controls.Add(this.label29);
@@ -558,6 +558,7 @@
             this.Controls.Add(this.Canchas_listBox);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Polideportivo";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
@@ -609,7 +610,6 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.ListBox Alquileres_listBox;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Button NuevoAlquiler_btn;
         private System.Windows.Forms.Label horaInicio_lbl;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label fechaAlquiler_lbl;
@@ -620,6 +620,7 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label horaFin_lbl;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -135,12 +135,41 @@ namespace POLIDEPORTIVO.clases
 			return aPorFecha;
 		}
 
-		// Disponibilidad de juez
-        public bool ComprobarDisponibilidad(Juez juez, DateTime fecha, int horaInicio, int horaFin)
+		public List<Alquiler> BuscarAlquileres(DateTime fecha)
 		{
-			bool disponible = true;
+			return alquileres.FindAll(alquiler => alquiler.Fecha.Date == fecha.Date);
+		}
 
-			List<Alquiler> listaAlquileres = BuscarAlquileres(fecha, alquileres);
+		// Comprueba si una cancha esta disponible para ser alquilada segun una fecha y horario.
+		public bool DisponibilidadCancha(Cancha cancha, DateTime fecha, int horaInicio, int duracion)
+		{
+			bool resultado = true;
+
+			List<Alquiler> alquileresFiltradosPorCancha = BuscarAlquileres(cancha, fecha);
+
+			if (alquileresFiltradosPorCancha.Count > 0)
+			{
+                alquileresFiltradosPorCancha.ForEach(alquiler =>
+                {
+                    if	((horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
+                        (horaInicio < (alquiler.HoraInicio + alquiler.Duracion) && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
+                        (horaInicio > alquiler.HoraInicio && (horaInicio + duracion) < (alquiler.HoraInicio + alquiler.Duracion)) ||
+                        (horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)))
+                    {
+                        resultado = false;
+                    }
+                });
+            }
+
+			return resultado;
+		}
+
+		// Comprueba si un juez esta disponible para ser asignado a un partido.
+        public bool DisponibilidadJuez(Juez juez, DateTime fecha, int horaInicio, int duracion)
+		{
+			bool resultado = true;
+
+			List<Alquiler> listaAlquileres = BuscarAlquileres(fecha);
 
 			if (listaAlquileres.Count > 0)
 			{
@@ -149,87 +178,66 @@ namespace POLIDEPORTIVO.clases
 				{
 					listaAlquileresMismoJuez.ForEach(alquiler =>
 					{
-						if ((horaInicio < alquiler.HoraInicio && horaFin > alquiler.HoraFin) ||
-                            (horaInicio < alquiler.HoraFin && horaFin > alquiler.HoraFin) ||
-							(horaInicio > alquiler.HoraInicio && horaFin < alquiler.HoraFin) ||
-							(horaInicio < alquiler.HoraInicio && horaFin > alquiler.HoraFin))
+						if ((horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
+                            (horaInicio < (alquiler.HoraInicio + alquiler.Duracion) && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
+							(horaInicio > alquiler.HoraInicio && (horaInicio + duracion) < (alquiler.HoraInicio + alquiler.Duracion)) ||
+							(horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)))
                         {
-							disponible = false;
+							resultado = false;
 						}
 					});
 				}
             }
 
-			return disponible;
-		}
-	
-		// Disponibilidad de cancha
-		public bool ComprobarDisponibilidad(Cancha cancha, DateTime fecha, int horaInicio, int horaFin)
-		{
-			bool disponible = true;
-
-            List<Alquiler> listaAlquileres = BuscarAlquileres(fecha, alquileres);
-
-            if (listaAlquileres.Count > 0)
-            {
-                List<Alquiler> listaAlquileresMismaCancha = BuscarAlquileres(cancha, listaAlquileres);
-                if (listaAlquileresMismaCancha.Count > 0)
-                {
-                    listaAlquileresMismaCancha.ForEach(alquiler =>
-                    {
-                        if ((horaInicio < alquiler.HoraInicio && horaFin > alquiler.HoraFin) ||
-                            (horaInicio < alquiler.HoraFin && horaFin > alquiler.HoraFin) ||
-                            (horaInicio > alquiler.HoraInicio && horaFin < alquiler.HoraFin) ||
-                            (horaInicio < alquiler.HoraInicio && horaFin > alquiler.HoraFin))
-                        {
-                            disponible = false;
-                        }
-                    });
-                }
-            }
-
-            return disponible;
+			return resultado;
 		}
 
-		public Alquiler NuevoAlquiler(Cancha cancha, DateTime fecha, int horaInicio, int horaFin)
+		public int GenerarAlquiler(Cancha cancha, DateTime fecha, int horaInicio, int duracion)
 		{
-			Alquiler nuevoAlquiler = null;
+			int resultado = 0;
 
-			if (ComprobarDisponibilidad(cancha, fecha, horaInicio, horaFin))
+			if (DisponibilidadCancha(cancha, fecha, horaInicio, duracion))
 			{
-                nuevoAlquiler = new Alquiler(fecha, horaInicio, horaFin, cancha);
+                Alquiler nuevoAlquiler = new Alquiler(fecha, horaInicio, duracion, cancha);
                 alquileres.Add(nuevoAlquiler);
-            }
+            } else
+			{
+				resultado = -1;
+			}
 
-			return nuevoAlquiler;
+			return resultado;
 		}
 
-		public Alquiler NuevoAlquiler(Cancha cancha, DateTime fecha, int horaInicio, int horaFin, List<Juez> jueces)
+		public int GenerarAlquiler(Cancha cancha, DateTime fecha, int horaInicio, int duracion, List<Juez> jueces)
 		{
-			Alquiler nuevoAlquiler = null;
-			if (ComprobarDisponibilidad(cancha, fecha, horaInicio, horaFin))
+			int resultado = 0;
+
+			if (DisponibilidadCancha(cancha, fecha, horaInicio, duracion))
 			{
-                if (jueces.Count == 1)
-                {
-					if (ComprobarDisponibilidad(jueces[0], fecha, horaInicio, horaFin))
+				if (jueces.Count == 1)
+				{
+					if (DisponibilidadJuez(jueces[0], fecha, horaInicio, duracion))
 					{
-						nuevoAlquiler = new AlquilerConOpcional(fecha, horaInicio, horaFin, cancha, jueces[0]);
+						AlquilerConOpcional nuevoAlquiler = new AlquilerConOpcional(fecha, horaInicio, duracion, cancha, jueces[0]);
 						alquileres.Add(nuevoAlquiler);
 					}
-                }
-                else
-                {
-					if (ComprobarDisponibilidad(jueces[0], fecha, horaInicio, horaFin)
-						&& ComprobarDisponibilidad(jueces[1], fecha, horaInicio, horaFin)
-						&& ComprobarDisponibilidad(jueces[2], fecha, horaInicio, horaFin))
+					else resultado = -1;
+				}
+				else
+				{
+					if (DisponibilidadJuez(jueces[0], fecha, horaInicio, duracion)
+						&& DisponibilidadJuez(jueces[1], fecha, horaInicio, duracion)
+						&& DisponibilidadJuez(jueces[2], fecha, horaInicio, duracion))
 					{
-                        nuevoAlquiler = new AlquilerConOpcionales(fecha, horaInicio, horaFin, cancha, jueces[0], jueces[1], jueces[2]);
-                        alquileres.Add(nuevoAlquiler);
-                    }
-                }				
-            }
+						AlquilerConOpcionales nuevoAlquiler = new AlquilerConOpcionales(fecha, horaInicio, duracion, cancha, jueces[0], jueces[1], jueces[2]);
+						alquileres.Add(nuevoAlquiler);
+					}
+					else resultado = -1;
+				}
+			}
+			else resultado = -1;
 
-            return nuevoAlquiler;
+            return resultado;
         }
 
 		public void RegistrarJuez(Juez juez)

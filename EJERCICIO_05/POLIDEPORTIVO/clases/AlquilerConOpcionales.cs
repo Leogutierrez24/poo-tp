@@ -25,11 +25,11 @@ namespace POLIDEPORTIVO.clases
         public AlquilerConOpcionales(
             DateTime fecha,
             int inicio,
-            int fin,
+            int duracion,
             Cancha cancha,
             Juez juez, 
             Juez primerLinea,
-            Juez segundoLinea) : base (fecha, inicio, fin, cancha, juez)
+            Juez segundoLinea) : base (fecha, inicio, duracion, cancha, juez)
         {
             primerJuezLinea = primerLinea;
             segundoJuezLinea = segundoLinea;
