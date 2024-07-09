@@ -30,10 +30,7 @@
         {
             this.Alquilar_btn = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.TercerJuezDisponible_lbl = new System.Windows.Forms.Label();
-            this.SegundoJuezDisponible_lbl = new System.Windows.Forms.Label();
             this.PrimerJuezDisponible_lbl = new System.Windows.Forms.Label();
-            this.HorarioDisponible_lbl = new System.Windows.Forms.Label();
             this.CanchaDisponble_lbl = new System.Windows.Forms.Label();
             this.TotalAlquiler_lbl = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -69,7 +66,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.Canchas_comboBox = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -81,7 +77,7 @@
             // Alquilar_btn
             // 
             this.Alquilar_btn.Enabled = false;
-            this.Alquilar_btn.Location = new System.Drawing.Point(426, 536);
+            this.Alquilar_btn.Location = new System.Drawing.Point(309, 535);
             this.Alquilar_btn.Name = "Alquilar_btn";
             this.Alquilar_btn.Size = new System.Drawing.Size(89, 33);
             this.Alquilar_btn.TabIndex = 11;
@@ -91,10 +87,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.TercerJuezDisponible_lbl);
-            this.groupBox4.Controls.Add(this.SegundoJuezDisponible_lbl);
             this.groupBox4.Controls.Add(this.PrimerJuezDisponible_lbl);
-            this.groupBox4.Controls.Add(this.HorarioDisponible_lbl);
             this.groupBox4.Controls.Add(this.CanchaDisponble_lbl);
             this.groupBox4.Controls.Add(this.TotalAlquiler_lbl);
             this.groupBox4.Controls.Add(this.label15);
@@ -121,50 +114,27 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Resumen";
             // 
-            // TercerJuezDisponible_lbl
-            // 
-            this.TercerJuezDisponible_lbl.AutoSize = true;
-            this.TercerJuezDisponible_lbl.Location = new System.Drawing.Point(185, 422);
-            this.TercerJuezDisponible_lbl.Name = "TercerJuezDisponible_lbl";
-            this.TercerJuezDisponible_lbl.Size = new System.Drawing.Size(56, 13);
-            this.TercerJuezDisponible_lbl.TabIndex = 22;
-            this.TercerJuezDisponible_lbl.Text = "Disponible";
-            // 
-            // SegundoJuezDisponible_lbl
-            // 
-            this.SegundoJuezDisponible_lbl.AutoSize = true;
-            this.SegundoJuezDisponible_lbl.Location = new System.Drawing.Point(185, 371);
-            this.SegundoJuezDisponible_lbl.Name = "SegundoJuezDisponible_lbl";
-            this.SegundoJuezDisponible_lbl.Size = new System.Drawing.Size(56, 13);
-            this.SegundoJuezDisponible_lbl.TabIndex = 21;
-            this.SegundoJuezDisponible_lbl.Text = "Disponible";
-            // 
             // PrimerJuezDisponible_lbl
             // 
             this.PrimerJuezDisponible_lbl.AutoSize = true;
+            this.PrimerJuezDisponible_lbl.ForeColor = System.Drawing.Color.Green;
             this.PrimerJuezDisponible_lbl.Location = new System.Drawing.Point(185, 320);
             this.PrimerJuezDisponible_lbl.Name = "PrimerJuezDisponible_lbl";
             this.PrimerJuezDisponible_lbl.Size = new System.Drawing.Size(56, 13);
             this.PrimerJuezDisponible_lbl.TabIndex = 20;
             this.PrimerJuezDisponible_lbl.Text = "Disponible";
-            // 
-            // HorarioDisponible_lbl
-            // 
-            this.HorarioDisponible_lbl.AutoSize = true;
-            this.HorarioDisponible_lbl.Location = new System.Drawing.Point(150, 207);
-            this.HorarioDisponible_lbl.Name = "HorarioDisponible_lbl";
-            this.HorarioDisponible_lbl.Size = new System.Drawing.Size(91, 13);
-            this.HorarioDisponible_lbl.TabIndex = 19;
-            this.HorarioDisponible_lbl.Text = "Horario disponible";
+            this.PrimerJuezDisponible_lbl.Visible = false;
             // 
             // CanchaDisponble_lbl
             // 
             this.CanchaDisponble_lbl.AutoSize = true;
+            this.CanchaDisponble_lbl.ForeColor = System.Drawing.Color.Green;
             this.CanchaDisponble_lbl.Location = new System.Drawing.Point(185, 25);
             this.CanchaDisponble_lbl.Name = "CanchaDisponble_lbl";
             this.CanchaDisponble_lbl.Size = new System.Drawing.Size(56, 13);
             this.CanchaDisponble_lbl.TabIndex = 18;
             this.CanchaDisponble_lbl.Text = "Disponible";
+            this.CanchaDisponble_lbl.Visible = false;
             // 
             // TotalAlquiler_lbl
             // 
@@ -407,9 +377,19 @@
             0,
             0,
             0});
+            this.Duracion_numericUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Duracion_numericUpDown.Name = "Duracion_numericUpDown";
             this.Duracion_numericUpDown.Size = new System.Drawing.Size(71, 20);
             this.Duracion_numericUpDown.TabIndex = 5;
+            this.Duracion_numericUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.Duracion_numericUpDown.ValueChanged += new System.EventHandler(this.Duracion_numericUpDown_ValueChanged);
             // 
             // label4
@@ -501,22 +481,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cancha por alquilar";
             // 
-            // button1
-            // 
-            this.button1.Enabled = false;
-            this.button1.Location = new System.Drawing.Point(315, 535);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 34);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Comprobar disponibilidad";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // Alquilar_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(588, 580);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.Alquilar_btn);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -544,10 +513,7 @@
 
         private System.Windows.Forms.Button Alquilar_btn;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label TercerJuezDisponible_lbl;
-        private System.Windows.Forms.Label SegundoJuezDisponible_lbl;
         private System.Windows.Forms.Label PrimerJuezDisponible_lbl;
-        private System.Windows.Forms.Label HorarioDisponible_lbl;
         private System.Windows.Forms.Label CanchaDisponble_lbl;
         private System.Windows.Forms.Label TotalAlquiler_lbl;
         private System.Windows.Forms.Label label15;
@@ -583,6 +549,5 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox Canchas_comboBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
     }
 }
