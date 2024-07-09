@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using POLIDEPORTIVO.formularios;
+using System.Diagnostics.Eventing.Reader;
 
 namespace POLIDEPORTIVO
 {
     public partial class Form1 : Form
     {
-        private Polideportivo polideportivo;
+        private readonly Polideportivo polideportivo;
 
         public Form1()
         {
@@ -78,6 +79,9 @@ namespace POLIDEPORTIVO
             CargarCanchas();
             CargarJueces();
             CargarAlquileres();
+            LimpiarCamposAlquiler();
+            LimpiarCamposCancha();
+            LimpiarCamposJuez();
         }
 
         private void Canchas_listBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -109,15 +113,28 @@ namespace POLIDEPORTIVO
         {
             if (Alquileres_listBox.SelectedItems.Count == 1)
             {
-                tipoCanchaAlquiler_lbl.Text = string.Empty;
-                totalAlquiler_lbl.Text = string.Empty;
-                tipoAlquiler_lbl.Text = string.Empty;
-                fechaAlquiler_lbl.Text = string.Empty;
-                horaInicio_lbl.Text = string.Empty;
-                horaFin_lbl.Text = string.Empty;
-                primerJuez_lbl.Text = string.Empty;
-                primerLinea_lbl.Text = string.Empty;
-                segundoLinea_lbl.Text = string.Empty;
+                Alquiler alquilerSeleccionado = Alquileres_listBox.SelectedItem as Alquiler;
+                tipoCanchaAlquiler_lbl.Text = alquilerSeleccionado.Cancha.ToString();
+                totalAlquiler_lbl.Text = string.Format("${0:0.00}", alquilerSeleccionado.Total);
+                fechaAlquiler_lbl.Text = alquilerSeleccionado.Fecha.ToShortDateString();
+                horaInicio_lbl.Text = $"{alquilerSeleccionado.HoraInicio} hrs";
+                horaFin_lbl.Text = $"{alquilerSeleccionado.HoraInicio + alquilerSeleccionado.Duracion} hrs";
+                tipoAlquiler_lbl.Text = "Sin opcionales";
+                primerJuez_lbl.Text = "No contiene";
+                primerLinea_lbl.Text = "No contiene";
+                segundoLinea_lbl.Text = "No contiene";
+                if (alquilerSeleccionado is AlquilerConOpcionales aConOpcionales)
+                {
+                    tipoAlquiler_lbl.Text = "Con opcional 2";
+                    primerJuez_lbl.Text = aConOpcionales.PrimerJuez.ToString();
+                    primerLinea_lbl.Text = aConOpcionales.PrimerJuezLinea.ToString();
+                    segundoLinea_lbl.Text = aConOpcionales.SegundoJuezLinea.ToString();
+                } else if (alquilerSeleccionado is AlquilerConOpcional aConOpcional)
+                {
+                    tipoAlquiler_lbl.Text = "Con opcional 1";
+                    primerJuez_lbl.Text = aConOpcional.PrimerJuez.ToString();
+                }
+                
             }
         }
 
@@ -132,6 +149,12 @@ namespace POLIDEPORTIVO
         {
             Alquilar_frm form = new Alquilar_frm(polideportivo);
             form.ShowDialog();
+            CargarAlquileres();
+        }
+
+        private void VerRecaudacion_btn_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show(string.Format("${0:0.00}", polideportivo.CalcularRecaudacion()));
         }
     }
 }

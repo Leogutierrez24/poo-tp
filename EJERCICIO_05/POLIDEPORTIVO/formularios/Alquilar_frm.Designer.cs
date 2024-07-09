@@ -76,7 +76,6 @@
             // 
             // Alquilar_btn
             // 
-            this.Alquilar_btn.Enabled = false;
             this.Alquilar_btn.Location = new System.Drawing.Point(309, 535);
             this.Alquilar_btn.Name = "Alquilar_btn";
             this.Alquilar_btn.Size = new System.Drawing.Size(89, 33);

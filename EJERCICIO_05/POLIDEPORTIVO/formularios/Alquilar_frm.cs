@@ -15,8 +15,6 @@ namespace POLIDEPORTIVO.formularios
     {
         private readonly Polideportivo polideportivo;
 
-        private Alquiler nuevoAlquiler;
-
         private bool canchaDisponible = true;
         private bool juezDisponible = true;
 
@@ -39,7 +37,6 @@ namespace POLIDEPORTIVO.formularios
         {
             InitializeComponent();
             this.polideportivo = polideportivo;
-            nuevoAlquiler = new Alquiler();
         }
 
         private void CargarOpcionales()
@@ -63,13 +60,23 @@ namespace POLIDEPORTIVO.formularios
             }
         }
 
+        private void HorarioMinimo()
+        {
+            if (Fecha_dateTimePicker.Value.Date == DateTime.Now.Date) Horario_numericUpDown.Minimum = DateTime.Now.Hour;
+            else Horario_numericUpDown.Minimum = 9;
+        }
+
         private void Alquilar_frm_Load(object sender, EventArgs e)
         {
             polideportivo.Canchas.ForEach(cancha => Canchas_comboBox.Items.Add(cancha));
             polideportivo.Jueces.ForEach(juez => Jueces_listBox.Items.Add(juez));
+            Canchas_comboBox.SelectedIndex = 0;
             Fecha_dateTimePicker.MinDate = DateTime.Now;
-            Horario_numericUpDown.Minimum = DateTime.Now.Hour;
-            nuevoAlquiler.Fecha = Fecha_dateTimePicker.Value;
+            horaElegida = (int)Horario_numericUpDown.Value;
+            duracionElegida = (int)Duracion_numericUpDown.Value;
+            HorarioMinimo();
+            HorarioComienzo_textBox.Text = $"{horaElegida} hrs";
+            HorarioFinalizacion_textBox.Text = $"{horaElegida + duracionElegida} hrs";
         }
 
         private void DisponibilidadLabels(Label label, bool var)
@@ -86,17 +93,34 @@ namespace POLIDEPORTIVO.formularios
             }
         }
 
+        private void DisponibilidadCancha()
+        {
+            canchaDisponible = polideportivo.DisponibilidadCancha(canchaElegida, Fecha_dateTimePicker.Value, (int)Horario_numericUpDown.Value, (int)Duracion_numericUpDown.Value);
+            Cancha_textBox.Text = canchaElegida.Tipo.ToString();
+            DisponibilidadLabels(CanchaDisponble_lbl, canchaDisponible);
+        }
+
+        private float CalcularPrecio(Cancha cancha, int duracion, int opcional)
+        {
+            float resultado = 0;
+            if (opcional == 0) resultado = Alquiler.CalcularPrecio(cancha, duracion);
+            if (opcional == 1) resultado = AlquilerConOpcional.CalcularPrecio(cancha, duracion);
+            if (opcional == 2) resultado = AlquilerConOpcionales.CalcularPrecio(cancha, duracion);
+            return resultado;
+        }
+
         private void Canchas_comboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             CargarOpcionales();
             ComprobarOpcional();
-            Cancha canchaSeleccionada = Canchas_comboBox.SelectedItem as Cancha;
-            canchaDisponible = polideportivo.DisponibilidadCancha(canchaSeleccionada, Fecha_dateTimePicker.Value, (int)Horario_numericUpDown.Value, (int)Duracion_numericUpDown.Value);
-            Cancha_textBox.Text = canchaSeleccionada.Tipo.ToString();
-            DisponibilidadLabels(CanchaDisponble_lbl, canchaDisponible);
+            canchaElegida = Canchas_comboBox.SelectedItem as Cancha;
+            DisponibilidadCancha();
             primerJuez = null;
             primerJuezLinea = null;
             segundoJuezLinea = null;
+            if (Opcionales_comboBox.SelectedIndex == -1 || Opcionales_comboBox.SelectedIndex == 0) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 0));
+            else if (Opcionales_comboBox.SelectedIndex == 1) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 1));
+            else if (Opcionales_comboBox.SelectedIndex == 2) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 2));
         }
 
         private void ComprobarOpcional()
@@ -127,24 +151,35 @@ namespace POLIDEPORTIVO.formularios
             primerJuez = null;
             primerJuezLinea = null;
             segundoJuezLinea = null;
+            if (Opcionales_comboBox.SelectedIndex == -1 || Opcionales_comboBox.SelectedIndex == 0) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 0));
+            else if (Opcionales_comboBox.SelectedIndex == 1) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 1));
+            else if (Opcionales_comboBox.SelectedIndex == 2) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 2));
         }
 
         private void Fecha_dateTimePicker_ValueChanged(object sender, EventArgs e)
         {
+            HorarioMinimo(); 
             fechaElegida = Fecha_dateTimePicker.Value;
-            Fecha_textBox.Text = nuevoAlquiler.Fecha.ToShortDateString();
+            Fecha_textBox.Text = fechaElegida.ToShortDateString();
+            DisponibilidadCancha();
         }
 
         private void Horario_numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             horaElegida = (int)Horario_numericUpDown.Value;
-            HorarioComienzo_textBox.Text = $"{nuevoAlquiler.HoraInicio} hrs";
+            HorarioComienzo_textBox.Text = $"{horaElegida} hrs";
+            HorarioFinalizacion_textBox.Text = $"{horaElegida + duracionElegida} hrs";
+            DisponibilidadCancha();
         }
 
         private void Duracion_numericUpDown_ValueChanged(object sender, EventArgs e)
         {
             duracionElegida = (int)Duracion_numericUpDown.Value;
-            HorarioFinalizacion_textBox.Text = $"{nuevoAlquiler.HoraInicio + nuevoAlquiler.Duracion} hrs";
+            HorarioFinalizacion_textBox.Text = $"{horaElegida + duracionElegida} hrs";
+            DisponibilidadCancha();
+            if (Opcionales_comboBox.SelectedIndex == -1 || Opcionales_comboBox.SelectedIndex == 0) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 0));
+            else if (Opcionales_comboBox.SelectedIndex == 1) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 1));
+            else if (Opcionales_comboBox.SelectedIndex == 2) TotalAlquiler_lbl.Text = string.Format("${0:0.00}", CalcularPrecio(canchaElegida, duracionElegida, 2));
         }
 
         // Botones
@@ -164,22 +199,24 @@ namespace POLIDEPORTIVO.formularios
             {
                 if (Jueces_listBox.SelectedItems.Count == 3)
                 {
+                    juezDisponible = true;
+
                     List<Juez> juecesSeleccionados = new List<Juez>();
                     foreach (object o in Jueces_listBox.SelectedItems)
                     {
                         juecesSeleccionados.Add(o as Juez);
                     }
 
-                    juecesSeleccionados.ForEach(juez =>
+                    if (juecesSeleccionados.Exists(juez => !polideportivo.DisponibilidadJuez(juez, fechaElegida, horaElegida, duracionElegida)))
                     {
-                        juezDisponible = polideportivo.DisponibilidadJuez(juez, fechaElegida, horaElegida, duracionElegida);
-                        DisponibilidadLabels(PrimerJuezDisponible_lbl, juezDisponible);
-                    });
+                        MessageBox.Show("No todos los jueces estan disponibles para dirigir.");
+                        juezDisponible = false;
+                    }
 
                     if (juezDisponible)
                     {
                         primerJuez = juecesSeleccionados[0];
-                        PrimerJuezDisponible_lbl.Text = primerJuez.ToString();
+                        PrimerJuez_textBox.Text = primerJuez.ToString();
                         primerJuezLinea = juecesSeleccionados[1];
                         SegundoJuez_textBox.Text = primerJuezLinea.ToString();
                         segundoJuezLinea = juecesSeleccionados[2];
@@ -192,15 +229,20 @@ namespace POLIDEPORTIVO.formularios
 
         private void Alquilar_btn_Click(object sender, EventArgs e)
         {
-            if (Opcionales_comboBox.SelectedIndex == 0 || Opcionales_comboBox.SelectedIndex != -1)
+            if (!Opcionales_comboBox.Enabled || Opcionales_comboBox.SelectedIndex == -1 || Opcionales_comboBox.SelectedIndex == 0)
             {
                 if (canchaElegida != null && fechaElegida != null)
                 {
                     if (canchaDisponible)
                     {
-                        nuevoAlquiler = new Alquiler(fechaElegida, horaElegida, duracionElegida, canchaElegida);
-                        MessageBox.Show("Se ha registrado el siguiente alquiler: " + nuevoAlquiler);
-                        this.Close();
+                        int resultado = polideportivo.GenerarAlquiler(canchaElegida, fechaElegida, horaElegida, duracionElegida);
+
+                        if (resultado == 0)
+                        {
+                            MessageBox.Show("Se ha registrado el alquiler con exito.");
+                            this.Close();
+                        }
+                        else MessageBox.Show("Hubo un error al intentar alquilar.");                        
                     }
                 }
                 else MessageBox.Show("Todavia no se ha elegido una cancha o fecha por alquilar.");
@@ -211,7 +253,20 @@ namespace POLIDEPORTIVO.formularios
                 {
                     if (canchaDisponible)
                     {
-                        // TODO: Generar alquiler con un opcional
+                        if (primerJuez != null && juezDisponible)
+                        {
+                            List<Juez> juecesElegidos = new List<Juez> { primerJuez };
+                            int resultado = polideportivo.GenerarAlquiler(canchaElegida, fechaElegida, horaElegida, duracionElegida, juecesElegidos);
+
+                            if (resultado == 0)
+                            {
+                                MessageBox.Show("Se ha registrado el alquiler con exito.");
+                                this.Close();
+                            }
+                            else MessageBox.Show("Hubo un error al intentar alquilar.");
+                        }
+                        else MessageBox.Show("Es necesario elegir un juez para continuar con el alquiler.");
+
                     }
                     else MessageBox.Show("La cancha seleccionada no esta disponible para ser alquilada.");
                 }
@@ -219,7 +274,28 @@ namespace POLIDEPORTIVO.formularios
             }
             else if (Opcionales_comboBox.SelectedIndex == 2)
             {
-                // TODO: Generar alquiler con dos opcionales seleccionados
+                if (canchaElegida != null && fechaElegida != null)
+                {
+                    if (canchaDisponible)
+                    {
+                        if (primerJuez != null && primerJuezLinea != null && segundoJuezLinea != null && juezDisponible)
+                        {
+                            List<Juez> juecesElegidos = new List<Juez> { primerJuez, primerJuezLinea, segundoJuezLinea };
+                            int resultado = polideportivo.GenerarAlquiler(canchaElegida, fechaElegida, horaElegida, duracionElegida, juecesElegidos);
+
+                            if (resultado == 0)
+                            {
+                                MessageBox.Show("Se ha registrado el alquiler con exito.");
+                                this.Close();
+                            }
+                            else MessageBox.Show("Hubo un error al intentar alquilar.");
+                        }
+                        else MessageBox.Show("Es necesario elegir un juez para continuar con el alquiler.");
+
+                    }
+                    else MessageBox.Show("La cancha seleccionada no esta disponible para ser alquilada.");
+                }
+                else MessageBox.Show("Todavia no se ha elegido una cancha o fecha por alquilar.");
             }
             else MessageBox.Show("Hubo un error.");
 

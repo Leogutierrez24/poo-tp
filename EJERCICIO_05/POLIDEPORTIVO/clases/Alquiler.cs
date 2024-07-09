@@ -60,7 +60,12 @@ namespace POLIDEPORTIVO.clases
 
         public override string ToString()
         {
-            return $"{cancha.Tipo} | {fecha.ToShortDateString()} | {horaInicio}";
+            return $"{cancha.Tipo} | {fecha.ToShortDateString()} | {horaInicio} hrs";
         }
+
+		public static int CalcularPrecio(Cancha cancha, int duracion)
+		{
+			return cancha.Precio * duracion;
+		}
     }
 }

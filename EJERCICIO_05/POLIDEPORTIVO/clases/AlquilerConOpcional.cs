@@ -25,5 +25,11 @@ namespace POLIDEPORTIVO.clases
 		{
 			primerJuez = juez;
 		}
+
+		public static new int CalcularPrecio(Cancha cancha, int duracion)
+		{
+			return duracion * (cancha.Precio + 100);
+
+        }
 	}
 }

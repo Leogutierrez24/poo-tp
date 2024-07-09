@@ -75,6 +75,7 @@
             this.Alquileres_listBox = new System.Windows.Forms.ListBox();
             this.label29 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.VerRecaudacion_btn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -344,7 +345,7 @@
             this.groupBox3.Controls.Add(this.label26);
             this.groupBox3.Controls.Add(this.label27);
             this.groupBox3.Controls.Add(this.label28);
-            this.groupBox3.Location = new System.Drawing.Point(156, 196);
+            this.groupBox3.Location = new System.Drawing.Point(246, 194);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(461, 150);
             this.groupBox3.TabIndex = 9;
@@ -408,7 +409,7 @@
             // segundoLinea_lbl
             // 
             this.segundoLinea_lbl.AutoSize = true;
-            this.segundoLinea_lbl.Location = new System.Drawing.Point(343, 78);
+            this.segundoLinea_lbl.Location = new System.Drawing.Point(227, 115);
             this.segundoLinea_lbl.Name = "segundoLinea_lbl";
             this.segundoLinea_lbl.Size = new System.Drawing.Size(74, 13);
             this.segundoLinea_lbl.TabIndex = 11;
@@ -417,16 +418,16 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(220, 78);
+            this.label33.Location = new System.Drawing.Point(220, 102);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(117, 13);
+            this.label33.Size = new System.Drawing.Size(114, 13);
             this.label33.TabIndex = 10;
-            this.label33.Text = "Segundo juez de línea:";
+            this.label33.Text = "Segundo juez de línea";
             // 
             // primerLinea_lbl
             // 
             this.primerLinea_lbl.AutoSize = true;
-            this.primerLinea_lbl.Location = new System.Drawing.Point(329, 52);
+            this.primerLinea_lbl.Location = new System.Drawing.Point(227, 80);
             this.primerLinea_lbl.Name = "primerLinea_lbl";
             this.primerLinea_lbl.Size = new System.Drawing.Size(61, 13);
             this.primerLinea_lbl.TabIndex = 9;
@@ -435,16 +436,16 @@
             // label31
             // 
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(220, 52);
+            this.label31.Location = new System.Drawing.Point(220, 67);
             this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(103, 13);
+            this.label31.Size = new System.Drawing.Size(100, 13);
             this.label31.TabIndex = 8;
-            this.label31.Text = "Primer juez de línea:";
+            this.label31.Text = "Primer juez de línea";
             // 
             // primerJuez_lbl
             // 
             this.primerJuez_lbl.AutoSize = true;
-            this.primerJuez_lbl.Location = new System.Drawing.Point(290, 27);
+            this.primerJuez_lbl.Location = new System.Drawing.Point(227, 44);
             this.primerJuez_lbl.Name = "primerJuez_lbl";
             this.primerJuez_lbl.Size = new System.Drawing.Size(57, 13);
             this.primerJuez_lbl.TabIndex = 7;
@@ -453,7 +454,7 @@
             // tipoAlquiler_lbl
             // 
             this.tipoAlquiler_lbl.AutoSize = true;
-            this.tipoAlquiler_lbl.Location = new System.Drawing.Point(100, 78);
+            this.tipoAlquiler_lbl.Location = new System.Drawing.Point(96, 78);
             this.tipoAlquiler_lbl.Name = "tipoAlquiler_lbl";
             this.tipoAlquiler_lbl.Size = new System.Drawing.Size(83, 13);
             this.tipoAlquiler_lbl.TabIndex = 6;
@@ -482,9 +483,9 @@
             this.label25.AutoSize = true;
             this.label25.Location = new System.Drawing.Point(220, 27);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(64, 13);
+            this.label25.Size = new System.Drawing.Size(61, 13);
             this.label25.TabIndex = 3;
-            this.label25.Text = "Primer Juez:";
+            this.label25.Text = "Primer Juez";
             // 
             // label26
             // 
@@ -518,7 +519,7 @@
             this.Alquileres_listBox.FormattingEnabled = true;
             this.Alquileres_listBox.Location = new System.Drawing.Point(15, 201);
             this.Alquileres_listBox.Name = "Alquileres_listBox";
-            this.Alquileres_listBox.Size = new System.Drawing.Size(135, 134);
+            this.Alquileres_listBox.Size = new System.Drawing.Size(222, 134);
             this.Alquileres_listBox.TabIndex = 8;
             this.Alquileres_listBox.SelectedIndexChanged += new System.EventHandler(this.Alquileres_listBox_SelectedIndexChanged);
             // 
@@ -533,7 +534,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(623, 211);
+            this.button1.Location = new System.Drawing.Point(713, 216);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(81, 35);
             this.button1.TabIndex = 10;
@@ -541,11 +542,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // VerRecaudacion_btn
+            // 
+            this.VerRecaudacion_btn.Location = new System.Drawing.Point(713, 257);
+            this.VerRecaudacion_btn.Name = "VerRecaudacion_btn";
+            this.VerRecaudacion_btn.Size = new System.Drawing.Size(81, 35);
+            this.VerRecaudacion_btn.TabIndex = 11;
+            this.VerRecaudacion_btn.Text = "Ver recaudacion";
+            this.VerRecaudacion_btn.UseVisualStyleBackColor = true;
+            this.VerRecaudacion_btn.Click += new System.EventHandler(this.VerRecaudacion_btn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(816, 356);
+            this.Controls.Add(this.VerRecaudacion_btn);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.Alquileres_listBox);
@@ -621,6 +633,7 @@
         private System.Windows.Forms.Label horaFin_lbl;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button VerRecaudacion_btn;
     }
 }
 

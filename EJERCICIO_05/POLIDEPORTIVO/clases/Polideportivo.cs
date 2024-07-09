@@ -131,7 +131,7 @@ namespace POLIDEPORTIVO.clases
 
 		public List<Alquiler> BuscarAlquileres(Cancha cancha, DateTime fecha)
 		{
-			List<Alquiler> aPorFecha = alquileres.FindAll(alquiler => alquiler.Fecha == fecha && alquiler.Cancha.Tipo == cancha.Tipo);
+			List<Alquiler> aPorFecha = alquileres.FindAll(alquiler => alquiler.Fecha.Date == fecha.Date && alquiler.Cancha.Tipo == cancha.Tipo);
 			return aPorFecha;
 		}
 
@@ -143,23 +143,25 @@ namespace POLIDEPORTIVO.clases
 		// Comprueba si una cancha esta disponible para ser alquilada segun una fecha y horario.
 		public bool DisponibilidadCancha(Cancha cancha, DateTime fecha, int horaInicio, int duracion)
 		{
-			bool resultado = true;
+			bool resultado = false;
 
 			List<Alquiler> alquileresFiltradosPorCancha = BuscarAlquileres(cancha, fecha);
 
 			if (alquileresFiltradosPorCancha.Count > 0)
 			{
-                alquileresFiltradosPorCancha.ForEach(alquiler =>
-                {
-                    if	((horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
-                        (horaInicio < (alquiler.HoraInicio + alquiler.Duracion) && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
-                        (horaInicio > alquiler.HoraInicio && (horaInicio + duracion) < (alquiler.HoraInicio + alquiler.Duracion)) ||
-                        (horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)))
+				if (alquileresFiltradosPorCancha.Exists(alquiler => horaInicio == alquiler.HoraInicio))
+				{
+					resultado = false;
+				} else
+				{
+                    if (alquileresFiltradosPorCancha.Exists(alquiler => (horaInicio < alquiler.HoraInicio && (horaInicio + duracion) <= alquiler.HoraInicio) ||
+                    (horaInicio >= (alquiler.HoraInicio + alquiler.Duracion) && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion))))
                     {
-                        resultado = false;
+                        resultado = true;
                     }
-                });
-            }
+                }
+			}
+			else resultado = true;
 
 			return resultado;
 		}
@@ -167,7 +169,7 @@ namespace POLIDEPORTIVO.clases
 		// Comprueba si un juez esta disponible para ser asignado a un partido.
         public bool DisponibilidadJuez(Juez juez, DateTime fecha, int horaInicio, int duracion)
 		{
-			bool resultado = true;
+			bool resultado = false;
 
 			List<Alquiler> listaAlquileres = BuscarAlquileres(fecha);
 
@@ -176,20 +178,20 @@ namespace POLIDEPORTIVO.clases
                 List<Alquiler> listaAlquileresMismoJuez = BuscarAlquileres(juez, listaAlquileres);
 				if (listaAlquileresMismoJuez.Count > 0)
 				{
-					listaAlquileresMismoJuez.ForEach(alquiler =>
+					if (listaAlquileresMismoJuez.Exists(alquiler => horaInicio == alquiler.HoraInicio))
 					{
-						if ((horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
-                            (horaInicio < (alquiler.HoraInicio + alquiler.Duracion) && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)) ||
-							(horaInicio > alquiler.HoraInicio && (horaInicio + duracion) < (alquiler.HoraInicio + alquiler.Duracion)) ||
-							(horaInicio < alquiler.HoraInicio && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion)))
-                        {
-							resultado = false;
-						}
-					});
-				}
+						resultado = false;
+					} else if (listaAlquileresMismoJuez.Exists(alquiler => (horaInicio < alquiler.HoraInicio && (horaInicio + duracion) <= alquiler.HoraInicio) ||
+																			(horaInicio >= (alquiler.HoraInicio + alquiler.Duracion) && (horaInicio + duracion) > (alquiler.HoraInicio + alquiler.Duracion))))
+                    {
+                        resultado = true;
+                    }
+                }
+                else resultado = true;
             }
+            else resultado = true;
 
-			return resultado;
+            return resultado;
 		}
 
 		public int GenerarAlquiler(Cancha cancha, DateTime fecha, int horaInicio, int duracion)
@@ -245,7 +247,5 @@ namespace POLIDEPORTIVO.clases
 			juez.Legajo = jueces.Count + 1;
 			jueces.Add(juez);
 		}
-
-
 	}
 }
