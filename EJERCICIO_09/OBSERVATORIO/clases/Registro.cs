@@ -35,5 +35,18 @@ namespace OBSERVATORIO.clases
 			get { return distancia; }
 			set { distancia = value; }
 		}
-	}
+
+		public Registro(Persona observador, DateTime fechaAvistamiento, CuerpoCeleste cuerpo, float distancia)
+		{
+			this.observador = observador;
+			this.fechaAvistamiento = fechaAvistamiento;
+			this.cuerpo = cuerpo;
+			this.distancia = distancia;
+		}
+
+        public override string ToString()
+        {
+            return $"{fechaAvistamiento.ToShortDateString()} | {cuerpo.Nombre}";
+        }
+    }
 }

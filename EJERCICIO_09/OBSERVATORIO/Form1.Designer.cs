@@ -30,19 +30,6 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.CuerposRegistrados_listBox = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ValorFiltro_textBox = new System.Windows.Forms.TextBox();
-            this.Filtrar_btn = new System.Windows.Forms.Button();
-            this.VerCuerpoFiltrado_btn = new System.Windows.Forms.Button();
-            this.CuerposEncontrados_listBox = new System.Windows.Forms.ListBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.Filtros_comboBox = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Opcion03_radioButton = new System.Windows.Forms.RadioButton();
-            this.Opcion02_radioButton = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Opcion01_radioButton = new System.Windows.Forms.RadioButton();
             this.Registros_listBox = new System.Windows.Forms.ListBox();
             this.label5 = new System.Windows.Forms.Label();
             this.NuevoRegistro_btn = new System.Windows.Forms.Button();
@@ -50,7 +37,6 @@
             this.ModificarCuerpo_btn = new System.Windows.Forms.Button();
             this.VerRegistro_btn = new System.Windows.Forms.Button();
             this.VerCuerpo_btn = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -70,147 +56,10 @@
             this.CuerposRegistrados_listBox.Size = new System.Drawing.Size(177, 121);
             this.CuerposRegistrados_listBox.TabIndex = 1;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.ValorFiltro_textBox);
-            this.groupBox1.Controls.Add(this.Filtrar_btn);
-            this.groupBox1.Controls.Add(this.VerCuerpoFiltrado_btn);
-            this.groupBox1.Controls.Add(this.CuerposEncontrados_listBox);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.Filtros_comboBox);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.Opcion03_radioButton);
-            this.groupBox1.Controls.Add(this.Opcion02_radioButton);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.Opcion01_radioButton);
-            this.groupBox1.Location = new System.Drawing.Point(220, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(373, 369);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Buscar Cuerpos";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(197, 26);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 13);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Concepto a filtrar:";
-            // 
-            // ValorFiltro_textBox
-            // 
-            this.ValorFiltro_textBox.Enabled = false;
-            this.ValorFiltro_textBox.Location = new System.Drawing.Point(200, 41);
-            this.ValorFiltro_textBox.Name = "ValorFiltro_textBox";
-            this.ValorFiltro_textBox.Size = new System.Drawing.Size(158, 20);
-            this.ValorFiltro_textBox.TabIndex = 11;
-            // 
-            // Filtrar_btn
-            // 
-            this.Filtrar_btn.Location = new System.Drawing.Point(236, 69);
-            this.Filtrar_btn.Name = "Filtrar_btn";
-            this.Filtrar_btn.Size = new System.Drawing.Size(81, 36);
-            this.Filtrar_btn.TabIndex = 10;
-            this.Filtrar_btn.Text = "Buscar";
-            this.Filtrar_btn.UseVisualStyleBackColor = true;
-            this.Filtrar_btn.Click += new System.EventHandler(this.Filtrar_btn_Click);
-            // 
-            // VerCuerpoFiltrado_btn
-            // 
-            this.VerCuerpoFiltrado_btn.Location = new System.Drawing.Point(141, 315);
-            this.VerCuerpoFiltrado_btn.Name = "VerCuerpoFiltrado_btn";
-            this.VerCuerpoFiltrado_btn.Size = new System.Drawing.Size(90, 36);
-            this.VerCuerpoFiltrado_btn.TabIndex = 9;
-            this.VerCuerpoFiltrado_btn.Text = "Ver Cuerpo";
-            this.VerCuerpoFiltrado_btn.UseVisualStyleBackColor = true;
-            this.VerCuerpoFiltrado_btn.Click += new System.EventHandler(this.VerCuerpoFiltrado_btn_Click);
-            // 
-            // CuerposEncontrados_listBox
-            // 
-            this.CuerposEncontrados_listBox.FormattingEnabled = true;
-            this.CuerposEncontrados_listBox.Location = new System.Drawing.Point(15, 188);
-            this.CuerposEncontrados_listBox.Name = "CuerposEncontrados_listBox";
-            this.CuerposEncontrados_listBox.Size = new System.Drawing.Size(343, 121);
-            this.CuerposEncontrados_listBox.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Resultado:";
-            // 
-            // Filtros_comboBox
-            // 
-            this.Filtros_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Filtros_comboBox.FormattingEnabled = true;
-            this.Filtros_comboBox.Location = new System.Drawing.Point(18, 138);
-            this.Filtros_comboBox.Name = "Filtros_comboBox";
-            this.Filtros_comboBox.Size = new System.Drawing.Size(158, 21);
-            this.Filtros_comboBox.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Filtrar por:";
-            // 
-            // Opcion03_radioButton
-            // 
-            this.Opcion03_radioButton.AutoSize = true;
-            this.Opcion03_radioButton.Location = new System.Drawing.Point(18, 88);
-            this.Opcion03_radioButton.Name = "Opcion03_radioButton";
-            this.Opcion03_radioButton.Size = new System.Drawing.Size(59, 17);
-            this.Opcion03_radioButton.TabIndex = 3;
-            this.Opcion03_radioButton.Text = "Estrella";
-            this.Opcion03_radioButton.UseVisualStyleBackColor = true;
-            this.Opcion03_radioButton.CheckedChanged += new System.EventHandler(this.Opcion03_radioButton_CheckedChanged);
-            // 
-            // Opcion02_radioButton
-            // 
-            this.Opcion02_radioButton.AutoSize = true;
-            this.Opcion02_radioButton.Location = new System.Drawing.Point(18, 65);
-            this.Opcion02_radioButton.Name = "Opcion02_radioButton";
-            this.Opcion02_radioButton.Size = new System.Drawing.Size(61, 17);
-            this.Opcion02_radioButton.TabIndex = 2;
-            this.Opcion02_radioButton.Text = "Planeta";
-            this.Opcion02_radioButton.UseVisualStyleBackColor = true;
-            this.Opcion02_radioButton.CheckedChanged += new System.EventHandler(this.Opcion02_radioButton_CheckedChanged);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Cuerpo Celeste:";
-            // 
-            // Opcion01_radioButton
-            // 
-            this.Opcion01_radioButton.AutoSize = true;
-            this.Opcion01_radioButton.Checked = true;
-            this.Opcion01_radioButton.Location = new System.Drawing.Point(18, 42);
-            this.Opcion01_radioButton.Name = "Opcion01_radioButton";
-            this.Opcion01_radioButton.Size = new System.Drawing.Size(60, 17);
-            this.Opcion01_radioButton.TabIndex = 0;
-            this.Opcion01_radioButton.TabStop = true;
-            this.Opcion01_radioButton.Text = "Satelite";
-            this.Opcion01_radioButton.UseVisualStyleBackColor = true;
-            this.Opcion01_radioButton.CheckedChanged += new System.EventHandler(this.Opcion01_radioButton_CheckedChanged);
-            // 
             // Registros_listBox
             // 
             this.Registros_listBox.FormattingEnabled = true;
-            this.Registros_listBox.Location = new System.Drawing.Point(12, 260);
+            this.Registros_listBox.Location = new System.Drawing.Point(236, 25);
             this.Registros_listBox.Name = "Registros_listBox";
             this.Registros_listBox.Size = new System.Drawing.Size(177, 121);
             this.Registros_listBox.TabIndex = 4;
@@ -218,7 +67,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 244);
+            this.label5.Location = new System.Drawing.Point(236, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 3;
@@ -226,7 +75,7 @@
             // 
             // NuevoRegistro_btn
             // 
-            this.NuevoRegistro_btn.Location = new System.Drawing.Point(12, 387);
+            this.NuevoRegistro_btn.Location = new System.Drawing.Point(236, 152);
             this.NuevoRegistro_btn.Name = "NuevoRegistro_btn";
             this.NuevoRegistro_btn.Size = new System.Drawing.Size(87, 36);
             this.NuevoRegistro_btn.TabIndex = 5;
@@ -256,7 +105,7 @@
             // 
             // VerRegistro_btn
             // 
-            this.VerRegistro_btn.Location = new System.Drawing.Point(108, 387);
+            this.VerRegistro_btn.Location = new System.Drawing.Point(332, 152);
             this.VerRegistro_btn.Name = "VerRegistro_btn";
             this.VerRegistro_btn.Size = new System.Drawing.Size(81, 36);
             this.VerRegistro_btn.TabIndex = 8;
@@ -278,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(618, 436);
+            this.ClientSize = new System.Drawing.Size(426, 243);
             this.Controls.Add(this.VerCuerpo_btn);
             this.Controls.Add(this.VerRegistro_btn);
             this.Controls.Add(this.ModificarCuerpo_btn);
@@ -286,15 +135,12 @@
             this.Controls.Add(this.NuevoRegistro_btn);
             this.Controls.Add(this.Registros_listBox);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.CuerposRegistrados_listBox);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Observatorio";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -304,26 +150,13 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox CuerposRegistrados_listBox;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton Opcion01_radioButton;
-        private System.Windows.Forms.ListBox CuerposEncontrados_listBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox Filtros_comboBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton Opcion03_radioButton;
-        private System.Windows.Forms.RadioButton Opcion02_radioButton;
         private System.Windows.Forms.ListBox Registros_listBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button NuevoRegistro_btn;
         private System.Windows.Forms.Button AgregarCuerpo_btn;
-        private System.Windows.Forms.Button VerCuerpoFiltrado_btn;
         private System.Windows.Forms.Button ModificarCuerpo_btn;
         private System.Windows.Forms.Button VerRegistro_btn;
         private System.Windows.Forms.Button VerCuerpo_btn;
-        private System.Windows.Forms.Button Filtrar_btn;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox ValorFiltro_textBox;
     }
 }
 

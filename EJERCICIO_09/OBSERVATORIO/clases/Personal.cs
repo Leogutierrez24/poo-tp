@@ -14,5 +14,10 @@ namespace OBSERVATORIO.clases
 			get { return legajo; }
 			set { legajo = value; }
 		}
+
+		public Personal(string nombre, string apellido, DateTime fechaNacimiento, int legajo) : base (nombre, apellido, fechaNacimiento)
+		{
+			this.legajo = legajo;
+		}
 	}
 }

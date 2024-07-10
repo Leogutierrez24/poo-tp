@@ -177,5 +177,11 @@ namespace OBSERVATORIO.clases
 		{
 			constelaciones.Add(constelacion);
 		}
+
+		public void NuevoRegistro(CuerpoCeleste cuerpo, Persona persona, DateTime fechaDescubrimiento, float distanciaATierra)
+		{
+			Registro nRegistro = new Registro(persona, fechaDescubrimiento, cuerpo, distanciaATierra);
+			registros.Add(nRegistro);
+		}
 	}
 }

@@ -3,23 +3,11 @@
   "WorkspaceRootPath": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\clases\\observatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\clases\\observatorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\formularios\\verestrella_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\formularios\\verestrella_frm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\clases\\estrella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\clases\\estrella.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -30,60 +18,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 300,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Observatorio.cs",
-              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\clases\\Observatorio.cs",
-              "RelativeDocumentMoniker": "OBSERVATORIO\\clases\\Observatorio.cs",
-              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\clases\\Observatorio.cs",
-              "RelativeToolTip": "OBSERVATORIO\\clases\\Observatorio.cs",
-              "ViewState": "AQIAAJsAAAAAAAAAAAAAAKgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T23:53:32.449Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
-              "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
-              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T23:53:42.554Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Estrella.cs",
-              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\clases\\Estrella.cs",
-              "RelativeDocumentMoniker": "OBSERVATORIO\\clases\\Estrella.cs",
-              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\clases\\Estrella.cs",
-              "RelativeToolTip": "OBSERVATORIO\\clases\\Estrella.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T00:57:13.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VerEstrella_frm.cs [Dise\u00F1o]",
-              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\formularios\\VerEstrella_frm.cs",
-              "RelativeDocumentMoniker": "OBSERVATORIO\\formularios\\VerEstrella_frm.cs",
-              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\formularios\\VerEstrella_frm.cs [Dise\u00F1o]",
-              "RelativeToolTip": "OBSERVATORIO\\formularios\\VerEstrella_frm.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T00:54:19.02Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -102,16 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Form1.cs",
               "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
               "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
               "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
               "RelativeToolTip": "OBSERVATORIO\\Form1.cs",
-              "ViewState": "AQIAADEAAAAAAAAAAAAqwGEAAABjAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAkwF8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T00:08:26.491Z",
+              "WhenOpened": "2024-07-10T00:39:35.5Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
+              "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
+              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T00:39:31.861Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

@@ -29,5 +29,11 @@ namespace OBSERVATORIO.clases
 			set { fechaNacimiento = value; }
 		}
 
+		public Persona(string nombre, string apellido, DateTime fechaNacimiento)
+		{
+			this.nombre = nombre;
+			this.apellido = apellido;
+			this.fechaNacimiento = fechaNacimiento;
+		}
 	}
 }
