@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_11\\clases\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
+      "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_11\\clases\\estudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\estudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_11\\clases\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 300,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClassDiagram1.cd",
+              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\CLASES\\ClassDiagram1.cd",
+              "RelativeDocumentMoniker": "CLASES\\ClassDiagram1.cd",
+              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\CLASES\\ClassDiagram1.cd",
+              "RelativeToolTip": "CLASES\\ClassDiagram1.cd",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
+              "WhenOpened": "2024-07-11T03:13:37.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Estudio.cs",
+              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\CLASES\\Estudio.cs",
+              "RelativeDocumentMoniker": "CLASES\\Estudio.cs",
+              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\CLASES\\Estudio.cs",
+              "RelativeToolTip": "CLASES\\Estudio.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T03:11:21.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Hospital.cs",
+              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\CLASES\\Hospital.cs",
+              "RelativeDocumentMoniker": "CLASES\\Hospital.cs",
+              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_11\\CLASES\\Hospital.cs",
+              "RelativeToolTip": "CLASES\\Hospital.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwCsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T02:20:53.172Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
