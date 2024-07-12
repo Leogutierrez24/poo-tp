@@ -194,7 +194,7 @@ namespace OBSERVATORIO.formularios
                     MessageBox.Show($"Se registró la Estrella: {nuevaEstrella.Nombre}");
                     this.Close();
                 }
-                else MessageBox.Show("Debe haber solo una constelacion seleccionada para agregar la estrella.");                
+                else MessageBox.Show("Debe haber solo una constelación seleccionada para agregar la estrella.");                
             }
             else MessageBox.Show("Hay campos con valores erroneos o incompletos!!!");
         }
@@ -287,7 +287,7 @@ namespace OBSERVATORIO.formularios
                 CargarConstelaciones();
                 ConstelacionNombre_textBox.Text = string.Empty;
             }
-            else MessageBox.Show("Es necesario un nombre para agregar una nueva constelacion!!!");
+            else MessageBox.Show("Es necesario un nombre para agregar una nueva constelación!!!");
             
         }
     }

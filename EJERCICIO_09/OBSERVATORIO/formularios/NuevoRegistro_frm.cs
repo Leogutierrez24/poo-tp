@@ -63,7 +63,7 @@ namespace OBSERVATORIO.formularios
             {
                 constelacion.Estrellas.ForEach(item => CuerposEncontrados_listBox.Items.Add(item));
             }
-            else MessageBox.Show("No se encontro constelacion.");
+            else MessageBox.Show("No se encontro constelación.");
         }
 
         private void FiltrarPlanetas()
@@ -199,7 +199,7 @@ namespace OBSERVATORIO.formularios
                 MessageBox.Show("Registro agregado!");
                 Close();
             }
-            else MessageBox.Show("Hay campos vacios o incompletos.");
+            else MessageBox.Show("Hay campos vacíos o incompletos.");
         }
 
         private void button2_Click(object sender, EventArgs e)

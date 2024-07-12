@@ -58,6 +58,7 @@
             this.label25 = new System.Windows.Forms.Label();
             this.PlanetaTemp_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label26 = new System.Windows.Forms.Label();
+            this.PlanetaSinSatelites_checkBox = new System.Windows.Forms.CheckBox();
             this.PlanetaSatelites_listBox = new System.Windows.Forms.ListBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -75,6 +76,16 @@
             this.PlanetaEdad_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.label11 = new System.Windows.Forms.Label();
             this.Estrella_groupBox = new System.Windows.Forms.GroupBox();
+            this.Constelacion_checkBox = new System.Windows.Forms.CheckBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.AgregarConstelacion_btn = new System.Windows.Forms.Button();
+            this.ConstelacionNombre_textBox = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.Constelaciones_listBox = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.EstrellaTemperatura_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label16 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.EstrellaGigante_radioButton = new System.Windows.Forms.RadioButton();
@@ -93,17 +104,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.AgregarCuerpo_btn = new System.Windows.Forms.Button();
             this.Cancelar_btn = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.EstrellaTemperatura_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.Constelaciones_listBox = new System.Windows.Forms.ListBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.AgregarConstelacion_btn = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label28 = new System.Windows.Forms.Label();
-            this.ConstelacionNombre_textBox = new System.Windows.Forms.TextBox();
-            this.PlanetaSinSatelites_checkBox = new System.Windows.Forms.CheckBox();
-            this.Constelacion_checkBox = new System.Windows.Forms.CheckBox();
             this.Satelite_groupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SateliteMasa_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SateliteEdad_numericUpDown)).BeginInit();
@@ -117,11 +117,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaMasa_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaEdad_numericUpDown)).BeginInit();
             this.Estrella_groupBox.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EstrellaTemperatura_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaDiametro_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaMasa_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaEdad_numericUpDown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EstrellaTemperatura_numericUpDown)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // TipoCuerpo01_radioButton
@@ -473,6 +473,16 @@
             this.label26.TabIndex = 29;
             this.label26.Text = "Temperatura";
             // 
+            // PlanetaSinSatelites_checkBox
+            // 
+            this.PlanetaSinSatelites_checkBox.AutoSize = true;
+            this.PlanetaSinSatelites_checkBox.Location = new System.Drawing.Point(14, 291);
+            this.PlanetaSinSatelites_checkBox.Name = "PlanetaSinSatelites_checkBox";
+            this.PlanetaSinSatelites_checkBox.Size = new System.Drawing.Size(113, 17);
+            this.PlanetaSinSatelites_checkBox.TabIndex = 27;
+            this.PlanetaSinSatelites_checkBox.Text = "No posee satelites";
+            this.PlanetaSinSatelites_checkBox.UseVisualStyleBackColor = true;
+            // 
             // PlanetaSatelites_listBox
             // 
             this.PlanetaSatelites_listBox.FormattingEnabled = true;
@@ -652,6 +662,101 @@
             this.Estrella_groupBox.TabIndex = 6;
             this.Estrella_groupBox.TabStop = false;
             this.Estrella_groupBox.Text = "Agregar Estrella";
+            // 
+            // Constelacion_checkBox
+            // 
+            this.Constelacion_checkBox.AutoSize = true;
+            this.Constelacion_checkBox.Location = new System.Drawing.Point(217, 207);
+            this.Constelacion_checkBox.Name = "Constelacion_checkBox";
+            this.Constelacion_checkBox.Size = new System.Drawing.Size(91, 17);
+            this.Constelacion_checkBox.TabIndex = 39;
+            this.Constelacion_checkBox.Text = "No especifica";
+            this.Constelacion_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.AgregarConstelacion_btn);
+            this.groupBox4.Controls.Add(this.ConstelacionNombre_textBox);
+            this.groupBox4.Controls.Add(this.label28);
+            this.groupBox4.Location = new System.Drawing.Point(217, 238);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(177, 110);
+            this.groupBox4.TabIndex = 9;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Nueva constelación";
+            // 
+            // AgregarConstelacion_btn
+            // 
+            this.AgregarConstelacion_btn.Location = new System.Drawing.Point(39, 53);
+            this.AgregarConstelacion_btn.Name = "AgregarConstelacion_btn";
+            this.AgregarConstelacion_btn.Size = new System.Drawing.Size(109, 39);
+            this.AgregarConstelacion_btn.TabIndex = 45;
+            this.AgregarConstelacion_btn.Text = "Agregar constelación";
+            this.AgregarConstelacion_btn.UseVisualStyleBackColor = true;
+            this.AgregarConstelacion_btn.Click += new System.EventHandler(this.AgregarConstelacion_btn_Click);
+            // 
+            // ConstelacionNombre_textBox
+            // 
+            this.ConstelacionNombre_textBox.Location = new System.Drawing.Point(52, 24);
+            this.ConstelacionNombre_textBox.Name = "ConstelacionNombre_textBox";
+            this.ConstelacionNombre_textBox.Size = new System.Drawing.Size(119, 20);
+            this.ConstelacionNombre_textBox.TabIndex = 1;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(6, 27);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(47, 13);
+            this.label28.TabIndex = 0;
+            this.label28.Text = "Nombre:";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(214, 25);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(79, 13);
+            this.label27.TabIndex = 44;
+            this.label27.Text = "Constelaciones";
+            // 
+            // Constelaciones_listBox
+            // 
+            this.Constelaciones_listBox.FormattingEnabled = true;
+            this.Constelaciones_listBox.Location = new System.Drawing.Point(217, 41);
+            this.Constelaciones_listBox.Name = "Constelaciones_listBox";
+            this.Constelaciones_listBox.Size = new System.Drawing.Size(157, 160);
+            this.Constelaciones_listBox.TabIndex = 43;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(81, 351);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(46, 13);
+            this.label7.TabIndex = 42;
+            this.label7.Text = "(Celsius)";
+            // 
+            // EstrellaTemperatura_numericUpDown
+            // 
+            this.EstrellaTemperatura_numericUpDown.Location = new System.Drawing.Point(84, 328);
+            this.EstrellaTemperatura_numericUpDown.Maximum = new decimal(new int[] {
+            7000,
+            0,
+            0,
+            0});
+            this.EstrellaTemperatura_numericUpDown.Name = "EstrellaTemperatura_numericUpDown";
+            this.EstrellaTemperatura_numericUpDown.Size = new System.Drawing.Size(110, 20);
+            this.EstrellaTemperatura_numericUpDown.TabIndex = 40;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(11, 330);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(67, 13);
+            this.label16.TabIndex = 41;
+            this.label16.Text = "Temperatura";
             // 
             // label32
             // 
@@ -834,111 +939,6 @@
             this.Cancelar_btn.UseVisualStyleBackColor = true;
             this.Cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(81, 351);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 42;
-            this.label7.Text = "(Celsius)";
-            // 
-            // EstrellaTemperatura_numericUpDown
-            // 
-            this.EstrellaTemperatura_numericUpDown.Location = new System.Drawing.Point(84, 328);
-            this.EstrellaTemperatura_numericUpDown.Maximum = new decimal(new int[] {
-            7000,
-            0,
-            0,
-            0});
-            this.EstrellaTemperatura_numericUpDown.Name = "EstrellaTemperatura_numericUpDown";
-            this.EstrellaTemperatura_numericUpDown.Size = new System.Drawing.Size(110, 20);
-            this.EstrellaTemperatura_numericUpDown.TabIndex = 40;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(11, 330);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(67, 13);
-            this.label16.TabIndex = 41;
-            this.label16.Text = "Temperatura";
-            // 
-            // Constelaciones_listBox
-            // 
-            this.Constelaciones_listBox.FormattingEnabled = true;
-            this.Constelaciones_listBox.Location = new System.Drawing.Point(217, 41);
-            this.Constelaciones_listBox.Name = "Constelaciones_listBox";
-            this.Constelaciones_listBox.Size = new System.Drawing.Size(157, 160);
-            this.Constelaciones_listBox.TabIndex = 43;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(214, 25);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(79, 13);
-            this.label27.TabIndex = 44;
-            this.label27.Text = "Constelaciones";
-            // 
-            // AgregarConstelacion_btn
-            // 
-            this.AgregarConstelacion_btn.Location = new System.Drawing.Point(39, 53);
-            this.AgregarConstelacion_btn.Name = "AgregarConstelacion_btn";
-            this.AgregarConstelacion_btn.Size = new System.Drawing.Size(109, 39);
-            this.AgregarConstelacion_btn.TabIndex = 45;
-            this.AgregarConstelacion_btn.Text = "Agregar constelacion";
-            this.AgregarConstelacion_btn.UseVisualStyleBackColor = true;
-            this.AgregarConstelacion_btn.Click += new System.EventHandler(this.AgregarConstelacion_btn_Click);
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.AgregarConstelacion_btn);
-            this.groupBox4.Controls.Add(this.ConstelacionNombre_textBox);
-            this.groupBox4.Controls.Add(this.label28);
-            this.groupBox4.Location = new System.Drawing.Point(217, 238);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(177, 110);
-            this.groupBox4.TabIndex = 9;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Nueva constelacion";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 27);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(47, 13);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "Nombre:";
-            // 
-            // ConstelacionNombre_textBox
-            // 
-            this.ConstelacionNombre_textBox.Location = new System.Drawing.Point(52, 24);
-            this.ConstelacionNombre_textBox.Name = "ConstelacionNombre_textBox";
-            this.ConstelacionNombre_textBox.Size = new System.Drawing.Size(119, 20);
-            this.ConstelacionNombre_textBox.TabIndex = 1;
-            // 
-            // PlanetaSinSatelites_checkBox
-            // 
-            this.PlanetaSinSatelites_checkBox.AutoSize = true;
-            this.PlanetaSinSatelites_checkBox.Location = new System.Drawing.Point(14, 291);
-            this.PlanetaSinSatelites_checkBox.Name = "PlanetaSinSatelites_checkBox";
-            this.PlanetaSinSatelites_checkBox.Size = new System.Drawing.Size(113, 17);
-            this.PlanetaSinSatelites_checkBox.TabIndex = 27;
-            this.PlanetaSinSatelites_checkBox.Text = "No posee satelites";
-            this.PlanetaSinSatelites_checkBox.UseVisualStyleBackColor = true;
-            // 
-            // Constelacion_checkBox
-            // 
-            this.Constelacion_checkBox.AutoSize = true;
-            this.Constelacion_checkBox.Location = new System.Drawing.Point(217, 207);
-            this.Constelacion_checkBox.Name = "Constelacion_checkBox";
-            this.Constelacion_checkBox.Size = new System.Drawing.Size(91, 17);
-            this.Constelacion_checkBox.TabIndex = 39;
-            this.Constelacion_checkBox.Text = "No especifica";
-            this.Constelacion_checkBox.UseVisualStyleBackColor = true;
-            // 
             // AgregarCuerpo_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -976,12 +976,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.PlanetaEdad_numericUpDown)).EndInit();
             this.Estrella_groupBox.ResumeLayout(false);
             this.Estrella_groupBox.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EstrellaTemperatura_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaDiametro_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaMasa_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EstrellaEdad_numericUpDown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.EstrellaTemperatura_numericUpDown)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

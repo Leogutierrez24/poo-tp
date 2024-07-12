@@ -88,10 +88,10 @@ namespace OBSERVATORIO.formularios
                             ModificarBotones(false);
                             ModificarCampos(true);
                         }
-                        else MessageBox.Show("El valor asignado para Acomplamiento de marea no es valido.");
-                    } else MessageBox.Show("El valor asignado para Masa no es valido.");
-                } else MessageBox.Show("El valor asignado para Edad no es valido.");
-            } else MessageBox.Show("Hay campos vacios o incompletos.");
+                        else MessageBox.Show("El valor asignado para Acomplamiento de marea no es válido.");
+                    } else MessageBox.Show("El valor asignado para Masa no es válido.");
+                } else MessageBox.Show("El valor asignado para Edad no es válido.");
+            } else MessageBox.Show("Hay campos vacíos o incompletos.");
         }
 
         private void Cancelar_btn_Click(object sender, EventArgs e)
