@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|i:\\facultad\\segundo a\u00F1o\\poo\\poo-tp\\ejercicio_09\\observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4011A7D2-E7DA-4004-AAEB-2BBA6A55E279}|OBSERVATORIO\\OBSERVATORIO.csproj|solutionrelative:observatorio\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +18,35 @@
       "DocumentGroups": [
         {
           "DockedHeight": 300,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
+              "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
+              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
+              "RelativeToolTip": "OBSERVATORIO\\Form1.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowBMAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T00:39:35.5Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
+              "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
+              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T00:39:31.861Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
@@ -35,31 +62,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs",
-              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
-              "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
-              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
-              "RelativeToolTip": "OBSERVATORIO\\Form1.cs",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAkwF8AAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T00:39:35.5Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs",
-              "RelativeDocumentMoniker": "OBSERVATORIO\\Form1.cs",
-              "ToolTip": "I:\\Facultad\\segundo a\u00F1o\\poo\\poo-tp\\EJERCICIO_09\\OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "OBSERVATORIO\\Form1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T00:39:31.861Z",
-              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

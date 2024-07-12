@@ -37,5 +37,17 @@ namespace OBSERVATORIO.clases
             this.segundaEstrella = segundaEstrella;
             this.segundaDistancia = segundaDistancia;
         }
+
+        public new void Actualizar(string nombre, float masa, float edad, float distancia, float segundaDistancia, float temp, bool habitabilidad, bool ricitos)
+        {
+            this.nombre = nombre;
+            this.masa = masa;
+            this.edad = edad;
+            this.distancia = distancia;
+            this.segundaDistancia = segundaDistancia;
+            temperatura = temp;
+            this.habitabilidad = habitabilidad;
+            this.ricitos = ricitos;
+        }
     }
 }

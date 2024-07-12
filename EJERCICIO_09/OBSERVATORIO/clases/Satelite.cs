@@ -23,5 +23,13 @@ namespace OBSERVATORIO.clases
 			this.acoplamientoMarea = acoplamientoMarea;
 		}
 
+		public void Actualizar(string nombre, float edad, float masa, bool acoplamiento)
+		{
+            this.nombre = nombre;
+            this.masa = masa;
+            this.edad = edad;
+            acoplamientoMarea = acoplamiento;
+        }
+
 	}
 }

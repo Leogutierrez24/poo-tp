@@ -38,6 +38,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.Modificar_btn = new System.Windows.Forms.Button();
+            this.AceptarCambios_btn = new System.Windows.Forms.Button();
+            this.Cancelar_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,7 +57,7 @@
             this.Nombre_textBox.Location = new System.Drawing.Point(25, 35);
             this.Nombre_textBox.Name = "Nombre_textBox";
             this.Nombre_textBox.ReadOnly = true;
-            this.Nombre_textBox.Size = new System.Drawing.Size(219, 20);
+            this.Nombre_textBox.Size = new System.Drawing.Size(236, 20);
             this.Nombre_textBox.TabIndex = 1;
             // 
             // Edad_textBox
@@ -62,7 +65,7 @@
             this.Edad_textBox.Location = new System.Drawing.Point(25, 88);
             this.Edad_textBox.Name = "Edad_textBox";
             this.Edad_textBox.ReadOnly = true;
-            this.Edad_textBox.Size = new System.Drawing.Size(219, 20);
+            this.Edad_textBox.Size = new System.Drawing.Size(236, 20);
             this.Edad_textBox.TabIndex = 3;
             // 
             // label2
@@ -80,7 +83,7 @@
             this.Masa_textBox.Location = new System.Drawing.Point(25, 143);
             this.Masa_textBox.Name = "Masa_textBox";
             this.Masa_textBox.ReadOnly = true;
-            this.Masa_textBox.Size = new System.Drawing.Size(219, 20);
+            this.Masa_textBox.Size = new System.Drawing.Size(236, 20);
             this.Masa_textBox.TabIndex = 5;
             // 
             // label3
@@ -98,7 +101,7 @@
             this.Acoplamiento_textBox.Location = new System.Drawing.Point(146, 186);
             this.Acoplamiento_textBox.Name = "Acoplamiento_textBox";
             this.Acoplamiento_textBox.ReadOnly = true;
-            this.Acoplamiento_textBox.Size = new System.Drawing.Size(98, 20);
+            this.Acoplamiento_textBox.Size = new System.Drawing.Size(115, 20);
             this.Acoplamiento_textBox.TabIndex = 7;
             // 
             // label4
@@ -114,7 +117,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(118, 111);
+            this.label5.Location = new System.Drawing.Point(135, 111);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(126, 13);
             this.label5.TabIndex = 8;
@@ -123,17 +126,52 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(125, 166);
+            this.label6.Location = new System.Drawing.Point(146, 166);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(119, 13);
+            this.label6.Size = new System.Drawing.Size(115, 13);
             this.label6.TabIndex = 9;
             this.label6.Text = " M🜨 = 5,97 × 10^24 kg";
+            // 
+            // Modificar_btn
+            // 
+            this.Modificar_btn.Location = new System.Drawing.Point(25, 225);
+            this.Modificar_btn.Name = "Modificar_btn";
+            this.Modificar_btn.Size = new System.Drawing.Size(75, 23);
+            this.Modificar_btn.TabIndex = 10;
+            this.Modificar_btn.Text = "Modificar";
+            this.Modificar_btn.UseVisualStyleBackColor = true;
+            this.Modificar_btn.Click += new System.EventHandler(this.Modificar_btn_Click);
+            // 
+            // AceptarCambios_btn
+            // 
+            this.AceptarCambios_btn.Enabled = false;
+            this.AceptarCambios_btn.Location = new System.Drawing.Point(106, 225);
+            this.AceptarCambios_btn.Name = "AceptarCambios_btn";
+            this.AceptarCambios_btn.Size = new System.Drawing.Size(75, 23);
+            this.AceptarCambios_btn.TabIndex = 11;
+            this.AceptarCambios_btn.Text = "Aceptar";
+            this.AceptarCambios_btn.UseVisualStyleBackColor = true;
+            this.AceptarCambios_btn.Click += new System.EventHandler(this.AceptarCambios_btn_Click);
+            // 
+            // Cancelar_btn
+            // 
+            this.Cancelar_btn.Enabled = false;
+            this.Cancelar_btn.Location = new System.Drawing.Point(186, 225);
+            this.Cancelar_btn.Name = "Cancelar_btn";
+            this.Cancelar_btn.Size = new System.Drawing.Size(75, 23);
+            this.Cancelar_btn.TabIndex = 12;
+            this.Cancelar_btn.Text = "Cancelar";
+            this.Cancelar_btn.UseVisualStyleBackColor = true;
+            this.Cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
             // 
             // VerSatelite_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(273, 232);
+            this.ClientSize = new System.Drawing.Size(295, 281);
+            this.Controls.Add(this.Cancelar_btn);
+            this.Controls.Add(this.AceptarCambios_btn);
+            this.Controls.Add(this.Modificar_btn);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.Acoplamiento_textBox);
@@ -165,5 +203,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button Modificar_btn;
+        private System.Windows.Forms.Button AceptarCambios_btn;
+        private System.Windows.Forms.Button Cancelar_btn;
     }
 }

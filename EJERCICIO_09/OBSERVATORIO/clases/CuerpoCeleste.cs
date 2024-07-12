@@ -22,8 +22,8 @@ namespace OBSERVATORIO.clases
 			set { edad = value; }
 		}
 
-		protected double masa;
-		public double Masa
+		protected float masa;
+		public float Masa
 		{
 			get { return masa; }
 			set { masa = value; }

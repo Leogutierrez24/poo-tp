@@ -15,14 +15,14 @@ namespace OBSERVATORIO.clases
 			set { estrella = value; }
 		}
 
-		private float distancia;
+		protected float distancia;
 		public float Distancia
 		{
 			get { return distancia; }
 			set { distancia = value; }
 		}
 
-		private float temperatura;
+		protected float temperatura;
 		public float Temperatura
 		{
 			get { return temperatura; }
@@ -36,14 +36,14 @@ namespace OBSERVATORIO.clases
 			set { satelites = value; }
 		}
 
-		private bool habitabilidad;
+		protected bool habitabilidad;
 		public bool Habitabilidad
 		{
 			get { return habitabilidad; }
 			set { habitabilidad = value; }
 		}
 
-		private bool ricitos;
+		protected bool ricitos;
 		public bool Ricitos
 		{
 			get { return ricitos; }
@@ -71,6 +71,17 @@ namespace OBSERVATORIO.clases
 		public void AgregarSatelites(List<Satelite> satelites)
 		{
 			satelites.ForEach(satelite => this.satelites.Add(satelite));
+		}
+
+		public void Actualizar(string nombre, float masa, float edad, float distancia, float temp, bool habitabilidad, bool ricitos)
+		{
+			this.nombre = nombre;
+			this.masa = masa;
+			this.edad = edad;
+			this.distancia= distancia;
+			temperatura = temp;
+			this.habitabilidad = habitabilidad;
+			this.ricitos = ricitos;
 		}
     }
 }

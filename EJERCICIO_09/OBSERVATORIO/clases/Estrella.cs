@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace OBSERVATORIO.clases
 {
-    public class Estrella : CuerpoCeleste
-    {
+	public class Estrella : CuerpoCeleste
+	{
 		private float temperatura;
 		public float Temperatura
 		{
@@ -36,7 +36,7 @@ namespace OBSERVATORIO.clases
 			set { diametro = value; }
 		}
 
-        public Estrella(string nombre, float masa, float edad, float diametro, TipoEstrella tipo, Color color, float temperatura)
+		public Estrella(string nombre, float masa, float edad, float diametro, TipoEstrella tipo, Color color, float temperatura)
 		{
 			this.nombre = nombre;
 			this.masa = masa;
@@ -46,5 +46,16 @@ namespace OBSERVATORIO.clases
 			this.color = color;
 			this.temperatura = temperatura;
 		}
-    }
+
+		public void Actualizar(string nombre, float masa, float edad, float diametro, TipoEstrella tipo, Color color, float temperatura)
+		{
+            this.nombre = nombre;
+            this.masa = masa;
+            this.edad = edad;
+            this.diametro = diametro;
+            this.tipo = tipo;
+            this.color = color;
+            this.temperatura = temperatura;
+        }
+	}
 }

@@ -34,7 +34,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.NuevoRegistro_btn = new System.Windows.Forms.Button();
             this.AgregarCuerpo_btn = new System.Windows.Forms.Button();
-            this.ModificarCuerpo_btn = new System.Windows.Forms.Button();
             this.VerRegistro_btn = new System.Windows.Forms.Button();
             this.VerCuerpo_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -93,16 +92,6 @@
             this.AgregarCuerpo_btn.UseVisualStyleBackColor = true;
             this.AgregarCuerpo_btn.Click += new System.EventHandler(this.AgregarCuerpo_btn_Click);
             // 
-            // ModificarCuerpo_btn
-            // 
-            this.ModificarCuerpo_btn.Location = new System.Drawing.Point(108, 154);
-            this.ModificarCuerpo_btn.Name = "ModificarCuerpo_btn";
-            this.ModificarCuerpo_btn.Size = new System.Drawing.Size(81, 36);
-            this.ModificarCuerpo_btn.TabIndex = 7;
-            this.ModificarCuerpo_btn.Text = "Modificar";
-            this.ModificarCuerpo_btn.UseVisualStyleBackColor = true;
-            this.ModificarCuerpo_btn.Click += new System.EventHandler(this.ModificarCuerpo_btn_Click);
-            // 
             // VerRegistro_btn
             // 
             this.VerRegistro_btn.Location = new System.Drawing.Point(332, 152);
@@ -115,7 +104,7 @@
             // 
             // VerCuerpo_btn
             // 
-            this.VerCuerpo_btn.Location = new System.Drawing.Point(108, 196);
+            this.VerCuerpo_btn.Location = new System.Drawing.Point(108, 154);
             this.VerCuerpo_btn.Name = "VerCuerpo_btn";
             this.VerCuerpo_btn.Size = new System.Drawing.Size(81, 36);
             this.VerCuerpo_btn.TabIndex = 10;
@@ -127,10 +116,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(426, 243);
+            this.ClientSize = new System.Drawing.Size(426, 207);
             this.Controls.Add(this.VerCuerpo_btn);
             this.Controls.Add(this.VerRegistro_btn);
-            this.Controls.Add(this.ModificarCuerpo_btn);
             this.Controls.Add(this.AgregarCuerpo_btn);
             this.Controls.Add(this.NuevoRegistro_btn);
             this.Controls.Add(this.Registros_listBox);
@@ -154,7 +142,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button NuevoRegistro_btn;
         private System.Windows.Forms.Button AgregarCuerpo_btn;
-        private System.Windows.Forms.Button ModificarCuerpo_btn;
         private System.Windows.Forms.Button VerRegistro_btn;
         private System.Windows.Forms.Button VerCuerpo_btn;
     }

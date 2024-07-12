@@ -15,7 +15,7 @@ namespace OBSERVATORIO
 {
     public partial class Form1 : Form
     {
-        private Observatorio observatorio;
+        private readonly Observatorio observatorio;
 
         public Form1()
         {
@@ -52,13 +52,6 @@ namespace OBSERVATORIO
             CargarCuerpos();
         }
 
-        
-
-        private void ModificarCuerpo_btn_Click(object sender, EventArgs e)
-        {
-            // TODO
-        }
-
         private void VerCuerpo_btn_Click(object sender, EventArgs e)
         {
             if (CuerposRegistrados_listBox.SelectedItems.Count == 1)
@@ -77,6 +70,7 @@ namespace OBSERVATORIO
                     VerEstrella_frm form = new VerEstrella_frm(cuerpo as Estrella);
                     form.ShowDialog();
                 }
+                CargarCuerpos();
             }
             else MessageBox.Show("Selecciona un cuerpo para continuar.");
         }

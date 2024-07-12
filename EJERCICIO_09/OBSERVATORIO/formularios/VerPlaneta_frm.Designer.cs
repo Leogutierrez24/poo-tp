@@ -57,23 +57,26 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.Cancelar_btn = new System.Windows.Forms.Button();
+            this.AceptarCambios_btn = new System.Windows.Forms.Button();
+            this.Modificar_btn = new System.Windows.Forms.Button();
             this.EstrellaPrincipal_groupBox.SuspendLayout();
             this.EstrellaSecundaria_groupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // Temperatura_textBox
             // 
-            this.Temperatura_textBox.Location = new System.Drawing.Point(92, 180);
+            this.Temperatura_textBox.Location = new System.Drawing.Point(96, 183);
             this.Temperatura_textBox.Name = "Temperatura_textBox";
             this.Temperatura_textBox.ReadOnly = true;
-            this.Temperatura_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Temperatura_textBox.Size = new System.Drawing.Size(142, 20);
             this.Temperatura_textBox.TabIndex = 15;
             // 
             // label4
             // 
             this.label4.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 183);
+            this.label4.Location = new System.Drawing.Point(18, 186);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 13);
             this.label4.TabIndex = 14;
@@ -134,17 +137,17 @@
             // 
             // Habitabilidad_textBox
             // 
-            this.Habitabilidad_textBox.Location = new System.Drawing.Point(92, 220);
+            this.Habitabilidad_textBox.Location = new System.Drawing.Point(96, 226);
             this.Habitabilidad_textBox.Name = "Habitabilidad_textBox";
             this.Habitabilidad_textBox.ReadOnly = true;
-            this.Habitabilidad_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Habitabilidad_textBox.Size = new System.Drawing.Size(142, 20);
             this.Habitabilidad_textBox.TabIndex = 17;
             // 
             // label5
             // 
             this.label5.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 223);
+            this.label5.Location = new System.Drawing.Point(18, 226);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(68, 13);
             this.label5.TabIndex = 16;
@@ -152,21 +155,21 @@
             // 
             // Ricitos_textBox
             // 
-            this.Ricitos_textBox.Location = new System.Drawing.Point(91, 258);
+            this.Ricitos_textBox.Location = new System.Drawing.Point(96, 261);
             this.Ricitos_textBox.Name = "Ricitos_textBox";
             this.Ricitos_textBox.ReadOnly = true;
-            this.Ricitos_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Ricitos_textBox.Size = new System.Drawing.Size(144, 20);
             this.Ricitos_textBox.TabIndex = 19;
             // 
             // label6
             // 
             this.label6.AccessibleRole = System.Windows.Forms.AccessibleRole.ScrollBar;
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 261);
+            this.label6.Location = new System.Drawing.Point(18, 264);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.Size = new System.Drawing.Size(72, 13);
             this.label6.TabIndex = 18;
-            this.label6.Text = "Ricitos";
+            this.label6.Text = "Ricitos de oro";
             // 
             // EstrellaPrincipal_groupBox
             // 
@@ -289,7 +292,7 @@
             // Satelites_listBox
             // 
             this.Satelites_listBox.FormattingEnabled = true;
-            this.Satelites_listBox.Location = new System.Drawing.Point(18, 306);
+            this.Satelites_listBox.Location = new System.Drawing.Point(18, 309);
             this.Satelites_listBox.Name = "Satelites_listBox";
             this.Satelites_listBox.Size = new System.Drawing.Size(220, 95);
             this.Satelites_listBox.TabIndex = 22;
@@ -297,7 +300,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(18, 290);
+            this.label11.Location = new System.Drawing.Point(18, 293);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(47, 13);
             this.label11.TabIndex = 23;
@@ -306,7 +309,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(191, 203);
+            this.label13.Location = new System.Drawing.Point(191, 206);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(47, 13);
             this.label13.TabIndex = 25;
@@ -315,7 +318,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(155, 109);
+            this.label16.Location = new System.Drawing.Point(153, 109);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(85, 13);
             this.label16.TabIndex = 26;
@@ -324,17 +327,52 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(119, 164);
+            this.label12.Location = new System.Drawing.Point(123, 164);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 13);
+            this.label12.Size = new System.Drawing.Size(115, 13);
             this.label12.TabIndex = 24;
             this.label12.Text = " M🜨 = 5,97 × 10^24 kg";
+            // 
+            // Cancelar_btn
+            // 
+            this.Cancelar_btn.Enabled = false;
+            this.Cancelar_btn.Location = new System.Drawing.Point(426, 265);
+            this.Cancelar_btn.Name = "Cancelar_btn";
+            this.Cancelar_btn.Size = new System.Drawing.Size(75, 23);
+            this.Cancelar_btn.TabIndex = 36;
+            this.Cancelar_btn.Text = "Cancelar";
+            this.Cancelar_btn.UseVisualStyleBackColor = true;
+            this.Cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
+            // 
+            // AceptarCambios_btn
+            // 
+            this.AceptarCambios_btn.Enabled = false;
+            this.AceptarCambios_btn.Location = new System.Drawing.Point(345, 265);
+            this.AceptarCambios_btn.Name = "AceptarCambios_btn";
+            this.AceptarCambios_btn.Size = new System.Drawing.Size(75, 23);
+            this.AceptarCambios_btn.TabIndex = 35;
+            this.AceptarCambios_btn.Text = "Aceptar";
+            this.AceptarCambios_btn.UseVisualStyleBackColor = true;
+            this.AceptarCambios_btn.Click += new System.EventHandler(this.AceptarCambios_btn_Click);
+            // 
+            // Modificar_btn
+            // 
+            this.Modificar_btn.Location = new System.Drawing.Point(264, 265);
+            this.Modificar_btn.Name = "Modificar_btn";
+            this.Modificar_btn.Size = new System.Drawing.Size(75, 23);
+            this.Modificar_btn.TabIndex = 34;
+            this.Modificar_btn.Text = "Modificar";
+            this.Modificar_btn.UseVisualStyleBackColor = true;
+            this.Modificar_btn.Click += new System.EventHandler(this.Modificar_btn_Click);
             // 
             // VerPlaneta_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 423);
+            this.Controls.Add(this.Cancelar_btn);
+            this.Controls.Add(this.AceptarCambios_btn);
+            this.Controls.Add(this.Modificar_btn);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -398,5 +436,8 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button Cancelar_btn;
+        private System.Windows.Forms.Button AceptarCambios_btn;
+        private System.Windows.Forms.Button Modificar_btn;
     }
 }

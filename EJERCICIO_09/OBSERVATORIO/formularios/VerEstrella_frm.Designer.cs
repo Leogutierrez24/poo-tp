@@ -46,6 +46,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.Cancelar_btn = new System.Windows.Forms.Button();
+            this.AceptarCambios_btn = new System.Windows.Forms.Button();
+            this.Modificar_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Temperatura_textBox
@@ -53,7 +56,7 @@
             this.Temperatura_textBox.Location = new System.Drawing.Point(91, 185);
             this.Temperatura_textBox.Name = "Temperatura_textBox";
             this.Temperatura_textBox.ReadOnly = true;
-            this.Temperatura_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Temperatura_textBox.Size = new System.Drawing.Size(166, 20);
             this.Temperatura_textBox.TabIndex = 15;
             // 
             // label4
@@ -71,7 +74,7 @@
             this.Masa_textBox.Location = new System.Drawing.Point(21, 139);
             this.Masa_textBox.Name = "Masa_textBox";
             this.Masa_textBox.ReadOnly = true;
-            this.Masa_textBox.Size = new System.Drawing.Size(219, 20);
+            this.Masa_textBox.Size = new System.Drawing.Size(236, 20);
             this.Masa_textBox.TabIndex = 13;
             // 
             // label3
@@ -89,7 +92,7 @@
             this.Edad_textBox.Location = new System.Drawing.Point(21, 84);
             this.Edad_textBox.Name = "Edad_textBox";
             this.Edad_textBox.ReadOnly = true;
-            this.Edad_textBox.Size = new System.Drawing.Size(219, 20);
+            this.Edad_textBox.Size = new System.Drawing.Size(236, 20);
             this.Edad_textBox.TabIndex = 11;
             // 
             // label2
@@ -107,7 +110,7 @@
             this.Nombre_textBox.Location = new System.Drawing.Point(21, 31);
             this.Nombre_textBox.Name = "Nombre_textBox";
             this.Nombre_textBox.ReadOnly = true;
-            this.Nombre_textBox.Size = new System.Drawing.Size(219, 20);
+            this.Nombre_textBox.Size = new System.Drawing.Size(236, 20);
             this.Nombre_textBox.TabIndex = 9;
             // 
             // label1
@@ -124,7 +127,7 @@
             this.Tipo_textBox.Location = new System.Drawing.Point(91, 227);
             this.Tipo_textBox.Name = "Tipo_textBox";
             this.Tipo_textBox.ReadOnly = true;
-            this.Tipo_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Tipo_textBox.Size = new System.Drawing.Size(166, 20);
             this.Tipo_textBox.TabIndex = 17;
             // 
             // label5
@@ -142,7 +145,7 @@
             this.Color_textBox.Location = new System.Drawing.Point(91, 266);
             this.Color_textBox.Name = "Color_textBox";
             this.Color_textBox.ReadOnly = true;
-            this.Color_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Color_textBox.Size = new System.Drawing.Size(166, 20);
             this.Color_textBox.TabIndex = 19;
             // 
             // label6
@@ -160,7 +163,7 @@
             this.Diametro_textBox.Location = new System.Drawing.Point(91, 305);
             this.Diametro_textBox.Name = "Diametro_textBox";
             this.Diametro_textBox.ReadOnly = true;
-            this.Diametro_textBox.Size = new System.Drawing.Size(149, 20);
+            this.Diametro_textBox.Size = new System.Drawing.Size(166, 20);
             this.Diametro_textBox.TabIndex = 21;
             // 
             // label7
@@ -176,7 +179,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(155, 107);
+            this.label16.Location = new System.Drawing.Point(172, 107);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(85, 13);
             this.label16.TabIndex = 27;
@@ -185,16 +188,16 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(121, 162);
+            this.label12.Location = new System.Drawing.Point(142, 162);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(119, 13);
+            this.label12.Size = new System.Drawing.Size(115, 13);
             this.label12.TabIndex = 28;
             this.label12.Text = " M🜨 = 5,97 × 10^24 kg";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(193, 208);
+            this.label13.Location = new System.Drawing.Point(210, 208);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(47, 13);
             this.label13.TabIndex = 29;
@@ -203,17 +206,52 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(131, 328);
+            this.label8.Location = new System.Drawing.Point(148, 328);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(109, 13);
             this.label8.TabIndex = 30;
             this.label8.Text = "millones de kilometros";
             // 
+            // Cancelar_btn
+            // 
+            this.Cancelar_btn.Enabled = false;
+            this.Cancelar_btn.Location = new System.Drawing.Point(182, 358);
+            this.Cancelar_btn.Name = "Cancelar_btn";
+            this.Cancelar_btn.Size = new System.Drawing.Size(75, 23);
+            this.Cancelar_btn.TabIndex = 33;
+            this.Cancelar_btn.Text = "Cancelar";
+            this.Cancelar_btn.UseVisualStyleBackColor = true;
+            this.Cancelar_btn.Click += new System.EventHandler(this.Cancelar_btn_Click);
+            // 
+            // AceptarCambios_btn
+            // 
+            this.AceptarCambios_btn.Enabled = false;
+            this.AceptarCambios_btn.Location = new System.Drawing.Point(102, 358);
+            this.AceptarCambios_btn.Name = "AceptarCambios_btn";
+            this.AceptarCambios_btn.Size = new System.Drawing.Size(75, 23);
+            this.AceptarCambios_btn.TabIndex = 32;
+            this.AceptarCambios_btn.Text = "Aceptar";
+            this.AceptarCambios_btn.UseVisualStyleBackColor = true;
+            this.AceptarCambios_btn.Click += new System.EventHandler(this.AceptarCambios_btn_Click);
+            // 
+            // Modificar_btn
+            // 
+            this.Modificar_btn.Location = new System.Drawing.Point(21, 358);
+            this.Modificar_btn.Name = "Modificar_btn";
+            this.Modificar_btn.Size = new System.Drawing.Size(75, 23);
+            this.Modificar_btn.TabIndex = 31;
+            this.Modificar_btn.Text = "Modificar";
+            this.Modificar_btn.UseVisualStyleBackColor = true;
+            this.Modificar_btn.Click += new System.EventHandler(this.Modificar_btn_Click);
+            // 
             // VerEstrella_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 350);
+            this.ClientSize = new System.Drawing.Size(281, 397);
+            this.Controls.Add(this.Cancelar_btn);
+            this.Controls.Add(this.AceptarCambios_btn);
+            this.Controls.Add(this.Modificar_btn);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -261,5 +299,8 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button Cancelar_btn;
+        private System.Windows.Forms.Button AceptarCambios_btn;
+        private System.Windows.Forms.Button Modificar_btn;
     }
 }

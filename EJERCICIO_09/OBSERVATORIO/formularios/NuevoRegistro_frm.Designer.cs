@@ -43,24 +43,24 @@
             this.label2 = new System.Windows.Forms.Label();
             this.Opcion01_radioButton = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Nombre_textBox = new System.Windows.Forms.TextBox();
+            this.Legajo_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Personal_checkBox = new System.Windows.Forms.CheckBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.FechaNacimieto_dateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.Apellido_textBox = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.FechaNacimieto_dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Personal_checkBox = new System.Windows.Forms.CheckBox();
-            this.label9 = new System.Windows.Forms.Label();
+            this.Nombre_textBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.DistanciaATierra_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.Legajo_numericUpDown = new System.Windows.Forms.NumericUpDown();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DistanciaATierra_numericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Legajo_numericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DistanciaATierra_numericUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -223,21 +223,47 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Descubridor";
             // 
-            // label5
+            // Legajo_numericUpDown
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 21);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Nombe:";
+            this.Legajo_numericUpDown.Location = new System.Drawing.Point(56, 161);
+            this.Legajo_numericUpDown.Name = "Legajo_numericUpDown";
+            this.Legajo_numericUpDown.Size = new System.Drawing.Size(166, 20);
+            this.Legajo_numericUpDown.TabIndex = 14;
             // 
-            // Nombre_textBox
+            // label9
             // 
-            this.Nombre_textBox.Location = new System.Drawing.Point(56, 18);
-            this.Nombre_textBox.Name = "Nombre_textBox";
-            this.Nombre_textBox.Size = new System.Drawing.Size(166, 20);
-            this.Nombre_textBox.TabIndex = 1;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 163);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Legajo:";
+            // 
+            // Personal_checkBox
+            // 
+            this.Personal_checkBox.AutoSize = true;
+            this.Personal_checkBox.Location = new System.Drawing.Point(9, 133);
+            this.Personal_checkBox.Name = "Personal_checkBox";
+            this.Personal_checkBox.Size = new System.Drawing.Size(81, 17);
+            this.Personal_checkBox.TabIndex = 7;
+            this.Personal_checkBox.Text = "Es personal";
+            this.Personal_checkBox.UseVisualStyleBackColor = true;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 77);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(109, 13);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Fecha de nacimiento:";
+            // 
+            // FechaNacimieto_dateTimePicker
+            // 
+            this.FechaNacimieto_dateTimePicker.Location = new System.Drawing.Point(9, 93);
+            this.FechaNacimieto_dateTimePicker.Name = "FechaNacimieto_dateTimePicker";
+            this.FechaNacimieto_dateTimePicker.Size = new System.Drawing.Size(202, 20);
+            this.FechaNacimieto_dateTimePicker.TabIndex = 5;
             // 
             // Apellido_textBox
             // 
@@ -255,40 +281,21 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Apellido:";
             // 
-            // FechaNacimieto_dateTimePicker
+            // Nombre_textBox
             // 
-            this.FechaNacimieto_dateTimePicker.Location = new System.Drawing.Point(9, 93);
-            this.FechaNacimieto_dateTimePicker.Name = "FechaNacimieto_dateTimePicker";
-            this.FechaNacimieto_dateTimePicker.Size = new System.Drawing.Size(202, 20);
-            this.FechaNacimieto_dateTimePicker.TabIndex = 5;
+            this.Nombre_textBox.Location = new System.Drawing.Point(56, 18);
+            this.Nombre_textBox.Name = "Nombre_textBox";
+            this.Nombre_textBox.Size = new System.Drawing.Size(166, 20);
+            this.Nombre_textBox.TabIndex = 1;
             // 
-            // label8
+            // label5
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 77);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 13);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Fecha de nacimiento:";
-            // 
-            // Personal_checkBox
-            // 
-            this.Personal_checkBox.AutoSize = true;
-            this.Personal_checkBox.Location = new System.Drawing.Point(9, 133);
-            this.Personal_checkBox.Name = "Personal_checkBox";
-            this.Personal_checkBox.Size = new System.Drawing.Size(81, 17);
-            this.Personal_checkBox.TabIndex = 7;
-            this.Personal_checkBox.Text = "Es personal";
-            this.Personal_checkBox.UseVisualStyleBackColor = true;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 163);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Legajo:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 21);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Nombe:";
             // 
             // button1
             // 
@@ -336,13 +343,6 @@
             this.DistanciaATierra_numericUpDown.Size = new System.Drawing.Size(120, 20);
             this.DistanciaATierra_numericUpDown.TabIndex = 13;
             // 
-            // Legajo_numericUpDown
-            // 
-            this.Legajo_numericUpDown.Location = new System.Drawing.Point(56, 161);
-            this.Legajo_numericUpDown.Name = "Legajo_numericUpDown";
-            this.Legajo_numericUpDown.Size = new System.Drawing.Size(166, 20);
-            this.Legajo_numericUpDown.TabIndex = 14;
-            // 
             // NuevoRegistro_frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -358,14 +358,15 @@
             this.Controls.Add(this.FechaAvistamiento_dateTimePicker);
             this.Controls.Add(this.label1);
             this.Name = "NuevoRegistro_frm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nuevo Registro";
             this.Load += new System.EventHandler(this.NuevoRegistro_frm_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DistanciaATierra_numericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Legajo_numericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DistanciaATierra_numericUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
