@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CLASES
 {
-    public class Consulta
+    public class Consulta : IComparable<Consulta>
     {
 		private DateTime fecha;
 		public DateTime Fecha
@@ -36,7 +36,13 @@ namespace CLASES
 			set { costo = value; }
 		}
 
-
-
-	}
+        public int CompareTo(Consulta other)
+        {
+            if (other == null) return 1;
+			else
+			{
+				return fecha.CompareTo(other.fecha)*-1;
+			}
+        }
+    }
 }

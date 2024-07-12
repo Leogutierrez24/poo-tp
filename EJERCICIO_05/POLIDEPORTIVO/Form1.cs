@@ -154,7 +154,7 @@ namespace POLIDEPORTIVO
 
         private void VerRecaudacion_btn_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(string.Format("${0:0.00}", polideportivo.CalcularRecaudacion()));
+            MessageBox.Show(string.Format("Recaudación Total: ${0:0.00}", polideportivo.CalcularRecaudacion()));
         }
     }
 }

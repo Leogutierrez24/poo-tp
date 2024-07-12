@@ -22,11 +22,23 @@ namespace CLASES
 			set { estudios = value; }
 		}
 
+		private List<Consulta> consultas;
+		public List<Consulta> Consultas
+		{
+			get { return consultas; }
+			set { consultas = value; }
+		}
+
 		private List<Turno> turnos;
 		public List<Turno> Turnos
 		{
 			get { return turnos; }
 			set { turnos = value; }
+		}
+
+		public HistoriaClinica(Paciente paciente)
+		{
+			this.paciente = paciente;
 		}
 
 	}

@@ -14,6 +14,14 @@ namespace CLASES
 			get { return especialidades; }
 		}
 
+		private Agenda agenda;
+		public Agenda Agenda
+		{
+			get { return agenda; }
+			set { agenda = value; }
+		}
+
+
 		public Medico() { }
 
 		public void AgregarEspecialidad(Especialidad especialidad)

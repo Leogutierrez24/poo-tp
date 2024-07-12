@@ -209,7 +209,7 @@ namespace POLIDEPORTIVO.formularios
 
                     if (juecesSeleccionados.Exists(juez => !polideportivo.DisponibilidadJuez(juez, fechaElegida, horaElegida, duracionElegida)))
                     {
-                        MessageBox.Show("No todos los jueces estan disponibles para dirigir.");
+                        MessageBox.Show("No todos los jueces están disponibles para dirigir.");
                         juezDisponible = false;
                     }
 
@@ -223,7 +223,7 @@ namespace POLIDEPORTIVO.formularios
                         TercerJuez_textBox.Text = segundoJuezLinea.ToString();
                     }
                 }
-                else MessageBox.Show("Es necesario elegir solo 3 jueces para continuar.");
+                else MessageBox.Show("Es necesario elegir sólo 3 jueces para continuar.");
             }
         }
 
@@ -239,13 +239,13 @@ namespace POLIDEPORTIVO.formularios
 
                         if (resultado == 0)
                         {
-                            MessageBox.Show("Se ha registrado el alquiler con exito.");
+                            MessageBox.Show("Se ha registrado el alquiler con éxito.");
                             this.Close();
                         }
                         else MessageBox.Show("Hubo un error al intentar alquilar.");                        
                     }
                 }
-                else MessageBox.Show("Todavia no se ha elegido una cancha o fecha por alquilar.");
+                else MessageBox.Show("Todavía no se ha elegido una cancha o fecha por alquilar.");
             }
             else if (Opcionales_comboBox.SelectedIndex == 1)
             {
@@ -260,7 +260,7 @@ namespace POLIDEPORTIVO.formularios
 
                             if (resultado == 0)
                             {
-                                MessageBox.Show("Se ha registrado el alquiler con exito.");
+                                MessageBox.Show("Se ha registrado el alquiler con éxito.");
                                 this.Close();
                             }
                             else MessageBox.Show("Hubo un error al intentar alquilar.");
@@ -268,9 +268,9 @@ namespace POLIDEPORTIVO.formularios
                         else MessageBox.Show("Es necesario elegir un juez para continuar con el alquiler.");
 
                     }
-                    else MessageBox.Show("La cancha seleccionada no esta disponible para ser alquilada.");
+                    else MessageBox.Show("La cancha seleccionada no está disponible para ser alquilada.");
                 }
-                else MessageBox.Show("Todavia no se ha elegido una cancha o fecha por alquilar.");
+                else MessageBox.Show("Todavía no se ha elegido una cancha o fecha por alquilar.");
             }
             else if (Opcionales_comboBox.SelectedIndex == 2)
             {
@@ -285,7 +285,7 @@ namespace POLIDEPORTIVO.formularios
 
                             if (resultado == 0)
                             {
-                                MessageBox.Show("Se ha registrado el alquiler con exito.");
+                                MessageBox.Show("Se ha registrado el alquiler con éxito.");
                                 this.Close();
                             }
                             else MessageBox.Show("Hubo un error al intentar alquilar.");
@@ -293,9 +293,9 @@ namespace POLIDEPORTIVO.formularios
                         else MessageBox.Show("Es necesario elegir un juez para continuar con el alquiler.");
 
                     }
-                    else MessageBox.Show("La cancha seleccionada no esta disponible para ser alquilada.");
+                    else MessageBox.Show("La cancha seleccionada no está disponible para ser alquilada.");
                 }
-                else MessageBox.Show("Todavia no se ha elegido una cancha o fecha por alquilar.");
+                else MessageBox.Show("Todavía no se ha elegido una cancha o fecha por alquilar.");
             }
             else MessageBox.Show("Hubo un error.");
 

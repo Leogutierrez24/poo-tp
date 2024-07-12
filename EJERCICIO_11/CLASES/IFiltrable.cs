@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace CLASES
 {
-    public class TurnoConsulta : Turno
+    public interface IFiltrable
     {
-
+        bool CumpleCondicion();
     }
 }

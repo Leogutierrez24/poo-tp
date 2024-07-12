@@ -13,7 +13,6 @@ C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.exe
 C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.pdb
 C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.AssemblyReference.cache
 C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.Form1.resources
-C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.formularios.NuevaReserva_frm.resources
 C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.formularios.RegistroJuez_frm.resources
 C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.Properties.Resources.resources
 C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.csproj.GenerateResource.cache
@@ -32,3 +31,4 @@ I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEP
 I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.exe
 I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_05\POLIDEPORTIVO\bin\Debug\POLIDEPORTIVO.pdb
 I:\Facultad\segundo año\poo\poo-tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.formularios.Alquilar_frm.resources
+C:\facultad\poo\tp\EJERCICIO_05\POLIDEPORTIVO\obj\Debug\POLIDEPORTIVO.formularios.Alquilar_frm.resources

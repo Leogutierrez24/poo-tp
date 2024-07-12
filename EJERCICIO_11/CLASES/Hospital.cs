@@ -42,5 +42,32 @@ namespace CLASES
 			get { return turnos; }
 			set { turnos = value; }
 		}
+
+		public Hospital()
+		{
+
+		}
+
+		public void RegistrarMedico(Medico medico)
+		{
+			medicos.Add(medico);
+		}
+
+		public void IngresarPaciente(Paciente paciente)
+		{
+			HistoriaClinica nuevaHistoriaClinica = new HistoriaClinica(paciente);
+			historiasClinicas.Add(nuevaHistoriaClinica);
+			pacientes.Add(paciente);
+		}
+
+		public void AgregarEspecialidad(Especialidad especialidad)
+		{
+			especialidades.Add(especialidad);
+		}
+
+		public void AgendarTurno(Turno turno)
+		{
+			turnos.Add(turno);
+		}
 	}
 }

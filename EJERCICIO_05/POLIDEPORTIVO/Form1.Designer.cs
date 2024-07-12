@@ -548,7 +548,7 @@
             this.VerRecaudacion_btn.Name = "VerRecaudacion_btn";
             this.VerRecaudacion_btn.Size = new System.Drawing.Size(81, 35);
             this.VerRecaudacion_btn.TabIndex = 11;
-            this.VerRecaudacion_btn.Text = "Ver recaudacion";
+            this.VerRecaudacion_btn.Text = "Ver recaudación";
             this.VerRecaudacion_btn.UseVisualStyleBackColor = true;
             this.VerRecaudacion_btn.Click += new System.EventHandler(this.VerRecaudacion_btn_Click);
             // 

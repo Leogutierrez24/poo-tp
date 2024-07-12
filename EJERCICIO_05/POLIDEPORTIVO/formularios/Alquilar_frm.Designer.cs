@@ -398,7 +398,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Duracion:";
+            this.label4.Text = "Duración:";
             // 
             // Horario_numericUpDown
             // 
@@ -492,7 +492,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "Alquilar_frm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Alquilar_frm";
+            this.Text = "Registrar Alquiler";
             this.Load += new System.EventHandler(this.Alquilar_frm_Load);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();

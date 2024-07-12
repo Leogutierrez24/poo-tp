@@ -22,5 +22,12 @@ namespace CLASES
 			set { hora = value; }
 		}
 
+		private float costo;
+		public float Costo
+		{
+			get { return costo; }
+			set { costo = value; }
+		}
+
 	}
 }
