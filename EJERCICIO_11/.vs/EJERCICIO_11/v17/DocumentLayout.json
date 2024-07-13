@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_11\\clases\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\turno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|c:\\facultad\\poo\\tp\\ejercicio_11\\clases\\turnoconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\turnoconsulta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|c:\\facultad\\poo\\tp\\ejercicio_11\\clases\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|",
       "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\classdiagram1.cd||{59B0B277-7DDF-4E36-A3ED-02DAC5B9E2FA}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|C:\\facultad\\poo\\tp\\EJERCICIO_11\\clases\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C2127E3F-A932-48DF-A318-6CF6FE75EF1A}|CLASES\\CLASES.csproj|solutionrelative:clases\\hospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,45 +14,18 @@
       "DocumentGroups": [
         {
           "DockedHeight": 300,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Hospital.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\Hospital.cs",
-              "RelativeDocumentMoniker": "CLASES\\Hospital.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\Hospital.cs",
-              "RelativeToolTip": "CLASES\\Hospital.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T02:20:53.172Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TurnoConsulta.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\TurnoConsulta.cs",
-              "RelativeDocumentMoniker": "CLASES\\TurnoConsulta.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\TurnoConsulta.cs",
-              "RelativeToolTip": "CLASES\\TurnoConsulta.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T23:08:52.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "ClassDiagram1.cd",
               "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\ClassDiagram1.cd",
               "RelativeDocumentMoniker": "CLASES\\ClassDiagram1.cd",
               "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\ClassDiagram1.cd",
               "RelativeToolTip": "CLASES\\ClassDiagram1.cd",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000463|",
-              "WhenOpened": "2024-07-12T23:08:38.97Z",
+              "WhenOpened": "2024-07-13T00:19:41.797Z",
               "EditorCaption": ""
             },
             {
@@ -82,19 +43,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Turno.cs",
-              "DocumentMoniker": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\Turno.cs",
-              "RelativeDocumentMoniker": "CLASES\\Turno.cs",
-              "ToolTip": "C:\\facultad\\poo\\tp\\EJERCICIO_11\\CLASES\\Turno.cs",
-              "RelativeToolTip": "CLASES\\Turno.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAAAAgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-12T22:03:12.545Z",
-              "EditorCaption": ""
             }
           ]
         }

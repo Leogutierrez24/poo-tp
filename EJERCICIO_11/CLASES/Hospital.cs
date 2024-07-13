@@ -65,9 +65,41 @@ namespace CLASES
 			especialidades.Add(especialidad);
 		}
 
-		public void AgendarTurno(Turno turno)
+		private List<TurnoConsulta> FiltrarTurnosConsulta()
+		{
+			List<TurnoConsulta> turnosFiltrados = new List<TurnoConsulta>();
+			turnos.ForEach(turno =>
+			{
+				if (turno is TurnoConsulta tConsulta)
+				{
+					turnosFiltrados.Add(tConsulta);
+				}
+			});
+			return turnosFiltrados;
+		}
+
+		private List<TurnoConsulta> FiltrarTurnosPorMedico(Medico medico, List<TurnoConsulta> listaTurnos)
+		{
+            List<TurnoConsulta> turnosFiltrados = new List<TurnoConsulta>();
+            listaTurnos.ForEach(turno =>
+            {
+                if (turno.Medico.Documento == medico.Documento)
+                {
+                    turnosFiltrados.Add(turno);
+                }
+            });
+            return turnosFiltrados;
+        }
+
+		public void DisponibilidadTurnoConsulta()
+		{
+			List<TurnoConsulta> turnos = new List<TurnoConsulta>();
+		}
+
+		public void AgendarTurno(TurnoConsulta turno)
 		{
 			turnos.Add(turno);
+			turno.Medico.Agenda.AgendarTurno(turno);
 		}
 	}
 }

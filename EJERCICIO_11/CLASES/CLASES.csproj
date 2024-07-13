@@ -47,7 +47,6 @@
     <Compile Include="Estudio.cs" />
     <Compile Include="HistoriaClinica.cs" />
     <Compile Include="Hospital.cs" />
-    <Compile Include="IFiltrable.cs" />
     <Compile Include="Medico.cs" />
     <Compile Include="Paciente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

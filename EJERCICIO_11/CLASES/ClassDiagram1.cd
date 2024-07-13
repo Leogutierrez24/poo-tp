@@ -3,9 +3,10 @@
   <Class Name="CLASES.Consulta">
     <Position X="7" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABEAAAIRAAACEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABEAAAIRAAACUAAAAAAAAAABAAAAAQAAAQAAAAAAA=</HashCode>
       <FileName>Consulta.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="CLASES.Especialidad">
     <Position X="0.5" Y="4.25" Width="1.5" />
@@ -15,35 +16,35 @@
     </TypeIdentifier>
   </Class>
   <Class Name="CLASES.Estudio">
-    <Position X="7" Y="3.75" Width="1.5" />
+    <Position X="7" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>ABAAAAAAIAAAACCAAAAAgAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
       <FileName>Estudio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CLASES.HistoriaClinica">
-    <Position X="8.75" Y="0.5" Width="1.5" />
+    <Position X="9" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAhAAAAIQ=</HashCode>
+      <HashCode>AAAAEAAAABAAAIAAAACAAAAAAAAAAAAAAAAAhAAAAIQ=</HashCode>
       <FileName>HistoriaClinica.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CLASES.Hospital">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Position X="11.75" Y="0.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAABAAAAAAAAAAAAEAAAABAAAAAAAAhAAAAJQ=</HashCode>
+      <HashCode>AAAAEAAQABAAAAAAAAAAAEEACAIBAAAAAIAAhAAkAJQ=</HashCode>
       <FileName>Hospital.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CLASES.Medico">
     <Position X="5" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAABA=</HashCode>
+      <HashCode>AAAAEAAAIAAAACAAAAAAAAAAAAMAAAABAAAAAAAAABA=</HashCode>
       <FileName>Medico.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CLASES.OrdenMedica">
-    <Position X="8.75" Y="3.75" Width="1.5" />
+    <Position X="9.5" Y="4.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAQAAIAAAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>OrdenMedica.cs</FileName>
@@ -66,14 +67,14 @@
   <Class Name="CLASES.TurnoConsulta">
     <Position X="0.5" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>TurnoConsulta.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="CLASES.TurnoEstudio">
     <Position X="2.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAA=</HashCode>
       <FileName>TurnoEstudio.cs</FileName>
     </TypeIdentifier>
   </Class>

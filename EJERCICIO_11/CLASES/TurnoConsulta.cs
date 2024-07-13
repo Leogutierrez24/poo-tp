@@ -8,6 +8,12 @@ namespace CLASES
 {
     public class TurnoConsulta : Turno
     {
+		private Medico medico;
+		public Medico Medico
+		{
+			get { return medico; }
+			set { medico = value; }
+		}
 
-    }
+	}
 }

@@ -8,12 +8,15 @@ namespace CLASES
 {
     public class Agenda
     {
-		private List<TurnoConsulta> turnoAgendados;
+		private List<TurnoConsulta> turnoAgendados = new List<TurnoConsulta>();
 		public List<TurnoConsulta> TurnosAgendados
 		{
 			get { return turnoAgendados; }
-			set { turnoAgendados = value; }
 		}
 
+		public void AgendarTurno(TurnoConsulta turno)
+		{
+			turnoAgendados.Add(turno);
+		}
 	}
 }

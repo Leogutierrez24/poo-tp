@@ -8,8 +8,12 @@ namespace CLASES
 {
     public class TurnoEstudio : Turno
     {
-        public TurnoEstudio()
-        {
-        }
-    }
+		private Estudio estudio;
+		public Estudio Estudio
+		{
+			get { return estudio; }
+			set { estudio = value; }
+		}
+
+	}
 }

@@ -36,7 +36,15 @@ namespace CLASES
 			set { costo = value; }
 		}
 
-        public int CompareTo(Consulta other)
+		private string tratamiento;
+		public string Tratamiento
+		{
+			get { return tratamiento; }
+			set { tratamiento = value; }
+		}
+
+
+		public int CompareTo(Consulta other)
         {
             if (other == null) return 1;
 			else
@@ -44,5 +52,10 @@ namespace CLASES
 				return fecha.CompareTo(other.fecha)*-1;
 			}
         }
+
+		public float CalcularCosto()
+		{
+			return medico.Costo * (medico.Especialidades.Count > 0 ? medico.Especialidades.Count : 1);
+		}
     }
 }
